@@ -1,0 +1,156 @@
+/*-- -------------------------- -->
+<---         CORE STYLES        -->
+<--- -------------------------- -*/
+
+/* FONTS */
+@font-face {
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-display: swap;
+  src: local(""), url("/fonts/HelveticaNeue.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: local(""), url("/fonts/HelveticaNeue-Bold.woff") format("woff");
+}
+
+/*
+
+@font-face {
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: medium;
+  font-display: swap;
+  src: local(""), url("/fonts/HelveticaNeue-Medium.woff") format("woff");
+}
+
+*/
+
+/*-- -------------------------- -->
+<---         NAVIGATION         -->
+<--- -------------------------- -*/
+
+/* -- Mobile Navigation -- */
+@media screen and (min-width: 0px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+/*-- -------------------------- -->
+<---         FOOTER             -->
+<--- -------------------------- -*/
+
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+    margin: 0;
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+/*-- -------------------------- -->
+<---         SECTION TITLE      -->
+<--- -------------------------- -*/
+
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+#services-main {
+  margin: 0 auto;
+}

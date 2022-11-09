@@ -1,2 +1,2 @@
-# raincitywebsites
-Repo that syncs to netlify for raincitywebsites.com
+# webdevelopmentcompany
+Repository for creating my web development firms website
