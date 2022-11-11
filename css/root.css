@@ -28,6 +28,10 @@
   src: local(""), url("/fonts/HelveticaNeue-Medium.woff") format("woff");
 }
 
+body {
+  overscroll-behavior-y: none;
+}
+
 */
 
 /*-- -------------------------- -->
