@@ -228,7 +228,7 @@
 
   #services {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -273,6 +273,35 @@
   #services .right-section p {
     width: 100%;
   }
+
+  #services .right-section a {
+    /*border: 1px solid rgb(196, 196, 196);*/
+    border: none;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #services .right-section a:hover {
+    color: rgb(48, 86, 197);
+    filter: invert(22%) sepia(76%) saturate(4390%) hue-rotate(225deg)
+      brightness(87%) contrast(74%);
+  }
+
+  #services .right-section #button1 img {
+    padding-top: 12px;
+    width: 40px;
+  }
+
+  .hero-button-tablet {
+    display: none;
+  }
 }
 
 /* -- Ipad Pro -- */
@@ -287,7 +316,7 @@
 
   #services {
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -297,7 +326,6 @@
     width: 95%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border-bottom: 2px solid rgb(214, 214, 214);
   }
 
@@ -323,7 +351,6 @@
 
   #services .right-section {
     width: 100%;
-    height: 50vh;
     display: flex; /* establish flex container */
     flex-direction: row; /* make main axis vertical */
     justify-content: space-between; /* center items vertically, in this case */
@@ -334,6 +361,39 @@
 
   #services .right-section p {
     width: 45%;
+  }
+
+  .hero-button {
+    display: none;
+  }
+
+  #services .hero-button-tablet a {
+    /*border: 1px solid rgb(196, 196, 196);*/
+    border: none;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #services .hero-button-tablet a:hover {
+    color: rgb(48, 86, 197);
+    filter: invert(22%) sepia(76%) saturate(4390%) hue-rotate(225deg)
+      brightness(87%) contrast(74%);
+  }
+
+  #services .hero-button-tablet #button1 img {
+    padding-top: 12px;
+    width: 50px;
+  }
+
+  .hero-button-tablet {
+    display: initial;
   }
 }
 
@@ -353,7 +413,7 @@
 
   #services {
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -401,17 +461,44 @@
   }
 
   #services .right-section button {
-    border: 1px solid rgb(196, 196, 196);
-    width: 250px;
+    /*border: 1px solid rgb(196, 196, 196);*/
+    border: none;
     height: 60px;
     display: inline-flex;
     align-items: center;
     font-size: 20px;
+    font-weight: bold;
+    padding: 0px;
+    letter-spacing: 1px;
   }
 
-  #services .right-section #button1 {
-    background-color: rgb(48, 86, 197);
-    color: white;
+  #services .right-section a {
+    /*border: 1px solid rgb(196, 196, 196);*/
+    border: none;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #services .right-section a:hover {
+    color: rgb(48, 86, 197);
+    filter: invert(22%) sepia(76%) saturate(4390%) hue-rotate(225deg)
+      brightness(87%) contrast(74%);
+  }
+
+  #services .right-section #button1 img {
+    padding-top: 12px;
+    width: 70px;
+  }
+
+  .hero-button-tablet {
+    display: none;
   }
 }
 
@@ -435,10 +522,157 @@
     max-width: 100%;
     /*overflow-x: hidden;*/
   }
+
+  #portfolio {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #portfolio .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    padding-top: 40px;
+  }
+
+  #portfolio .left-section {
+    width: 100%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(208, 255, 208);
+    */
+    border-bottom: 2px solid rgb(214, 214, 214);
+    padding-bottom: 20px;
+  }
+
+  #portfolio .middle-section {
+    width: 100%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(195, 255, 195);
+    */
+    border-bottom: 2px solid rgb(214, 214, 214);
+    padding-bottom: 20px;
+  }
+
+  #portfolio .right-section {
+    width: 100%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(181, 253, 181);
+    */
+    border-bottom: 2px solid rgb(214, 214, 214);
+    padding-bottom: 20px;
+  }
+
+  #portfolio .title {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  #portfolio .description {
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+
+  #portfolio .subtitles {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+
+  #portfolio .subtitles span {
+    padding-right: 10px;
+  }
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 991px) {
+@media screen and (min-width: 450px) and (max-width: 1023px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #portfolio {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25px;
+  }
+
+  #portfolio .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  #portfolio .left-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(208, 255, 208);
+    */
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  #portfolio .middle-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(195, 255, 195);
+    */
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  #portfolio .right-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(181, 253, 181);
+    */
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  #portfolio .title {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  #portfolio .description {
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+
+  #portfolio .subtitles {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+
+  #portfolio .subtitles span {
+    padding-right: 10px;
+  }
 }
 
 /* -- Tablets -- */
@@ -454,6 +688,74 @@
     background-color: #f1f1f1;
     max-width: 100%;
     /*overflow-x: hidden;*/
+  }
+
+  #portfolio {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  #portfolio .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  #portfolio .left-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(208, 255, 208);
+    */
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  #portfolio .middle-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(195, 255, 195);
+    */
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  #portfolio .right-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(181, 253, 181);
+    */
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  #portfolio .title {
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+
+  #portfolio .description {
+    padding-bottom: 20px;
+  }
+
+  #portfolio .subtitles {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  #portfolio .subtitles span {
+    padding-right: 10px;
   }
 }
 
