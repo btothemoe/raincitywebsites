@@ -70,7 +70,7 @@ body {
   }
 
   .navbar {
-    width: 85%;
+    width: 90%;
     border-bottom: 2px solid black;
     display: flex;
     flex-direction: row;
@@ -338,7 +338,7 @@ body {
   }
 
   #section-title .container {
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
