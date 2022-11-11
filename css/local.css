@@ -525,7 +525,7 @@
 
   #portfolio {
     width: 100%;
-    height: 90vh;
+    height: 205vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -568,7 +568,7 @@
     border: 1px dashed;
     background-color: rgb(181, 253, 181);
     */
-    border-bottom: 2px solid rgb(214, 214, 214);
+
     padding-bottom: 20px;
   }
 
@@ -591,6 +591,11 @@
   #portfolio .subtitles span {
     padding-right: 10px;
   }
+
+  #portfolio a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 /* -- Ipad Pro -- */
@@ -606,7 +611,7 @@
 
   #portfolio {
     width: 100%;
-    height: 90vh;
+    height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -618,7 +623,98 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 5vw;
+    gap: 2vw;
+  }
+
+  #portfolio .left-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(208, 255, 208);
+    */
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  #portfolio .middle-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(195, 255, 195);
+    */
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  #portfolio .right-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(181, 253, 181);
+    */
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+
+  #portfolio .title {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  #portfolio .description {
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+
+  #portfolio .subtitles {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+
+  #portfolio .subtitles span {
+    padding-right: 10px;
+  }
+
+  #portfolio a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #portfolio {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+  }
+
+  #portfolio .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
   }
 
   #portfolio .left-section {
@@ -662,100 +758,21 @@
 
   #portfolio .description {
     padding-bottom: 20px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   #portfolio .subtitles {
     font-size: 12px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
   }
 
   #portfolio .subtitles span {
     padding-right: 10px;
   }
-}
 
-/* -- Tablets -- */
-@media screen and (min-width: 750px) and (max-width: 1023px) {
-}
-
-/* -- Small Desktop -- */
-@media screen and (min-width: 1024px) {
-  body,
-  html {
-    font-family: "HelveticaNeue", sans-serif;
-    font-size: 20px;
-    background-color: #f1f1f1;
-    max-width: 100%;
-    /*overflow-x: hidden;*/
-  }
-
-  #portfolio {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 50px;
-  }
-
-  #portfolio .container {
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5vw;
-  }
-
-  #portfolio .left-section {
-    width: 33.3%;
-    height: 90vh;
-    /*
-    border: 1px dashed;
-    background-color: rgb(208, 255, 208);
-    */
-    border-bottom: none;
-    padding-bottom: 0px;
-  }
-
-  #portfolio .middle-section {
-    width: 33.3%;
-    height: 90vh;
-    /*
-    border: 1px dashed;
-    background-color: rgb(195, 255, 195);
-    */
-    border-bottom: none;
-    padding-bottom: 0px;
-  }
-
-  #portfolio .right-section {
-    width: 33.3%;
-    height: 90vh;
-    /*
-    border: 1px dashed;
-    background-color: rgb(181, 253, 181);
-    */
-    border-bottom: none;
-    padding-bottom: 0px;
-  }
-
-  #portfolio .title {
-    padding-bottom: 20px;
-    font-weight: bold;
-  }
-
-  #portfolio .description {
-    padding-bottom: 20px;
-  }
-
-  #portfolio .subtitles {
-    font-size: 14px;
-    padding-bottom: 10px;
-  }
-
-  #portfolio .subtitles span {
-    padding-right: 10px;
+  #portfolio a {
+    text-decoration: none;
+    color: black;
   }
 }
 
@@ -780,10 +797,237 @@
     max-width: 100%;
     /*overflow-x: hidden;*/
   }
+
+  #pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url("/images/Vector2.svg");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: top 350px right;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #pricing .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  #pricing .left-section {
+    width: 100%;
+    /*
+    border: 1px dashed;
+    background-color: rgb(208, 236, 255);
+    */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    font-size: 20px;
+  }
+
+  #pricing .left-section .description {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  #pricing .right-section {
+    width: 100%;
+    /*
+    border: 1px dashed;
+    background-color: rgb(167, 220, 255);
+    */
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    flex-wrap: wrap;
+  }
+
+  #pricing .pricing-box-container {
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: start; /* center items vertically, in this case */
+    width: 100%;
+  }
+
+  #pricing .pricing-box-container img {
+    padding-right: 5px;
+    filter: invert(22%) sepia(76%) saturate(4390%) hue-rotate(225deg)
+      brightness(87%) contrast(74%);
+    width: 8%;
+  }
+
+  #pricing .pricing-box {
+    /*
+    border: 1px dashed;
+    */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: start; /* center items vertically, in this case */
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #pricing .title {
+    font-size: 26px;
+    line-height: 95%;
+    font-weight: bold;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+
+  #pricing .title #orange-header {
+    color: #f18200;
+  }
+
+  #pricing .description {
+    padding-bottom: 20px;
+    width: 300px;
+    font-size: 16px;
+  }
+
+  #pricing .pricing-box .pricing-title {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  #pricing .pricing-box p {
+    font-size: 12px;
+    width: 90%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #pricing .pricing-box hr {
+    border: 1px solid rgb(214, 214, 214);
+    width: 90%;
+    margin-left: 0;
+  }
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 991px) {
+@media screen and (min-width: 450px) and (max-width: 1023px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #pricing {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url("/images/Vector2.svg");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-top: 70px;
+  }
+
+  #pricing .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #pricing .left-section {
+    width: 50%;
+    /*
+    border: 1px dashed;
+    background-color: rgb(208, 236, 255);
+    */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    font-size: 20px;
+  }
+
+  #pricing .left-section .description {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  #pricing .right-section {
+    width: 50%;
+    height: 75vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(167, 220, 255);
+    */
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    flex-wrap: wrap;
+  }
+
+  #pricing .pricing-box-container {
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: start; /* center items vertically, in this case */
+    width: 100%;
+  }
+
+  #pricing .pricing-box-container img {
+    padding-right: 5px;
+    filter: invert(22%) sepia(76%) saturate(4390%) hue-rotate(225deg)
+      brightness(87%) contrast(74%);
+    width: 10%;
+  }
+
+  #pricing .pricing-box {
+    /*
+    border: 1px dashed;
+    */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: start; /* center items vertically, in this case */
+    width: 100%;
+  }
+
+  #pricing .title {
+    font-size: 4vw;
+    line-height: 95%;
+    font-weight: bold;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  #pricing .title #orange-header {
+    color: #f18200;
+  }
+
+  #pricing .description {
+    padding-bottom: 20px;
+    width: 300px;
+    font-size: 16px;
+  }
+
+  #pricing .pricing-box .pricing-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  #pricing .pricing-box p {
+    font-size: 14px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  #pricing .pricing-box hr {
+    border: 1px solid rgb(214, 214, 214);
+    width: 90%;
+    margin-left: 0;
+  }
 }
 
 /* -- Tablets -- */
@@ -799,6 +1043,114 @@
     background-color: #f1f1f1;
     max-width: 100%;
     /*overflow-x: hidden;*/
+  }
+
+  #pricing {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url("/images/Vector2.svg");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #pricing .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #pricing .left-section {
+    width: 50%;
+    height: 80vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(208, 236, 255);
+    */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  #pricing .left-section .description {
+    width: 75%;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+
+  #pricing .right-section {
+    width: 50%;
+    height: 80vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(167, 220, 255);
+    */
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    flex-wrap: wrap;
+  }
+
+  #pricing .pricing-box-container {
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    width: 49%;
+  }
+
+  #pricing .pricing-box-container img {
+    padding-right: 6px;
+    padding-top: 60px;
+    filter: invert(22%) sepia(76%) saturate(4390%) hue-rotate(225deg)
+      brightness(87%) contrast(74%);
+    width: 14%;
+  }
+
+  #pricing .pricing-box {
+    /*
+    border: 1px dashed;
+    */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: end; /* center items vertically, in this case */
+  }
+
+  #pricing .title {
+    font-size: 4vw;
+    line-height: 95%;
+    font-weight: bold;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  #pricing .title #orange-header {
+    color: #f18200;
+  }
+
+  #pricing .description {
+  }
+
+  #pricing .pricing-box .pricing-title {
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  #pricing .pricing-box p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  #pricing .pricing-box hr {
+    border: 1px solid rgb(214, 214, 214);
+    width: 80%;
+    margin-left: 0;
   }
 }
 

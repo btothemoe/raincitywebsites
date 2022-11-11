@@ -335,6 +335,7 @@ body {
     flex-direction: row;
     justify-content: center;
     background-color: #f1f1f1;
+    z-index: 10;
   }
 
   #section-title .container {
@@ -385,6 +386,7 @@ body {
     flex-direction: row;
     justify-content: center;
     background-color: #f1f1f1;
+    z-index: 10;
   }
 
   #section-title .container {
@@ -438,6 +440,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    z-index: 10;
   }
 
   #section-title .container {
