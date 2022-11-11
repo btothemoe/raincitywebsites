@@ -22,7 +22,7 @@
   }
 
   #hero .container {
-    width: 95%;
+    width: 85%;
     display: flex;
     flex-direction: column;
   }
@@ -87,7 +87,7 @@
   }
 
   #hero .container {
-    width: 95%;
+    width: 85%;
     display: flex;
     flex-direction: row;
   }
@@ -235,7 +235,7 @@
   }
 
   #services .container {
-    width: 95%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid rgb(214, 214, 214);
