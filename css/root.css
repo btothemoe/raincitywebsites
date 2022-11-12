@@ -46,7 +46,6 @@ body {
     font-family: "HelveticaNeue", sans-serif;
     background-color: #f1f1f1;
     max-width: 100%;
-    height: 5000px;
     margin: 0px;
     /*overflow-x: hidden;*/
     background-image: url("/images/Ellipse_Mobile.svg");
@@ -285,7 +284,148 @@ body {
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 991px) {
+@media screen and (min-width: 450px) and (max-width: 1023px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+    margin: 0;
+  }
+
+  #footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("/images/Vector3.svg");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  #footer .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  #footer .header {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #footer .left-section {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #footer .left-section label {
+    margin-bottom: -40px;
+  }
+
+  #footer .left-section input {
+    width: 85%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+  }
+
+  #footer .right-section {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* center items vertically, in this case */
+  }
+
+  #footer .right-section .header {
+    color: #f18200;
+    font-size: 24px;
+  }
+
+  #footer .right-section p {
+    width: 95%;
+    margin-bottom: 125px;
+    font-size: 18px;
+  }
+
+  #footer .right-section .footer-services {
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: space-between; /* center items vertically, in this case */
+  }
+
+
+
+  #footer
+    .right-section
+    .footer-services
+    .footer-services-section
+    .services-section-header {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  #footer
+    .right-section
+    .footer-services
+    .footer-services-section
+    .services-section-label {
+    padding-top: 25px;
+    font-size: 16px;
+  }
+
+  #footer .left-section .footer-menu .footer-menu-link {
+    list-style: none;
+    width: 45%;
+    height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #footer .left-section .footer-menu {
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: start; /* center items vertically, in this case */
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+
+  #footer .footer-menu a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+
+  .socials {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #353535;
+    color: white;
+  }
+
+  .socials .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}
 }
 
 /* -- Tablets -- */
@@ -301,6 +441,135 @@ body {
     max-width: 100%;
     /*overflow-x: hidden;*/
     margin: 0;
+  }
+
+  #footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("/images/Vector3.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  #footer .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  #footer .header {
+    font-weight: bold;
+    font-size: 26px;
+  }
+
+  #footer .left-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #footer .left-section label {
+    margin-bottom: -40px;
+  }
+
+  #footer .left-section input {
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+  }
+
+  #footer .right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* center items vertically, in this case */
+  }
+
+  #footer .right-section .header {
+    color: #f18200;
+    font-size: 30px;
+  }
+
+  #footer .right-section p {
+    width: 75%;
+    margin-bottom: 125px;
+  }
+
+  #footer .right-section .footer-services {
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: space-between; /* center items vertically, in this case */
+  }
+
+  #footer .right-section .footer-services .footer-services-section {
+  }
+
+  #footer
+    .right-section
+    .footer-services
+    .footer-services-section
+    .services-section-header {
+    font-weight: bold;
+  }
+
+  #footer
+    .right-section
+    .footer-services
+    .footer-services-section
+    .services-section-label {
+    padding-top: 25px;
+  }
+
+  #footer .left-section .footer-menu .footer-menu-link {
+    list-style: none;
+    width: 35%;
+    height: 60px;
+    font-weight: bold;
+    font-size: 26px;
+  }
+
+  #footer .left-section .footer-menu {
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: start; /* center items vertically, in this case */
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+
+  #footer .footer-menu a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+
+  .socials {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #353535;
+    color: white;
+  }
+
+  .socials .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
   }
 }
 
