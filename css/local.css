@@ -285,6 +285,7 @@
     letter-spacing: 1px;
     text-decoration: none;
     color: black;
+    padding-bottom: 20px;
   }
 
   #services .right-section a:hover {
@@ -392,6 +393,7 @@
 
   .hero-button-tablet {
     display: initial;
+    padding-bottom: 30px;
   }
 }
 
@@ -916,7 +918,8 @@
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: center right;
-    padding-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   #pricing .container {
@@ -1033,7 +1036,6 @@
 
   #pricing {
     width: 100%;
-    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1118,9 +1120,6 @@
     color: #f18200;
   }
 
-  #pricing .description {
-  }
-
   #pricing .pricing-box .pricing-title {
     font-weight: bold;
     font-size: 22px;
@@ -1161,10 +1160,152 @@
     max-width: 100%;
     /*overflow-x: hidden;*/
   }
+
+  #blog {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #blog .container {
+    width: 90%;
+    display: flex;
+    flex-direction: row; /* make main axis vertical */
+    justify-content: space-between; /* center items vertically, in this case */
+    flex-wrap: wrap;
+  }
+
+  #blog .blog-element {
+    width: 100%;
+    height: 30%;
+    border-bottom: 1px solid #a9a9a9;
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    position: relative;
+  }
+
+  #blog .blog-element .blog-date {
+    font-size: 14px;
+    width: 70%;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    display: flex;
+  }
+
+  #blog .blog-element .blog-header {
+    font-size: 4vw;
+    font-weight: bold;
+    width: 70%;
+  }
+
+  #blog .blog-element .blog-link {
+    font-size: 16px;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+  }
+
+  #blog .blog-element .blog-link .blog-link-text {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #blog .blog-element .blog-link img {
+    margin-top: 7px;
+    width: 13%;
+  }
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 991px) {
+@media screen and (min-width: 450px) and (max-width: 1023px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #blog {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #blog .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row; /* make main axis vertical */
+    justify-content: space-between; /* center items vertically, in this case */
+    flex-wrap: wrap;
+  }
+
+  #blog .container a:hover {
+    filter: invert(44%) sepia(91%) saturate(2152%) hue-rotate(13deg)
+      brightness(108%) contrast(102%);
+  }
+
+  #blog .blog-element {
+    width: 26%;
+    height: 80%;
+    border: 1px solid #a9a9a9;
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    position: relative;
+  }
+
+  #blog .blog-element .blog-date {
+    font-size: 14px;
+    width: 70%;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  #blog .blog-element .blog-header {
+    font-size: 2vw;
+    font-weight: bold;
+    width: 70%;
+  }
+
+  #blog .blog-element .blog-link {
+    font-size: 16px;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+  }
+
+  #blog .blog-element .blog-link .blog-link-text {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #blog .blog-element .blog-link img {
+    margin-top: 7px;
+    width: 13%;
+  }
 }
 
 /* -- Tablets -- */
@@ -1180,6 +1321,74 @@
     background-color: #f1f1f1;
     max-width: 100%;
     /*overflow-x: hidden;*/
+  }
+
+  #blog {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #blog .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row; /* make main axis vertical */
+    justify-content: space-between; /* center items vertically, in this case */
+    flex-wrap: wrap;
+  }
+
+  #blog .container a:hover {
+    filter: invert(44%) sepia(91%) saturate(2152%) hue-rotate(13deg)
+      brightness(108%) contrast(102%);
+  }
+
+  #blog .blog-element {
+    width: 29%;
+    height: 80%;
+    border: 1px solid #a9a9a9;
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    position: relative;
+  }
+
+  #blog .blog-element .blog-date {
+    font-size: 16px;
+    width: 70%;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  #blog .blog-element .blog-header {
+    font-size: 2vw;
+    font-weight: bold;
+    width: 70%;
+  }
+
+  #blog .blog-element .blog-link {
+    font-size: 16px;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+  }
+
+  #blog .blog-element .blog-link .blog-link-text {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #blog .blog-element .blog-link img {
+    margin-top: 11px;
+    width: 15%;
   }
 }
 
