@@ -277,9 +277,159 @@ body {
   html {
     font-family: "HelveticaNeue", sans-serif;
     font-size: 20px;
-    background-color: #f1f1f1;
     max-width: 100%;
     /*overflow-x: hidden;*/
+    margin: 0;
+  }
+
+  #footer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-image: url("/images/Vector3.svg");
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+
+  #footer .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  #footer .header {
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  #footer .left-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #footer .left-section .footer-menu .footer-menu-link {
+    list-style: none;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  #footer .left-section .footer-menu {
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: start; /* center items vertically, in this case */
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+
+  #footer .left-section label {
+    font-size: 16px;
+  }
+
+  #footer .left-section input {
+    width: 85%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+  }
+
+  #footer .left-section .footer-email-mobile {
+    color: #f18200;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+
+  #footer .left-section p {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  #footer .right-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* center items vertically, in this case */
+  }
+
+  #footer .right-section .header {
+    color: #f18200;
+    font-size: 24px;
+    display: none;
+  }
+
+  #footer .right-section p {
+    width: 95%;
+    margin-bottom: 125px;
+    font-size: 18px;
+    display: none;
+  }
+
+  #footer .right-section .footer-services {
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: space-between; /* center items vertically, in this case */
+    padding-bottom: 15px;
+  }
+
+  #footer .right-section .footer-services .footer-services-section {
+    padding-bottom: 20px;
+  }
+
+  #footer
+    .right-section
+    .footer-services
+    .footer-services-section
+    .services-section-header {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  #footer
+    .right-section
+    .footer-services
+    .footer-services-section
+    .services-section-label {
+    padding-top: 15px;
+    font-size: 14px;
+  }
+
+  #footer .footer-menu a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+
+  .socials {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #353535;
+    color: white;
+  }
+
+  .socials .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
   }
 }
 
@@ -342,6 +492,14 @@ body {
     font-size: 20px;
   }
 
+  #footer .left-section .footer-email-mobile {
+    display: none;
+  }
+
+  #footer .left-section p {
+    display: none;
+  }
+
   #footer .right-section {
     width: 65%;
     display: flex;
@@ -352,12 +510,14 @@ body {
   #footer .right-section .header {
     color: #f18200;
     font-size: 24px;
+    display: initial;
   }
 
   #footer .right-section p {
     width: 95%;
     margin-bottom: 125px;
     font-size: 18px;
+    display: initial;
   }
 
   #footer .right-section .footer-services {
@@ -365,8 +525,6 @@ body {
     flex-direction: row; /* make main axis vertical */
     justify-content: space-between; /* center items vertically, in this case */
   }
-
-
 
   #footer
     .right-section
@@ -425,7 +583,6 @@ body {
     padding-left: 2.5%;
     padding-right: 2.5%;
   }
-}
 }
 
 /* -- Tablets -- */
@@ -490,6 +647,14 @@ body {
     font-size: 20px;
   }
 
+  #footer .left-section .footer-email-mobile {
+    display: none;
+  }
+
+  #footer .left-section p {
+    display: none;
+  }
+
   #footer .right-section {
     width: 50%;
     display: flex;
@@ -500,20 +665,19 @@ body {
   #footer .right-section .header {
     color: #f18200;
     font-size: 30px;
+    display: initial;
   }
 
   #footer .right-section p {
     width: 75%;
     margin-bottom: 125px;
+    display: initial;
   }
 
   #footer .right-section .footer-services {
     display: flex; /* establish flex container */
     flex-direction: row; /* make main axis vertical */
     justify-content: space-between; /* center items vertically, in this case */
-  }
-
-  #footer .right-section .footer-services .footer-services-section {
   }
 
   #footer
