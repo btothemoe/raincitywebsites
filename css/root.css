@@ -28,10 +28,21 @@
   src: local(""), url("/fonts/HelveticaNeue-Medium.woff") format("woff");
 }
 
+/**
+ * Simple Radial Mouse Cursor
+ */
+#mouse-circle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: -10px 0px 0px -9px;
+  background: #f18200;
+  border-radius: 50%;
+  pointer-events: none !important;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0);
+}
 
-
-*/
-body {
+*/ body {
   overscroll-behavior-y: none;
 }
 
@@ -225,6 +236,22 @@ body {
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
+  }
+
+  .navbar-navigation a {
+    padding: 2px;
+    padding-left: 5px;
+    width: 102px;
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    background: black;
+    color: white;
+  }
+
+  .navbar-navigation img {
+    width: 150px;
+    padding-top: 17px;
   }
 
   .navbar-menu {
