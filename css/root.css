@@ -40,6 +40,7 @@
   border-radius: 50%;
   pointer-events: none !important;
   box-shadow: 0 0 16px rgba(255, 255, 255, 0);
+  z-index: 100;
 }
 
 */ body {

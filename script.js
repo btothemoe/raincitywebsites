@@ -1,4 +1,6 @@
-if (window.matchMedia("(min-width: 768px)").matches) {
+alert("Hello! I am an alert box!!");
+
+document.addEventListener("DOMContentLoaded", () => {
   let mousePosX = 0,
     mousePosY = 0,
     mouseCircle = document.getElementById("mouse-circle");
@@ -22,4 +24,4 @@ if (window.matchMedia("(min-width: 768px)").matches) {
     mouseCircle.style.left = revisedMousePosX + "px";
   }
   delayMouseFollow();
-}
+});
