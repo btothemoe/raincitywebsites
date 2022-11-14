@@ -264,32 +264,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   #about .container {
-    width: 95%;
+    width: 90%;
     display: flex;
-    flex-direction: row;
-  }
-
-  #about .container .left-section {
-    width: 50%;
-  }
-
-  #about .container .left-section .about-header {
-    font-size: 4.5vw;
-    font-weight: bold;
-  }
-
-  #about .container .right-section {
-    width: 50%;
-  }
-
-  #about .container .right-section p {
-    font-size: 1vw;
-    width: 95%;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(214, 214, 214);
   }
 }
 
@@ -344,144 +325,6 @@
     background-color: #f1f1f1;
     max-width: 100%;
     /*overflow-x: hidden;*/
-  }
-
-  #why-us {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-
-  #why-us .container {
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-  }
-
-  #why-us .container .left-section {
-    width: 50%;
-  }
-
-  #why-us .container .left-section p {
-    font-size: 1vw;
-    width: 70%;
-  }
-
-  #why-us .container .left-section .left-section-header {
-    font-size: 4.5vw;
-    font-weight: bold;
-  }
-
-  #why-us .container .left-section .left-section-header #orange-header {
-    color: #f18200;
-  }
-
-  #why-us .container .right-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40%;
-    border-top: 2px solid rgb(214, 214, 214);
-  }
-
-  #why-us .container .right-section .right-section-container {
-    width: 100%;
-    font-weight: bold;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-bottom: 2px solid rgb(214, 214, 214);
-  }
-}
-
-/* -- Regular Desktop -- */
-@media screen and (min-width: 1300px) {
-}
-
-@media only screen and (min-width: 2000px) {
-}
-
-/*-- -------------------------- -->
-<---          Meet The Team     -->
-<--- -------------------------- -*/
-
-/* -- Mobile -- */
-@media screen and (min-width: 0px) {
-  body,
-  html {
-    font-family: "HelveticaNeue", sans-serif;
-    color: rgb(32, 32, 32);
-    font-size: 20px;
-    background-color: #f1f1f1;
-    max-width: 100%;
-    /*overflow-x: hidden;*/
-  }
-}
-
-/* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 1023px) {
-  body,
-  html {
-    font-family: "HelveticaNeue", sans-serif;
-    color: rgb(32, 32, 32);
-    font-size: 20px;
-    background-color: #f1f1f1;
-    max-width: 100%;
-    /*overflow-x: hidden;*/
-  }
-}
-
-/* -- Tablets -- */
-@media screen and (min-width: 750px) and (max-width: 1023px) {
-}
-
-/* -- Small Desktop -- */
-@media screen and (min-width: 1024px) {
-  body,
-  html {
-    font-family: "HelveticaNeue", sans-serif;
-    color: rgb(32, 32, 32);
-    font-size: 20px;
-    background-color: #f1f1f1;
-    max-width: 100%;
-    /*overflow-x: hidden;*/
-  }
-
-  #meet-the-team {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-
-  #meet-the-team .container {
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-  }
-
-  #meet-the-team .container .left-section {
-    width: 50%;
-  }
-
-  #meet-the-team .container .right-section {
-    width: 50%;
-  }
-
-  #meet-the-team .container .right-section .right-section-header {
-    font-size: 2.5vw;
-    font-weight: bold;
-  }
-
-  #meet-the-team .container .right-section p {
-    font-size: 20px;
-    width: 95%;
   }
 }
 
