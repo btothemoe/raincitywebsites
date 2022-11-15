@@ -212,3 +212,239 @@
 
 @media only screen and (min-width: 2000px) {
 }
+
+/*-- -------------------------- -->
+<---          Our Services      -->
+<--- -------------------------- -*/
+
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 1023px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #OurServices {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  #OurServices .container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #OurServices .container .header {
+    font-size: 3vw;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }
+
+  #OurServices .container .services-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #OurServices .container .services-grid .services-grid-element {
+    width: 30%;
+    height: 350px;
+    border: 1px solid rgb(214, 214, 214);
+    margin-bottom: 2%;
+    padding: 15px;
+    background-color: #fafafa;
+  }
+
+  #OurServices .container .services-grid .services-grid-element img {
+    width: 15%;
+  }
+
+  #OurServices
+    .container
+    .services-grid
+    .services-grid-element
+    .element-header {
+    font-weight: bold;
+    padding-top: 20px;
+  }
+
+  #OurServices .container .services-grid .services-grid-element p {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+/*-- -------------------------- -->
+<---          PROCESS           -->
+<--- -------------------------- -*/
+
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 1023px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #process {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-image: url("/images/Vector2.svg");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  #process .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #process .container .left-section {
+    width: 50%;
+  }
+
+  #process .container .left-section .left-section-element {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #process .container .left-section .left-section-element .number {
+    width: 15%;
+    padding-top: 8px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #process .container .left-section .left-section-element .header {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  #process .container .left-section .left-section-element p {
+    width: 70%;
+    font-size: 20px;
+  }
+
+  #process .container .right-section {
+    width: 50%;
+    margin-top: -30px;
+  }
+
+  #process .container .right-section .block {
+    padding-bottom: 95px;
+  }
+
+  #process .container .right-section .right-section-element {
+    height: 250px;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #process .container .right-section .right-section-element .header {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  #process .container .right-section .right-section-element p {
+    font-size: 20px;
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
