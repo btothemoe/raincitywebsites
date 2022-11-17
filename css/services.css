@@ -228,6 +228,63 @@
     max-width: 100%;
     /*overflow-x: hidden;*/
   }
+
+  #OurServices {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #OurServices .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #OurServices .container .header {
+    font-size: 8vw;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }
+
+  #OurServices .container .services-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #OurServices .container .services-grid .services-grid-element {
+    flex-basis: 100%;
+    height: 300px;
+    border: 1px solid rgb(214, 214, 214);
+    margin-bottom: 5%;
+    padding: 15px;
+    background-color: #fafafa;
+  }
+
+  #OurServices .container .services-grid .services-grid-element img {
+    width: 15%;
+  }
+
+  #OurServices
+    .container
+    .services-grid
+    .services-grid-element
+    .element-header {
+    font-weight: bold;
+    font-size: 5.5vw;
+    padding-top: 20px;
+  }
+
+  #OurServices .container .services-grid .services-grid-element p {
+    font-size: 4vw;
+    padding-top: 10px;
+  }
 }
 
 /* -- Ipad Pro -- */
@@ -240,6 +297,63 @@
     background-color: #f1f1f1;
     max-width: 100%;
     /*overflow-x: hidden;*/
+  }
+
+  #OurServices {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  #OurServices .container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #OurServices .container .header {
+    font-size: 3vw;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }
+
+  #OurServices .container .services-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  #OurServices .container .services-grid .services-grid-element {
+    flex-basis: 42%;
+    height: 300px;
+    border: 1px solid rgb(214, 214, 214);
+    margin-bottom: 5%;
+    padding: 15px;
+    background-color: #fafafa;
+  }
+
+  #OurServices .container .services-grid .services-grid-element img {
+    width: 15%;
+  }
+
+  #OurServices
+    .container
+    .services-grid
+    .services-grid-element
+    .element-header {
+    font-weight: bold;
+    font-size: 2.5vw;
+    padding-top: 20px;
+  }
+
+  #OurServices .container .services-grid .services-grid-element p {
+    font-size: 2vw;
+    padding-top: 10px;
   }
 }
 
@@ -338,6 +452,85 @@
     max-width: 100%;
     /*overflow-x: hidden;*/
   }
+
+  #process {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+    background-image: url("/images/Vector2.svg");
+    background-size: 8 0%;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  #process .container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #process .container .left-section {
+    width: 100%;
+    display: none;
+  }
+
+  #process .container .left-section-mobile {
+    width: 100%;
+  }
+
+  #process .container .left-section-mobile .left-section-element {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  #process .container .left-section-mobile .left-section-element .number {
+    width: 8%;
+    padding-top: 4px;
+    font-size: 6vw;
+    font-weight: bold;
+  }
+
+  #process .container .left-section-mobile .left-section-element .header {
+    font-size: 6vw;
+    font-weight: bold;
+  }
+
+  #process .container .left-section-mobile .left-section-element p {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  #process .container .right-section {
+    width: 50%;
+    margin-top: -30px;
+    display: none;
+  }
+
+  #process .container .right-section .block {
+    padding-bottom: 95px;
+  }
+
+  #process .container .left-section-mobile .right-section-element {
+    height: 250px;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #process .container .left-section-mobile .right-section-element .header {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+
+  #process .container .left-section-mobile .right-section-element p {
+    font-size: 14px;
+  }
 }
 
 /* -- Ipad Pro -- */
@@ -350,6 +543,86 @@
     background-color: #f1f1f1;
     max-width: 100%;
     /*overflow-x: hidden;*/
+  }
+
+  #process {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-image: url("/images/Vector2.svg");
+    background-size: 8 0%;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  #process .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #process .container .left-section {
+    width: 50%;
+    display: none;
+  }
+
+  #process .container .left-section-mobile {
+    width: 100%;
+  }
+
+  #process .container .left-section-mobile .left-section-element {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  #process .container .left-section-mobile .left-section-element .number {
+    width: 8%;
+    padding-top: 8px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #process .container .left-section-mobile .left-section-element .header {
+    font-size: 8vw;
+    font-weight: bold;
+  }
+
+  #process .container .left-section-mobile .left-section-element p {
+    width: 70%;
+    font-size: 20px;
+  }
+
+  #process .container .right-section {
+    width: 50%;
+    margin-top: -30px;
+    display: none;
+  }
+
+  #process .container .right-section .block {
+    padding-bottom: 95px;
+  }
+
+  #process .container .left-section-mobile .right-section-element {
+    height: 250px;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #process .container .left-section-mobile .right-section-element .header {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  #process .container .left-section-mobile .right-section-element p {
+    font-size: 20px;
   }
 }
 
@@ -439,6 +712,16 @@
 
   #process .container .right-section .right-section-element p {
     font-size: 20px;
+  }
+
+  #process .container .left-section-mobile {
+    width: 50%;
+    display: none;
+  }
+
+  #process .container .right-section-mobile {
+    width: 50%;
+    display: none;
   }
 }
 

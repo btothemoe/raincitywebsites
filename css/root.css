@@ -242,12 +242,15 @@ body {
   .navbar-navigation a {
     padding: 2px;
     padding-left: 5px;
-    width: 102px;
     display: flex; /* establish flex container */
-    flex-direction: column; /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
-    background: black;
-    color: white;
+    flex-direction: row; /* make main axis vertical */
+    justify-content: start; /* center items vertically, in this case */
+    font-size: 26px;
+  }
+
+  .navbar-navigation #blue {
+    color: #3056c5;
+    padding-right: 5px;
   }
 
   .navbar-navigation img {
@@ -536,7 +539,7 @@ body {
 
   #footer .right-section .header {
     color: #f18200;
-    font-size: 24px;
+    font-size: 3vw;
     display: initial;
   }
 

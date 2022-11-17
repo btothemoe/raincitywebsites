@@ -214,7 +214,7 @@
 }
 
 /*-- -------------------------- -->
-<---          ABOUT             -->
+<---          BLOG              -->
 <--- -------------------------- -*/
 
 /* -- Mobile -- */
@@ -259,18 +259,87 @@
     /*overflow-x: hidden;*/
   }
 
-  #about {
+  #blog {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 
-  #about .container {
-    width: 90%;
+  #blog .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #blog .container .left-section {
+    width: 40%;
+  }
+
+  #blog .container .left-section .header {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+
+  #blog .container .left-section .categories {
+    width: 100%;
+  }
+
+  #blog .container .left-section .categories .category-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-bottom: 30px;
+    font-size: 22px;
+  }
+
+  #blog .container .left-section .categories .category-header {
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid rgb(214, 214, 214);
+    justify-content: center;
+    padding-left: 20px;
+  }
+
+  #blog .container .right-section {
+    width: 60%;
+    margin-top: -20px;
+  }
+
+  #blog .container .right-section .blog-page-element {
+    width: 100%;
+    height: 300px;
+    border-bottom: 2px solid #a9a9a9;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-top: 50px;
+  }
+
+  #blog .container .right-section .blog-page-element p {
+    width: 90%;
+  }
+
+  #blog .container .right-section .blog-page-element .left {
+    padding-top: 49px;
+    width: 7%;
+  }
+
+  #blog .container .right-section .blog-page-element .right {
+    width: 93%;
+  }
+
+  #blog .container .right-section .blog-page-element .header {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+
+  #blog .container .right-section .blog-page-element .sub-header {
+    font-size: 16px;
+    padding-bottom: 30px;
   }
 }
 
