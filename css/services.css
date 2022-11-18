@@ -259,7 +259,6 @@
   }
 
   #OurServices .container .services-grid .services-grid-element {
-    flex-basis: 100%;
     height: 300px;
     border: 1px solid rgb(214, 214, 214);
     margin-bottom: 5%;
@@ -329,7 +328,6 @@
   }
 
   #OurServices .container .services-grid .services-grid-element {
-    flex-basis: 42%;
     height: 300px;
     border: 1px solid rgb(214, 214, 214);
     margin-bottom: 5%;
@@ -404,7 +402,7 @@
 
   #OurServices .container .services-grid .services-grid-element {
     width: 30%;
-    height: 350px;
+    height: 400px;
     border: 1px solid rgb(214, 214, 214);
     margin-bottom: 2%;
     padding: 15px;
@@ -421,11 +419,13 @@
     .services-grid-element
     .element-header {
     font-weight: bold;
+    font-size: 1.5vw;
+    font-size: min(1.5vw, 30px);
     padding-top: 20px;
   }
 
   #OurServices .container .services-grid .services-grid-element p {
-    font-size: 20px;
+    font-size: min(1.3vw, 20px);
     padding-top: 10px;
   }
 }
@@ -663,12 +663,56 @@
 
   #process .container .left-section {
     width: 50%;
+    display: initial;
+  }
+
+  #process .container .left-section .left-section-element-first {
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 70px;
+    background-color: #f1f1f1;
+    padding-top: 30px;
+    margin-top: -30px;
   }
 
   #process .container .left-section .left-section-element {
-    height: 600px;
+    height: 500px;
     display: flex;
     flex-direction: row;
+    position: sticky;
+    top: 70px;
+    background-color: #f1f1f1;
+    padding-top: 30px;
+  }
+
+  #process .container .left-section .left-section-element-last {
+    /*height: 600px;*/
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 70px;
+    background-color: #f1f1f1;
+    padding-top: 30px;
+    padding-bottom: 75px;
+  }
+
+  #process .container .left-section .left-section-element-first .number {
+    width: 15%;
+    padding-top: 8px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #process .container .left-section .left-section-element-first .header {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  #process .container .left-section .left-section-element-first p {
+    width: 70%;
+    font-size: 20px;
   }
 
   #process .container .left-section .left-section-element .number {
@@ -688,9 +732,27 @@
     font-size: 20px;
   }
 
+  #process .container .left-section .left-section-element-last .number {
+    width: 15%;
+    padding-top: 8px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #process .container .left-section .left-section-element-last .header {
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  #process .container .left-section .left-section-element-last p {
+    width: 70%;
+    font-size: 20px;
+  }
+
   #process .container .right-section {
     width: 50%;
     margin-top: -30px;
+    display: initial;
   }
 
   #process .container .right-section .block {

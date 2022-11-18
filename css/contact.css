@@ -159,13 +159,12 @@
   #hero .container {
     display: flex;
     flex-direction: row;
-    width: 1400px;
-    margin-left: 27px;
-    margin-right: 27px;
+    justify-content: space-between;
+    width: 85%;
   }
 
   #hero .left-section {
-    width: 55%;
+    width: 35%;
     height: 70vh;
     /*
         background-color: rgb(223, 223, 253);
@@ -173,19 +172,57 @@
         */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
+    justify-content: start; /* center items vertically, in this case */
+    padding-top: 35px;
+  }
+
+  #hero .left-section .header {
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  #hero .left-section p {
+    font-size: 30px;
   }
 
   #hero .right-section {
-    width: 45%;
+    width: 60%;
     height: 70vh;
     /*background-color: rgb(204, 204, 252);
         border: 1px dashed;
         */
-    display: flex; /* establish flex container */
-    flex-direction: column; /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
     padding-top: 35px;
+  }
+
+  #hero .right-section .container {
+    width: 100%;
+    height: 70vh;
+    /*background-color: rgb(204, 204, 252);
+        border: 1px dashed;
+        */
+    background-color: #cfcfcf;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 30px;
+    border: 1px solid #cfcfcf;
+  }
+
+  #hero .right-section .container .header {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #hero .right-section .container textarea {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #bfbfbf;
+  }
+
+  #hero .right-section .container input {
+    width: 50%;
   }
 
   #hero .left-section .hero-header {
