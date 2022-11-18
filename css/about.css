@@ -564,6 +564,7 @@
   #why-us .container .right-section .right-section-container {
     width: 100%;
     font-weight: bold;
+    font-size: 20px;
     height: 70px;
     display: flex;
     flex-direction: column;
