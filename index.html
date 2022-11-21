@@ -19,6 +19,20 @@
       /* Open */
       function openNav() {
         document.getElementById("myNav").style.height = "100%";
+
+        var element = document.getElementById("link1");
+        element.classList.add("link-animation1");
+
+        var element = document.getElementById("link2");
+        element.classList.add("link-animation2");
+
+        var element = document.getElementById("link3");
+        element.classList.add("link-animation3");
+
+        var element = document.getElementById("link4");
+        element.classList.add("link-animation4");
+
+        
       }
 
       /* Close */
@@ -68,10 +82,10 @@
           <span class="closebtn" onclick="closeNav()">&times;</span>
         </div>
         <div class="overlay-links">
-          <a class="link" href="about.html">ABOUT</a></li>  
-          <a class="link" href="services.html">SERVICES</a></li>
-          <a class="link" href="blog.html">BLOG</a></li>
-          <a class="link" href="contact.html">CONTACT</a></li>
+          <h1><a id = "link1" class="link" href="about.html">ABOUT</a></li>  </h1>
+          <h1><a id = "link2" class="link" href="services.html">SERVICES</a></li></h1>
+          <h1><a id = "link3" class="link" href="blog.html">BLOG</a></li></h1>
+          <h1><a id = "link4" class="link" href="contact.html">CONTACT</a></li></h1>
         </div>
       </div>
     </div>
