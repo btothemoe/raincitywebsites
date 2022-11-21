@@ -135,7 +135,7 @@ body {
   
   .overlay-content {
     position: relative;
-    width: 90%;
+    width: 95%;
     
     
   }
@@ -164,43 +164,53 @@ body {
     font-weight: bold;
     font-size: 18px;
     display: block;
-    transition: 0.3s;
   }
 
   .overlay .overlay-links a {
     color:rgb(199, 199, 199)
+    
   }
 
   .overlay a:hover {
     color:rgb(255, 255, 255)
   }
 
+  .overlay-content .overlay-links h1 {
+    margin: 0;
+    overflow: hidden;
+    line-height: 1;
+  }
+
 
   .overlay .link {
-    font-size: 40px;
+    font-size: 60px;
     padding-left: 0px;
     margin: 0;
     padding-top: 30px;
+    display: block;
+    transform: translate(0,100%);
+    transition-duration: 1.25s;
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1)
   }
+
+  .link-animation1 {
+    animation: reveal cubic-bezier(0.77, 0, 0.175, 1) 1.25s;
+  }
+
+  .link-animation2 {
+    animation: hide cubic-bezier(0.77, 0, 0.175, 1) 1.25s;
+  }
+
   
   .overlay .closebtn:hover, .overlay .closebtn:focus {
     color: #f1f1f1;
+    transition-duration: 0.1s;
   }
   
   .overlay .closebtn {
     font-size: 60px;
     color: white;
     cursor: pointer; 
-  }
-  
-  @media screen and (max-height: 450px) {
-    .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
   }
 }
 
@@ -359,6 +369,7 @@ body {
   
   .overlay .closebtn:hover, .overlay .closebtn:focus {
     color: #f1f1f1;
+    transition-duration: 0.1s;
   }
   
   .overlay .closebtn {
@@ -366,16 +377,7 @@ body {
     color: white;
     cursor: pointer; 
   }
-  
-  @media screen and (max-height: 450px) {
-    .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-  }
+
 }
 
 /* -- Tablets -- */
