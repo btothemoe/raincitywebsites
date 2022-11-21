@@ -20,24 +20,72 @@
       function openNav() {
         document.getElementById("myNav").style.height = "100%";
 
+        for (let i = 1; i < 5; i++){
+          id = "link" + i;
+          document.getElementById(id).style.transitionDelay= i - 1 + "50ms";
+          document.getElementById(id).style.transform = "translate(0,0)";
+        }
+
+        /*
+        document.getElementById("link1").style.transform = "translate(0,0)";
+        document.getElementById("link2").style.transform = "translate(0,0)";
+        document.getElementById("link3").style.transform = "translate(0,0)";
+        document.getElementById("link4").style.transform = "translate(0,0)";
+        
+        /*
         var element = document.getElementById("link1");
         element.classList.add("link-animation1");
+
+        var element = document.getElementById("link2");
+        element.classList.add("link-animation1");
+
+        var element = document.getElementById("link3");
+        element.classList.add("link-animation1");
+
+        var element = document.getElementById("link4");
+        element.classList.add("link-animation1");
+
+        */
+      }
+
+      /* Close */
+      function closeNav() {
+
+        for (let i = 1; i < 5; i++){
+          id = "link" + i;
+          delay = 4;
+          document.getElementById(id).style.transitionDelay= delay - i + "50ms";
+          document.getElementById(id).style.transform = "translate(0,100%)";
+        }
+        
+        setTimeout(closeNavWait, 1000);
+
+        //function definition
+        function closeNavWait() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+          
+        
+        /*
+        document.getElementById("link1").style.transform = "translate(0,100%)";
+        document.getElementById("link2").style.transform = "translate(0,100%)";
+        document.getElementById("link3").style.transform = "translate(0,100%)";
+        document.getElementById("link4").style.transform = "translate(0,100%)";
+        */
+       /*
+        var element = document.getElementById("link1");
+        element.classList.add("link-animation2");
 
         var element = document.getElementById("link2");
         element.classList.add("link-animation2");
 
         var element = document.getElementById("link3");
-        element.classList.add("link-animation3");
+        element.classList.add("link-animation2");
 
         var element = document.getElementById("link4");
-        element.classList.add("link-animation4");
+        element.classList.add("link-animation2");
 
-        
-      }
-
-      /* Close */
-      function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
+        */
       }
     </script>
 
