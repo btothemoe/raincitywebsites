@@ -15,35 +15,16 @@
     <link rel="stylesheet" href="/css/local.css" />
 
     <!-- JS -->
-    <script type="text/javascript">
-      /*
-      document.addEventListener("DOMContentLoaded", () => {
-        let mousePosX = 0,
-          mousePosY = 0,
-          mouseCircle = document.getElementById("mouse-circle");
+    <script>
+      /* Open */
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
 
-        document.onmousemove = (e) => {
-          mousePosX = e.pageX;
-          mousePosY = e.pageY;
-        };
-
-        let delay = 4,
-          revisedMousePosX = 0,
-          revisedMousePosY = 0;
-
-        function delayMouseFollow() {
-          requestAnimationFrame(delayMouseFollow);
-
-          revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
-          revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
-
-          mouseCircle.style.top = revisedMousePosY + "px";
-          mouseCircle.style.left = revisedMousePosX + "px";
-        }
-        delayMouseFollow();
-    });
-    */
-    
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
     </script>
 
     <title>Rain City Websites</title>
@@ -52,8 +33,6 @@
     <!-- ============================================ -->
     <!--                   NAVIGATION                 -->
     <!-- ============================================ -->
-
-    
 
     <header>
       <!-- Normal Nav -->
@@ -71,14 +50,31 @@
               <li><a class="link" href="contact.html">CONTACT</a></li>
             </ul>
           </div>
-          <div class="navbar-menu-mobile">
-            <a class="link" href="about.html">NAVIGATION</a>
-            <a href="about.html"><img src="images/menu.svg"></a>
+          <div class="navbar-menu-mobile" onclick="openNav()">
+            <a class="link" >NAVIGATION</a>
+            <a><img src="images/menu.svg"></a>
           </div>
-        </div>
         </div>
       </nav>
     </header>
+
+    <div id="myNav" class="overlay">
+      
+      <div class="overlay-content">
+        <div class="overlay-nav">
+          <div class="navbar-overlay">
+            <a href="index.html"><span id="blue">RAIN </span> CITY</a> 
+          </div>
+          <span class="closebtn" onclick="closeNav()">&times;</span>
+        </div>
+        <div class="overlay-links">
+          <a class="link" href="about.html">ABOUT</a></li>  
+          <a class="link" href="services.html">SERVICES</a></li>
+          <a class="link" href="blog.html">BLOG</a></li>
+          <a class="link" href="contact.html">CONTACT</a></li>
+        </div>
+      </div>
+    </div>
 
     <!-- ============================================ -->
     <!--                   LANDING                    -->

@@ -14,6 +14,19 @@
     <link rel="stylesheet" href="/css/root.css" type="text/css" />
     <link rel="stylesheet" href="/css/blog.css" />
 
+    <!-- JS -->
+    <script>
+      /* Open */
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+      }
+
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+
     <title>Rain City Websites</title>
   </head>
   <body>
@@ -26,6 +39,7 @@
       <nav>
         <div class="navbar">
           <div class="navbar-navigation">
+            <!-- <a href="index.html"><img src="images/raincitylogo2.svg"></a> -->
             <a href="index.html"><span id="blue">RAIN </span> CITY</a> 
           </div>
           <div class="navbar-menu">
@@ -36,14 +50,31 @@
               <li><a class="link" href="contact.html">CONTACT</a></li>
             </ul>
           </div>
-          <div class="navbar-menu-mobile">
-            <a class="link" href="about.html">NAVIGATION</a>
-            <a href="about.html"><img src="images/menu.svg"></a>
+          <div class="navbar-menu-mobile" onclick="openNav()">
+            <a class="link" >NAVIGATION</a>
+            <a><img src="images/menu.svg"></a>
           </div>
-        </div>
         </div>
       </nav>
     </header>
+
+    <div id="myNav" class="overlay">
+      
+      <div class="overlay-content">
+        <div class="overlay-nav">
+          <div class="navbar-overlay">
+            <a href="index.html"><span id="blue">RAIN </span> CITY</a> 
+          </div>
+          <span class="closebtn" onclick="closeNav()">&times;</span>
+        </div>
+        <div class="overlay-links">
+          <a class="link" href="about.html">ABOUT</a></li>  
+          <a class="link" href="services.html">SERVICES</a></li>
+          <a class="link" href="blog.html">BLOG</a></li>
+          <a class="link" href="contact.html">CONTACT</a></li>
+        </div>
+      </div>
+    </div>
 
     <!-- ============================================ -->
     <!--                   LANDING                    -->
