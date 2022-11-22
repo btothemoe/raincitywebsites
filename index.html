@@ -16,6 +16,16 @@
 
     <!-- JS -->
     <script>
+
+      let circle = document.getElementById('circle');
+
+      const onMouseMove = (e) =>{
+        circle.style.left = e.pageX + 'px';
+        circle.style.top = e.pageY + 'px';
+      }
+
+      document.addEventListener('mousemove', onMouseMove);
+
       /* Open */
       function openNav() {
         document.getElementById("myNav").style.height = "100%";
@@ -25,27 +35,6 @@
           document.getElementById(id).style.transitionDelay= i - 1 + "50ms";
           document.getElementById(id).style.transform = "translate(0,0)";
         }
-
-        /*
-        document.getElementById("link1").style.transform = "translate(0,0)";
-        document.getElementById("link2").style.transform = "translate(0,0)";
-        document.getElementById("link3").style.transform = "translate(0,0)";
-        document.getElementById("link4").style.transform = "translate(0,0)";
-        
-        /*
-        var element = document.getElementById("link1");
-        element.classList.add("link-animation1");
-
-        var element = document.getElementById("link2");
-        element.classList.add("link-animation1");
-
-        var element = document.getElementById("link3");
-        element.classList.add("link-animation1");
-
-        var element = document.getElementById("link4");
-        element.classList.add("link-animation1");
-
-        */
       }
 
       /* Close */
@@ -64,28 +53,6 @@
         function closeNavWait() {
           document.getElementById("myNav").style.height = "0%";
         }
-          
-        
-        /*
-        document.getElementById("link1").style.transform = "translate(0,100%)";
-        document.getElementById("link2").style.transform = "translate(0,100%)";
-        document.getElementById("link3").style.transform = "translate(0,100%)";
-        document.getElementById("link4").style.transform = "translate(0,100%)";
-        */
-       /*
-        var element = document.getElementById("link1");
-        element.classList.add("link-animation2");
-
-        var element = document.getElementById("link2");
-        element.classList.add("link-animation2");
-
-        var element = document.getElementById("link3");
-        element.classList.add("link-animation2");
-
-        var element = document.getElementById("link4");
-        element.classList.add("link-animation2");
-
-        */
       }
     </script>
 
@@ -137,6 +104,8 @@
         </div>
       </div>
     </div>
+
+    <div id="circle"></div>
 
     <!-- ============================================ -->
     <!--                   LANDING                    -->
@@ -218,10 +187,12 @@
           <div class="hero-button">
             <a href="services.html" id="button1">HOW IT WORKS<img src="/images/noun-arrow.svg"></a>
           </div>
+          
         </div>
         <div class="hero-button-tablet">
           <a href="services.html" id="button1">HOW IT WORKS<img src="/images/noun-arrow.svg"></a>
         </div>
+        
         
       </div>
     </section>
@@ -561,6 +532,8 @@
           <p>
             Rain City Websites is proud to serve the local Seattle community and more. We have been helping small businesses thrive by providing affordable options for websites. Get in contact and learn how you can optimize your business today!
           </p>
+          <span id="circle" class="circle"></span>
+    
           <div class="footer-services">
             <div class="footer-services-section">
               <div class="services-section-header">DESIGN</div>
@@ -585,7 +558,7 @@
       </div>
     </footer>
 
-    <div id="mouse-circle"></div>
+    
 
     <div class="socials">
       <div class="container">

@@ -30,7 +30,7 @@
 
 /**
  * Simple Radial Mouse Cursor
- */
+
 #mouse-circle {
   position: absolute;
   width: 16px;
@@ -42,6 +42,8 @@
   box-shadow: 0 0 16px rgba(255, 255, 255, 0);
   z-index: 100;
 }
+ */
+
 
 body {
   overscroll-behavior-y: none;
@@ -193,13 +195,6 @@ body {
     transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1)
   }
 
-  .link-animation1 {
-    animation: reveal cubic-bezier(0.77, 0, 0.175, 1) 1.25s;
-  }
-
-  .link-animation2 {
-    animation: hide cubic-bezier(0.77, 0, 0.175, 1) 1.25s;
-  }
 
   
   .overlay .closebtn:hover, .overlay .closebtn:focus {
@@ -1196,4 +1191,16 @@ body {
 
 #services-main {
   margin: 0 auto;
+}
+
+
+
+
+#circle{
+  position:absolute;
+  transform:translate(-50%,-50%);
+  height:35px;
+  width:35px;
+  border-radius:50%;
+  border:2px solid black;
 }
