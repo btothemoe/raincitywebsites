@@ -50,7 +50,7 @@
   }
 
   #hero .left-section-mobile .hero-header {
-    font-size: 8.5vw;
+    font-size: 9.5vw;
     /*font-size: 35px;*/
     line-height: 95%;
     font-weight: bold;
@@ -59,6 +59,7 @@
   #hero .left-section-mobile p {
     font-size: 16px;
     line-height: 125%;
+    width: 90%;
   }
 
   #hero .left-section {
@@ -249,7 +250,7 @@
   }
 
   #about .container .left-section .about-header {
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: bold;
   }
 
@@ -260,8 +261,9 @@
   }
 
   #about .container .right-section p {
-    width: 95%;
-    font-size: 4vw;
+    font-size: 16px;
+    line-height: 125%;
+
   }
 }
 
