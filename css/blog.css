@@ -454,7 +454,11 @@
     flex-direction: row;
     justify-content: start;
     padding-bottom: 30px;
-    font-size: 22px;
+    font-size: 18px;
+  }
+
+  #blog .container .left-section .categories .category-element img {
+    width: 8%;
   }
 
   #blog .container .left-section .categories .category-header {
