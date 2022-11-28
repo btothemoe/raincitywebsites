@@ -62,7 +62,7 @@
 .link-grow {
   transform: scale(7);
   background: rgb(48, 48, 48);
-  opacity: 0.9;
+  opacity: 0.95;
   display: initial;
   transition: all 0.3s ease;
   transition-property: background, transform;
