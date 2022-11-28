@@ -98,6 +98,7 @@ body {
   }
 
   .navbar-menu {
+    width: 100px;
     display: none;
   }
 
@@ -497,7 +498,7 @@ body {
 
   .cl-effect-5 a span::before {
     position: absolute;
-    top: 100%;
+    top: -100%;
     content: attr(data-hover);
     font-weight: 700;
     -webkit-transform: translate3d(0, 0, 0);
@@ -507,9 +508,9 @@ body {
 
   .cl-effect-5 a:hover span,
   .cl-effect-5 a:focus span {
-    -webkit-transform: translateY(-100%);
-    -moz-transform: translateY(-100%);
-    transform: translateY(-100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
   }
 }
 
@@ -1062,6 +1063,52 @@ body {
     text-decoration: none;
     color: #939393;
     padding-left: 10px;
+  }
+
+  .cl-effect-5-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+  }
+
+  /* Effect 5: same word slide in */
+  .cl-effect-5-footer a {
+    overflow: hidden;
+    font-size: 56px;
+    height: 1em;
+    width: fit-content;
+    margin-top: 30px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .cl-effect-5-footer a:hover {
+    color: rgb(48, 86, 197);
+  }
+
+  .cl-effect-5-footer a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  .cl-effect-5-footer a span::before {
+    position: absolute;
+    top: -100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .cl-effect-5-footer a:hover span,
+  .cl-effect-5-footer a:focus span {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
   }
 }
 
