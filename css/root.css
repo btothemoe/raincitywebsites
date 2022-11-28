@@ -44,7 +44,6 @@
 }
  */
 
-
 body {
   overscroll-behavior-y: none;
 }
@@ -134,12 +133,10 @@ body {
     flex-direction: row;
     justify-content: center;
   }
-  
+
   .overlay-content {
     position: relative;
     width: 95%;
-    
-    
   }
 
   .overlay-content .overlay-nav {
@@ -150,10 +147,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
-  
 
   .overlay .overlay-content .overlay-nav .navbar-overlay {
-    
     width: 95%;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
@@ -169,12 +164,11 @@ body {
   }
 
   .overlay .overlay-links a {
-    color:rgb(199, 199, 199)
-    
+    color: rgb(199, 199, 199);
   }
 
   .overlay a:hover {
-    color:rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
   }
 
   .overlay-content .overlay-links h1 {
@@ -183,29 +177,27 @@ body {
     line-height: 1;
   }
 
-
   .overlay .link {
     font-size: 60px;
     padding-left: 0px;
     margin: 0;
     padding-top: 30px;
     display: block;
-    transform: translate(0,100%);
+    transform: translate(0, 100%);
     transition-duration: 1.25s;
-    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1)
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   }
 
-
-  
-  .overlay .closebtn:hover, .overlay .closebtn:focus {
+  .overlay .closebtn:hover,
+  .overlay .closebtn:focus {
     color: #f1f1f1;
     transition-duration: 0.1s;
   }
-  
+
   .overlay .closebtn {
     font-size: 60px;
     color: white;
-    cursor: pointer; 
+    cursor: pointer;
   }
 }
 
@@ -292,12 +284,10 @@ body {
     flex-direction: row;
     justify-content: center;
   }
-  
+
   .overlay-content {
     position: relative;
     width: 95%;
-    
-    
   }
 
   .overlay-content .overlay-nav {
@@ -308,10 +298,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
-  
 
   .overlay .overlay-content .overlay-nav .navbar-overlay {
-    
     width: 95%;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
@@ -327,12 +315,11 @@ body {
   }
 
   .overlay .overlay-links a {
-    color:rgb(199, 199, 199)
-    
+    color: rgb(199, 199, 199);
   }
 
   .overlay a:hover {
-    color:rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
   }
 
   .overlay-content .overlay-links h1 {
@@ -341,16 +328,15 @@ body {
     line-height: 1;
   }
 
-
   .overlay .link {
     font-size: 60px;
     padding-left: 0px;
     margin: 0;
     padding-top: 30px;
     display: block;
-    transform: translate(0,100%);
+    transform: translate(0, 100%);
     transition-duration: 1.25s;
-    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1)
+    transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   }
 
   .link-animation1 {
@@ -361,18 +347,17 @@ body {
     animation: hide cubic-bezier(0.77, 0, 0.175, 1) 1.25s;
   }
 
-  
-  .overlay .closebtn:hover, .overlay .closebtn:focus {
+  .overlay .closebtn:hover,
+  .overlay .closebtn:focus {
     color: #f1f1f1;
     transition-duration: 0.1s;
   }
-  
+
   .overlay .closebtn {
     font-size: 60px;
     color: white;
-    cursor: pointer; 
+    cursor: pointer;
   }
-
 }
 
 /* -- Tablets -- */
@@ -448,8 +433,8 @@ body {
     width: 60%;
     height: 100%;
     display: flex; /* establish flex container */
-    flex-direction: column; /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: end; /* center items vertically, in this case */
   }
 
   .navbar-menu ul {
@@ -460,7 +445,7 @@ body {
 
   .navbar-menu li {
     flex: 0 0 auto;
-    padding: 20px;
+    padding-left: 40px;
   }
 
   .navbar-menu a {
@@ -472,6 +457,19 @@ body {
     color: rgb(48, 86, 197);
   }
 
+  .navbar-menu #contact {
+    background-color: #3056c5;
+    border-radius: 20px;
+    padding: 10px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+
   .navbar-menu-mobile {
     display: none;
   }
@@ -479,8 +477,40 @@ body {
   .overlay {
     display: none;
   }
-  
-  
+
+  /* Effect 5: same word slide in */
+  .cl-effect-5 a {
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 1em;
+    margin-top: 30px;
+  }
+
+  .cl-effect-5 a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  .cl-effect-5 a span::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .cl-effect-5 a:hover span,
+  .cl-effect-5 a:focus span {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
 }
 
 /* -- Regular Desktop -- */
@@ -856,11 +886,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     background-image: url("/images/Vector3.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
+    height: 70vh;
+    /*
+    background-color: rgb(53, 53, 53);
+    color: white;
+    */
   }
 
   #footer .container {
@@ -882,21 +917,6 @@ body {
     justify-content: space-between;
   }
 
-  #footer .left-section label {
-    margin-bottom: -40px;
-  }
-
-  #footer .left-section input {
-    width: 60%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    border-bottom: 1px solid black;
-    font-size: 20px;
-  }
-
   #footer .left-section .footer-email-mobile {
     display: none;
   }
@@ -912,17 +932,46 @@ body {
     justify-content: space-between; /* center items vertically, in this case */
   }
 
-  #footer .right-section .header {
+  #footer .left-section .header {
     color: #f18200;
     font-size: 30px;
     display: initial;
+    padding-bottom: 30px;
+  }
+
+  #footer .left-section .footer-address {
+    font-size: 18px;
+    display: initial;
+    padding-bottom: 50px;
+  }
+
+  #footer .left-section .footer-address .header {
+    font-size: 24px;
+    display: initial;
+    padding-bottom: 50px;
   }
 
   #footer .right-section p {
     width: 85%;
-    margin-bottom: 125px;
     display: initial;
     font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  #footer .right-section label {
+    font-weight: bold;
+    font-size: 26px;
+  }
+
+  #footer .right-section input {
+    width: 60%;
+    padding: 15px;
+    /*background: transparent;*/
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    margin-top: 30px;
   }
 
   #footer .right-section .footer-services {
@@ -951,10 +1000,9 @@ body {
 
   #footer .left-section .footer-menu .footer-menu-link {
     list-style: none;
-    width: 35%;
-    height: 60px;
+    width: 100%;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 56px;
   }
 
   #footer .left-section .footer-menu {
@@ -1192,4 +1240,3 @@ body {
 #services-main {
   margin: 0 auto;
 }
-
