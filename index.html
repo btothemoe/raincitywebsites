@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/local.css" />
 
     <!-- JS -->
+    <script src="circletype.min.js"></script>
     <script>
 
       /* Open */
@@ -46,6 +47,8 @@
         }
       }
     </script>
+
+    
 
     <title>Rain City Websites</title>
   </head>
@@ -90,6 +93,8 @@
         </div>
       </nav>
     </header>
+
+    <div class="cursor" id="cursor"></div>
 
     <div id="myNav" class="overlay">
       <div class="overlay-content">
@@ -583,5 +588,30 @@
         </div>
       </div>
     </div>
+
+    <script>
+      /* cursor */
+      let mouseCursor = document.querySelector(".cursor");
+      let navLinks = document.querySelectorAll('a')
+      
+      
+      window.addEventListener("mousemove", cursor);
+
+      function cursor(e){
+        mouseCursor.style.top = e.clientY + 'px';
+        mouseCursor.style.left = e.clientX + 'px';
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('mouseover', () => {
+          mouseCursor.classList.add('link-grow');
+        });
+        link.addEventListener('mouseleave', () => {
+          mouseCursor.classList.remove('link-grow');
+        })
+      })
+
+
+    </script>
   </body>
 </html>

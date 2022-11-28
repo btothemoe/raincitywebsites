@@ -44,6 +44,35 @@
 }
  */
 
+.cursor {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+
+  position: fixed;
+  pointer-events: none !important;
+  z-index: 100;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  background-position: 55% 85%;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.link-grow {
+  transform: scale(7);
+  background: rgb(48, 48, 48);
+  opacity: 0.9;
+  display: initial;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  background-image: url("/images/noun-arrow-white.svg");
+  background-position: 54% 85%;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  color: white;
+}
+
 body {
   overscroll-behavior-y: none;
 }
