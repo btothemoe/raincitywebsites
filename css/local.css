@@ -1059,8 +1059,8 @@
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center right;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 75px;
+    padding-bottom: 0px;
   }
 
   #pricing .container {
@@ -1079,7 +1079,7 @@
     */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
+    justify-content: start; /* center items vertically, in this case */
   }
 
   #pricing .left-section .description {
@@ -1099,20 +1099,23 @@
     flex-direction: row; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
     flex-wrap: wrap;
+    padding-top: 0px;
   }
 
   #pricing .pricing-box-container {
     display: flex; /* establish flex container */
     flex-direction: row; /* make main axis vertical */
+    justify-content: start;
     width: 49%;
   }
 
   #pricing .pricing-box-container img {
     padding-right: 6px;
-    padding-top: 60px;
+    padding-top: 10px;
     filter: invert(22%) sepia(76%) saturate(4390%) hue-rotate(225deg)
       brightness(87%) contrast(74%);
     width: 14%;
+    height: 125px;
   }
 
   #pricing .pricing-box {
@@ -1121,7 +1124,8 @@
     */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
-    justify-content: end; /* center items vertically, in this case */
+    justify-content: start; /* center items vertically, in this case */
+    height: 200px;
   }
 
   #pricing .title {
