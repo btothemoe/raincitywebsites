@@ -432,12 +432,35 @@ body {
     justify-content: space-between;
   }
 
+  .hero-header {
+    font-size: 4.5vw;
+    /*font-size: 75px;*/
+    line-height: 95%;
+    font-weight: bold;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    top: 0px;
+    opacity: 1;
+  }
+
+  #hero .hero-animation {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-transition {
+    top: 80% !important;
+    opacity: 0;
+  }
+
   .navbar-navigation {
     width: 30%;
     height: 100%;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
+    transition: top 0.5s ease-in-out;
+    overflow: hidden;
   }
 
   .navbar-navigation a {
@@ -447,6 +470,9 @@ body {
     flex-direction: row; /* make main axis vertical */
     justify-content: start; /* center items vertically, in this case */
     font-size: 26px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top: 0;
   }
 
   .navbar-navigation #blue {
@@ -465,6 +491,7 @@ body {
     display: flex; /* establish flex container */
     flex-direction: row; /* make main axis vertical */
     justify-content: end; /* center items vertically, in this case */
+    overflow: hidden;
   }
 
   .navbar-menu ul {
@@ -481,6 +508,15 @@ body {
   .navbar-menu a {
     text-decoration: none;
     color: black;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+  }
+
+  .navbar-transition {
+    top: 80% !important;
+    opacity: 0;
   }
 
   .navbar-menu a:hover {
