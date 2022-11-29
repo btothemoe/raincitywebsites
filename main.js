@@ -32,22 +32,23 @@ window.onload = () => {
 
 window.onload = () => {
   const transition_el = document.querySelectorAll(".hero-header");
-
-  console.log(transition_el);
+  const transition_el2 = document.querySelectorAll(".hero-p");
 
   for (let i = 0; i < transition_el.length; i++) {
     const element = transition_el[i];
 
     setTimeout(() => {
       element.classList.remove("hero-transition");
-      console.log(transition_el);
     }, 200 * i);
   }
 
-  /*
-  setTimeout(() => {
-    transition_el.classList.remove("hero-transition");
-    console.log(transition_el);
-  }, 200);
-  */
+  for (let i = 0; i < transition_el2.length; i++) {
+    const element = transition_el2[i];
+
+    setTimeout(() => {
+      element.classList.remove("hero-transition");
+    }, 600 + 200 * i);
+  }
+
+  console.log(transition_el2);
 };
