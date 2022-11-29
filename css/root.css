@@ -1328,7 +1328,7 @@ body {
   transition: 0.3s ease-out;
 }
 
-.transition-2.is-active {
+.transition-2 .is-active {
   left: 0px;
 }
 
@@ -1340,7 +1340,7 @@ body {
   bottom: 0;
   z-index: 101;
   background-color: gray;
-  transition: 0.2s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .transition-3.is-active {

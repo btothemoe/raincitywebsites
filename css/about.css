@@ -189,11 +189,24 @@
     padding-top: 35px;
   }
 
-  #hero .left-section .hero-header {
+  .hero-header {
     font-size: 4.5vw;
     /*font-size: 75px;*/
     line-height: 95%;
     font-weight: bold;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    top: 0px;
+  }
+
+  #hero .hero-animation {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-transition {
+    top: 100%;
+    opacity: 0;
   }
 
   #hero .left-section p {
@@ -263,7 +276,6 @@
   #about .container .right-section p {
     font-size: 16px;
     line-height: 125%;
-
   }
 }
 

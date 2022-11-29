@@ -29,3 +29,25 @@ window.onload = () => {
   }
 };
 */
+
+window.onload = () => {
+  const transition_el = document.querySelectorAll(".hero-header");
+
+  console.log(transition_el);
+
+  for (let i = 0; i < transition_el.length; i++) {
+    const element = transition_el[i];
+
+    setTimeout(() => {
+      element.classList.remove("hero-transition");
+      console.log(transition_el);
+    }, 200 * i);
+  }
+
+  /*
+  setTimeout(() => {
+    transition_el.classList.remove("hero-transition");
+    console.log(transition_el);
+  }, 200);
+  */
+};
