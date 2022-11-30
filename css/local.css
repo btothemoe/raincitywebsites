@@ -195,7 +195,7 @@
     line-height: 95%;
     font-weight: bold;
     position: relative;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-out;
     top: 0px;
     opacity: 1;
   }

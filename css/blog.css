@@ -194,8 +194,9 @@
     line-height: 95%;
     font-weight: bold;
     position: relative;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s ease-out;
     top: 0px;
+    opacity: 1;
   }
 
   #hero .hero-animation {
@@ -204,14 +205,18 @@
   }
 
   .hero-transition {
-    top: 100%;
+    top: 80% !important;
     opacity: 0;
   }
 
-  #hero .left-section p {
+  #hero p {
     font-size: 20px;
     line-height: 125%;
     width: 80%;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top: 0px;
+    margin: 0px;
   }
 
   #hero .left-section-mobile {

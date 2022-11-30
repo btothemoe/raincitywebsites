@@ -31,10 +31,17 @@ window.onload = () => {
 */
 
 window.onload = () => {
+  const anchors = document.querySelectorAll("a");
   const transition_el = document.querySelectorAll(".hero-header");
   const transition_el2 = document.querySelectorAll(".hero-p");
   const transition_el3 = document.querySelectorAll(".navbar-navigation a");
   const transition_el4 = document.querySelectorAll(".navbar-menu a");
+  const transition_el5 = document.querySelectorAll(".navbar-overlay-animation");
+  const transition_el6 = document.querySelectorAll(
+    ".navbar-overlay-animation2"
+  );
+
+  console.log(transition_el5);
 
   //Header animation
   for (let i = 0; i < transition_el.length; i++) {
@@ -54,9 +61,15 @@ window.onload = () => {
     }, 600 + 200 * i);
   }
 
-  console.log(transition_el3);
+  //Navbar Animations
+  setTimeout(() => {
+    transition_el5[0].classList.remove("is-active");
+  }, 600);
 
-  //Navbar Animation
+  setTimeout(() => {
+    transition_el6[0].classList.remove("is-active");
+  }, 600);
+
   setTimeout(() => {
     transition_el3[0].classList.remove("navbar-transition");
   }, 700);
