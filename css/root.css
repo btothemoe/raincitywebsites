@@ -1357,6 +1357,7 @@ body {
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
+    font-size: 20px;
   }
 
   #section-title .right-section {
@@ -1367,6 +1368,7 @@ body {
     line-height: 150%;
     text-align: right;
     font-weight: bold;
+    font-size: 20px;
   }
 }
 
