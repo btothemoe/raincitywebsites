@@ -19,6 +19,8 @@
     <script type="text/javascript" src="main.js"></script>
   </head>
   <body>
+
+    <div class="navbar-overlay-animation is-active"></div>
     <!-- ============================================ -->
     <!--                   NAVIGATION                 -->
     <!-- ============================================ -->
@@ -26,34 +28,59 @@
     <header>
       <!-- Normal Nav -->
       <nav>
+        
         <div class="navbar">
           <div class="navbar-navigation">
             <!-- <a href="index.html"><img src="images/raincitylogo2.svg"></a> -->
-            <a href="/"><span id="blue">RAIN </span> CITY</a>
+            <a class="navbar-transition" href="/"><span id="blue">RAIN </span> CITY</a> 
           </div>
           <div class="navbar-menu">
             <div class="cl-effect-5">
               <nav class="cl-effect-5">
-                <a href="services.html"
-                  ><span data-hover="SERVICES">SERVICES</span></a
-                >
-                <a href="services.html"><span data-hover="WORK">WORK</span></a>
-                <a href="about.html"><span data-hover="ABOUT">ABOUT</span></a>
-                <a href="blog.html"
-                  ><span data-hover="INSIGHTS">INSIGHTS</span></a
-                >
-                <a class="link" id="contact" href="contact.html">CONTACT US</a>
+                <a class="navbar-transition" href="services.html"><span data-hover="SERVICES">SERVICES</span></a>
+                <a class="navbar-transition" href="services.html"><span data-hover="WORK">WORK</span></a>
+                <a class="navbar-transition" href="about.html"><span data-hover="ABOUT">ABOUT</span></a>
+                <a class="navbar-transition" href="blog.html"><span data-hover="INSIGHTS">INSIGHTS</span></a>
+                <a class="navbar-transition" id="contact" href="contact.html">CONTACT</a>
               </nav>
             </div>
+            
+            <!--
+            <ul>
+              <li><a href="services.html"><span data-hover="SERVICES">SERVICES</span></a></li>
+              <li><a class="flip-animate" href="services.html"><span data-hover="WORK">WORK</span></a></li>
+              <li><a class="flip-animate" href="about.html"><span data-hover="ABOUT">ABOUT</span></a></li>
+              <li><a class="flip-animate" href="blog.html"><span data-hover="INSIGHTS">INSIGHTS</span></a></li>
+              <li><a class="link" id="contact" href="contact.html">CONTACT US</a></li>
+            </ul>
+            -->
           </div>
-
           <div class="navbar-menu-mobile" onclick="openNav()">
-            <a class="link">NAVIGATION</a>
-            <a><img src="images/menu.svg" /></a>
+            <a class="link" >NAVIGATION</a>
+            <a><img src="images/menu.svg"></a>
           </div>
         </div>
       </nav>
     </header>
+
+    <div class="cursor" id="cursor"></div>
+
+    <div id="myNav" class="overlay">
+      <div class="overlay-content">
+        <div class="overlay-nav">
+          <div class="navbar-overlay">
+            <a href="index.html"><span id="blue">RAIN </span> CITY</a> 
+          </div>
+          <span class="closebtn" onclick="closeNav()">&times;</span>
+        </div>
+        <div class="overlay-links">
+          <h1><a id = "link1" class="link" href="about.html">ABOUT</a></li>  </h1>
+          <h1><a id = "link2" class="link" href="services.html">SERVICES</a></li></h1>
+          <h1><a id = "link3" class="link" href="blog.html">BLOG</a></li></h1>
+          <h1><a id = "link4" class="link" href="contact.html">CONTACT</a></li></h1>
+        </div>
+      </div>
+    </div>
 
     <!-- ============================================ -->
     <!--                   CONTACT                    -->
@@ -62,37 +89,64 @@
     <section id="hero">
       <div class="container">
         <div class="left-section">
-          <div class="header">QUESTIONS? WE’RE HERE TO HELP</div>
+          <div class="hero-animation">
+            <div class="hero-header hero-transition">
+              QUESTIONS? 
+            </div>
+          </div>
+          <div class="hero-animation">
+            <div class="hero-header hero-transition">
+              WE’RE HERE  
+            </div>
+          </div>
+          <div class="hero-animation">
+            <div class="hero-header hero-transition">
+              TO HELP
+            </div>
+          </div>
+          <br>
+          <div class="hero-animation">
+            <p class="hero-p hero-transition">
+              We pride ourselves in being fully transparent. We are clear on every
+            
+            </p>
+          </div>
+          <div class="hero-animation">
+            <p class="hero-p hero-transition">
+              step we take, and you will always be involved in all business
+              decisions.
+            </p>
+          </div>
+        </div>
+
+        <div class="left-section-mobile">
+          <div class="hero-header">
+            SMALL BUSINESS
+          </div><div class="hero-header">
+            WEB DESIGN AND 
+          </div>
+          <div class="hero-header">
+            DEVELOPMENT
+          </div>
           <p>
-            We pride ourselves in being fully transparent. We are clear on every
-            step we take, and you will always be involved in all business
-            decisions.
+            No page builders or WordPress necessary - We offer hand-coded
+            websites with superior results from $200/mo.
           </p>
-          <img src="images/Full Inbox _Isometric_Animated.svg" />
         </div>
         <div class="right-section">
-          <div class="container">
-            <div class="header">How Can We Help?</div>
-            <p>Describe your request and tell us about your project idea</p>
-            <form action="/action_page.php">
-              <textarea
-                rows="5"
-                cols="33"
-                placeholder="Feel free to share anything about the project or idea."
-              ></textarea>
-              <p>Contact Details</p>
-              <label for="fname">First name:</label>
-              <input type="text" id="fname" name="fname" value="John" />
-              <label for="lname">Last name:</label>
-              <input type="text" id="lname" name="lname" value="Doe" />
-              <label for="email">Enter your email:</label>
-              <input type="email" id="email" name="email" />
-              <input type="submit" />
-            </form>
-          </div>
+          <img
+            class="light"
+            decoding="async"
+            src="/images/Full Inbox _Isometric_Animated.svg"
+            alt=""
+            aria-hidden="true"
+            width="105%"
+          />
         </div>
       </div>
     </section>
+
+    <div class="navbar-overlay-animation2 is-active"></div>
 
     <section id="section-title">
       <div class="container">
