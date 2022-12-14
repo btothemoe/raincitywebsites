@@ -231,3 +231,113 @@
 
 @media only screen and (min-width: 2000px) {
 }
+
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #contact-section {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #contact-section .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 1023px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #contact-section {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #contact-section .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #contact-section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #contact-section .container {
+    width: 560%;
+    display: flex;
+    flex-direction: row;
+    width: 1400px;
+    margin-left: 27px;
+    margin-right: 27px;
+  }
+
+  #contact-section .left-section {
+    width: 50%;
+    height: 40vw;
+    background-color: #696969;
+  }
+
+  #contact-section .right-section {
+    width: 50%;
+    height: 40vw;
+    background-color: blue;
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
