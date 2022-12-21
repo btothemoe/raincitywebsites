@@ -50,7 +50,7 @@
   }
 
   #hero .left-section-mobile .hero-header {
-    font-size: 9.5vw;
+    font-size: min(9.5vw, 50px);
     /*font-size: 75px;*/
     line-height: 95%;
     font-weight: bold;
@@ -306,7 +306,7 @@
   }
 
   #services .left-section .services-header {
-    font-size: 8vw;
+    font-size: min(8vw, 36px);
     font-weight: bold;
   }
 
@@ -790,7 +790,7 @@
   #portfolio .title {
     padding-bottom: 20px;
     font-weight: bold;
-    font-size: 6vw;
+    font-size: min(6vw, 25px);
     color: rgb(32, 32, 32);
   }
 
@@ -1143,7 +1143,7 @@
   }
 
   #pricing .title {
-    font-size: 8vw;
+    font-size: min(8vw, 36px);
     line-height: 95%;
     font-weight: bold;
     padding-bottom: 20px;
@@ -1162,7 +1162,7 @@
 
   #pricing .pricing-box .pricing-title {
     font-weight: bold;
-    font-size: 4.5vw;
+    font-size: min(4.5vw, 20px);
     padding-bottom: 10px;
   }
 
@@ -1603,7 +1603,7 @@
   }
 
   #blog .blog-element .blog-header {
-    font-size: 4.5vw;
+    font-size: min(4.5vw, 20px);
     font-weight: bold;
     width: 70%;
   }

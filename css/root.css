@@ -883,8 +883,8 @@ body {
 
   .socials .container .socials-middle img {
     width: 20px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .socials .container .socials-right {
@@ -895,8 +895,8 @@ body {
   .socials .container .socials-right a {
     text-decoration: none;
     color: #939393;
-    padding-right: 15px;
-    font-size: 14px;
+    padding-right: 10px;
+    font-size: 12px;
   }
 }
 
