@@ -309,9 +309,7 @@
   }
 
   #services .right-section a:hover {
-    color: rgb(48, 86, 197);
-    filter: invert(22%) sepia(76%) saturate(4390%) hue-rotate(225deg)
-      brightness(87%) contrast(74%);
+    color: #f18200;
   }
 
   #services .right-section #button1 img {
@@ -507,9 +505,7 @@
   }
 
   #services .right-section a:hover {
-    color: rgb(48, 86, 197);
-    filter: invert(22%) sepia(76%) saturate(4390%) hue-rotate(225deg)
-      brightness(87%) contrast(74%);
+    color: #f18200;
   }
 
   #services .right-section #button1 img {
@@ -519,6 +515,54 @@
 
   .hero-button-tablet {
     display: none;
+  }
+
+  #services .right-section .cl-effect-5-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Effect 5: same word slide in */
+  #services .right-section .cl-effect-5-body a {
+    overflow: hidden;
+    height: 1em;
+    margin-top: 30px;
+  }
+
+  #services .right-section .cl-effect-5-body img {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #services .right-section .cl-effect-5-body a:hover {
+    color: #f18200;
+  }
+
+  #services .right-section .cl-effect-5-body a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  #services .right-section .cl-effect-5-body a span::before {
+    position: absolute;
+    top: -100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  #services .right-section .cl-effect-5-body a:hover span,
+  #services .right-section .cl-effect-5-body a:focus span {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
   }
 }
 
@@ -1217,10 +1261,67 @@
     margin-bottom: 5px;
   }
 
+  #pricing .left-section a {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px;
+    letter-spacing: 1px;
+    color: black;
+  }
+
   #pricing .pricing-box hr {
     border: 1px solid rgb(214, 214, 214);
     width: 80%;
     margin-left: 0;
+  }
+
+  #pricing .left-section .cl-effect-5-body {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Effect 5: same word slide in */
+  #pricing .left-section .cl-effect-5-body a {
+    overflow: hidden;
+    height: 1em;
+    margin-top: 30px;
+  }
+
+  #pricing .left-section .cl-effect-5-body img {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #pricing .left-section .cl-effect-5-body a:hover {
+    color: #f18200;
+  }
+
+  #pricing .left-section .cl-effect-5-body a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  #pricing .left-section .cl-effect-5-body a span::before {
+    position: absolute;
+    top: -100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  #pricing .left-section .cl-effect-5-body a:hover span,
+  #pricing .left-section .cl-effect-5-body a:focus span {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
   }
 }
 
@@ -1427,7 +1528,7 @@
 
   #blog {
     width: 100%;
-    height: 90vh;
+    height: 50vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1452,7 +1553,7 @@
 
   #blog .blog-element {
     width: 28%;
-    height: 45%;
+    height: min(45%, 25vw);
     border: 1px solid #e8e8e8;
     margin-bottom: 2%;
     text-decoration: none;
@@ -1500,7 +1601,7 @@
     align-items: center;
     justify-content: center;
     display: initial;
-    padding-top: 28px;
+    padding-top: 1.65vw;
   }
 
   #blog .blog-element .blog-link img {
