@@ -68,7 +68,7 @@
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 1023px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   body,
   html {
     font-family: "HelveticaNeue", sans-serif;
@@ -320,10 +320,66 @@
   .hero-button-tablet {
     display: none;
   }
+
+  #services .right-section .cl-effect-5-body {
+    display: none;
+  }
+
+  #services .cl-effect-5-body-tablet {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+  }
+
+  /* Effect 5: same word slide in */
+  #services .cl-effect-5-body-tablet a {
+    overflow: hidden;
+    height: 1em;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+
+  #services .cl-effect-5-body-tablet img {
+    padding-top: 25px;
+    padding-left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  #services .cl-effect-5-body-tablet a:hover {
+    color: #f18200;
+  }
+
+  #services .cl-effect-5-body-tablet a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  #services .cl-effect-5-body-tablet a span::before {
+    position: absolute;
+    top: -100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  #services .cl-effect-5-body-tablet a:hover span,
+  #services .cl-effect-5-body-tablet a:focus span {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
+  }
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 1023px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   body,
   html {
     font-family: "HelveticaNeue", sans-serif;
@@ -412,6 +468,62 @@
   .hero-button-tablet {
     display: initial;
     padding-bottom: 30px;
+  }
+
+  #services .right-section .cl-effect-5-body {
+    display: none;
+  }
+
+  #services .cl-effect-5-body-tablet {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+  }
+
+  /* Effect 5: same word slide in */
+  #services .cl-effect-5-body-tablet a {
+    overflow: hidden;
+    height: 1em;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+
+  #services .cl-effect-5-body-tablet img {
+    padding-top: 25px;
+    padding-left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  #services .cl-effect-5-body-tablet a:hover {
+    color: #f18200;
+  }
+
+  #services .cl-effect-5-body-tablet a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  #services .cl-effect-5-body-tablet a span::before {
+    position: absolute;
+    top: -100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  #services .cl-effect-5-body-tablet a:hover span,
+  #services .cl-effect-5-body-tablet a:focus span {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
   }
 }
 
@@ -514,6 +626,10 @@
   }
 
   .hero-button-tablet {
+    display: none;
+  }
+
+  #services .cl-effect-5-body-tablet {
     display: none;
   }
 
@@ -662,10 +778,14 @@
     text-decoration: none;
     color: black;
   }
+
+  #portfolio .overlay-hover {
+    display: none;
+  }
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 1023px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   body,
   html {
     font-family: "HelveticaNeue", sans-serif;
@@ -709,6 +829,7 @@
     */
     border-bottom: none;
     padding-bottom: 0px;
+    padding-top: 0px;
   }
 
   #portfolio .right-section {
@@ -719,6 +840,7 @@
     */
     border-bottom: none;
     padding-bottom: 0px;
+    padding-top: 0px;
   }
 
   #portfolio .title {
@@ -728,7 +850,7 @@
   }
 
   #portfolio .description {
-    padding-bottom: 20px;
+    height: 120px;
     font-size: 14px;
   }
 
@@ -739,6 +861,7 @@
 
   #portfolio .subtitles span {
     padding-right: 10px;
+    display: block;
   }
 
   #portfolio a {
@@ -1020,10 +1143,14 @@
     width: 90%;
     margin-left: 0;
   }
+
+  #pricing .left-section .cl-effect-5-body {
+    display: none;
+  }
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 1023px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   body,
   html {
     font-family: "HelveticaNeue", sans-serif;
@@ -1043,7 +1170,7 @@
     background-size: 500px;
     background-repeat: no-repeat;
     background-position: center right;
-    padding-top: 50px;
+    padding-top: 75px;
     padding-bottom: 50px;
   }
 
@@ -1081,6 +1208,7 @@
     flex-direction: row; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
     flex-wrap: wrap;
+    padding-top: 0px;
   }
 
   #pricing .pricing-box-container {
@@ -1108,8 +1236,8 @@
   }
 
   #pricing .title {
-    font-size: 4vw;
-    line-height: 95%;
+    font-size: 5vw;
+    line-height: 100%;
     font-weight: bold;
     padding-bottom: 50px;
     width: 100%;
@@ -1141,6 +1269,58 @@
     border: 1px solid rgb(214, 214, 214);
     width: 90%;
     margin-left: 0;
+  }
+
+  #pricing .left-section .cl-effect-5-body {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Effect 5: same word slide in */
+  #pricing .left-section .cl-effect-5-body a {
+    overflow: hidden;
+    height: 1em;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+
+  #pricing .left-section .cl-effect-5-body img {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #pricing .left-section .cl-effect-5-body a:hover {
+    color: #f18200;
+  }
+
+  #pricing .left-section .cl-effect-5-body a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  #pricing .left-section .cl-effect-5-body a span::before {
+    position: absolute;
+    top: -100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  #pricing .left-section .cl-effect-5-body a:hover span,
+  #pricing .left-section .cl-effect-5-body a:focus span {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
   }
 }
 
@@ -1417,7 +1597,7 @@
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 1023px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   body,
   html {
     font-family: "HelveticaNeue", sans-serif;
@@ -1454,7 +1634,7 @@
 
   #blog .blog-element {
     width: 28%;
-    height: 45%;
+    height: min(45%, 24vw);
     border: 1px solid #e8e8e8;
     margin-bottom: 2%;
     text-decoration: none;
