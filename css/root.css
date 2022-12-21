@@ -709,6 +709,7 @@ body {
     font-weight: bold;
     font-size: 18px;
     padding-bottom: 10px;
+    display: none;
   }
 
   #footer .left-section {
@@ -751,14 +752,15 @@ body {
 
   #footer .left-section .footer-email-mobile {
     color: #f18200;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   #footer .left-section p {
     width: 95%;
-    font-size: 14px;
+    font-size: 16px;
+    padding-bottom: 10px;
   }
 
   #footer .right-section {
@@ -798,7 +800,7 @@ body {
     .footer-services-section
     .services-section-header {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   #footer
@@ -807,13 +809,46 @@ body {
     .footer-services-section
     .services-section-label {
     padding-top: 15px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   #footer .footer-menu a {
     list-style: none;
     text-decoration: none;
     color: black;
+  }
+
+  #footer .right-section label {
+    font-weight: bold;
+    font-size: min(18px, 4vw);
+  }
+
+  #footer .right-section input {
+    width: 90%;
+    padding: 10px;
+    /*background: transparent;*/
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+
+  .cl-effect-5-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Effect 5: same word slide in */
+  .cl-effect-5-footer a {
+    overflow: hidden;
+    font-size: 30px;
+    height: 1em;
+    width: fit-content;
+    margin-top: 10px;
+    color: black;
+    font-weight: bold;
   }
 
   .socials {
@@ -830,13 +865,43 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-left: 2.5%;
     padding-right: 2.5%;
+  }
+
+  .socials .container .socials-left {
+    width: 50%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .socials .container .socials-middle {
+    width: 50%;
+    text-align: right;
+  }
+
+  .socials .container .socials-middle img {
+    width: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .socials .container .socials-right {
+    width: 100%;
+    text-align: left;
+  }
+
+  .socials .container .socials-right a {
+    text-decoration: none;
+    color: #939393;
+    padding-right: 15px;
+    font-size: 14px;
   }
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 1023px) {
+@media screen and (min-width: 650px) and (max-width: 1023px) {
   body,
   html {
     font-family: "HelveticaNeue", sans-serif;
@@ -872,6 +937,7 @@ body {
     font-size: 16px;
     padding-bottom: 30px;
     color: #f18200;
+    display: initial;
   }
 
   #footer .left-section {
