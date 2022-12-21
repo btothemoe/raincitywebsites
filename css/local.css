@@ -51,15 +51,33 @@
 
   #hero .left-section-mobile .hero-header {
     font-size: 9.5vw;
-    /*font-size: 35px;*/
+    /*font-size: 75px;*/
     line-height: 95%;
     font-weight: bold;
+    position: relative;
+    transition: 0.5s ease-out;
+    top: 0px;
+    opacity: 1;
+  }
+
+  #hero .hero-animation {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-transition {
+    top: 100% !important;
+    opacity: 0;
   }
 
   #hero .left-section-mobile p {
     font-size: 16px;
     line-height: 125%;
     width: 90%;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top: 0px;
+    margin: 0px;
   }
 
   #hero .left-section {
@@ -115,17 +133,35 @@
     justify-content: center; /* center items vertically, in this case */
   }
 
-  #hero .left-section .hero-header {
+  .hero-header {
     font-size: 4.5vw;
-    /*font-size: 45px;*/
+    /*font-size: 75px;*/
     line-height: 95%;
     font-weight: bold;
+    position: relative;
+    transition: 0.5s ease-out;
+    top: 0px;
+    opacity: 1;
+  }
+
+  #hero .hero-animation {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-transition {
+    top: 80% !important;
+    opacity: 0;
   }
 
   #hero .left-section p {
     font-size: 16px;
     line-height: 125%;
     width: 70%;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top: 0px;
+    margin: 0px;
   }
 
   #hero .left-section-mobile {
