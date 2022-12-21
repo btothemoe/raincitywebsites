@@ -15,31 +15,30 @@
     <link rel="stylesheet" href="/css/local.css" />
 
     <!-- JS -->
-    <script type="text/javascript"  src="main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 
     <script>
-
       /* Open */
       function openNav() {
         document.getElementById("myNav").style.height = "100%";
 
-        for (let i = 1; i < 5; i++){
+        for (let i = 1; i < 7; i++) {
           id = "link" + i;
-          document.getElementById(id).style.transitionDelay= i - 1 + "50ms";
+          document.getElementById(id).style.transitionDelay = i - 1 + "50ms";
           document.getElementById(id).style.transform = "translate(0,0)";
         }
       }
 
       /* Close */
       function closeNav() {
-
-        for (let i = 1; i < 5; i++){
+        for (let i = 1; i < 7; i++) {
           id = "link" + i;
           delay = 4;
-          document.getElementById(id).style.transitionDelay= delay - i + "50ms";
+          document.getElementById(id).style.transitionDelay =
+            delay - i + "50ms";
           document.getElementById(id).style.transform = "translate(0,100%)";
         }
-        
+
         setTimeout(closeNavWait, 1000);
 
         //function definition
@@ -49,12 +48,9 @@
       }
     </script>
 
-    
-
     <title>Rain City Websites</title>
   </head>
   <body>
-    
     <!--  <div class="transition transition-3 is-active"></div> -->
     <div class="navbar-overlay-animation is-active"></div>
     <!-- ============================================ -->
@@ -64,36 +60,37 @@
     <header>
       <!-- Normal Nav -->
       <nav>
-        
         <div class="navbar">
           <div class="navbar-navigation">
             <!-- <a href="index.html"><img src="images/raincitylogo2.svg"></a> -->
-            <a class="navbar-transition" href="/"><span id="blue">RAIN </span> CITY</a> 
+            <a class="navbar-transition" href="/"
+              ><span id="blue">RAIN </span> CITY</a
+            >
           </div>
           <div class="navbar-menu">
             <div class="cl-effect-5">
               <nav class="cl-effect-5">
-                <a class="navbar-transition" href="services.html"><span data-hover="SERVICES">SERVICES</span></a>
-                <a class="navbar-transition" href="services.html"><span data-hover="WORK">WORK</span></a>
-                <a class="navbar-transition" href="about.html"><span data-hover="ABOUT">ABOUT</span></a>
-                <a class="navbar-transition" href="blog.html"><span data-hover="INSIGHTS">INSIGHTS</span></a>
-                <a class="navbar-transition" id="contact" href="contact.html">CONTACT</a>
+                <a class="navbar-transition" href="services.html"
+                  ><span data-hover="SERVICES">SERVICES</span></a
+                >
+                <a class="navbar-transition" href="services.html"
+                  ><span data-hover="WORK">WORK</span></a
+                >
+                <a class="navbar-transition" href="about.html"
+                  ><span data-hover="ABOUT">ABOUT</span></a
+                >
+                <a class="navbar-transition" href="blog.html"
+                  ><span data-hover="INSIGHTS">INSIGHTS</span></a
+                >
+                <a class="navbar-transition" id="contact" href="contact.html"
+                  >CONTACT</a
+                >
               </nav>
             </div>
-            
-            <!--
-            <ul>
-              <li><a href="services.html"><span data-hover="SERVICES">SERVICES</span></a></li>
-              <li><a class="flip-animate" href="services.html"><span data-hover="WORK">WORK</span></a></li>
-              <li><a class="flip-animate" href="about.html"><span data-hover="ABOUT">ABOUT</span></a></li>
-              <li><a class="flip-animate" href="blog.html"><span data-hover="INSIGHTS">INSIGHTS</span></a></li>
-              <li><a class="link" id="contact" href="contact.html">CONTACT US</a></li>
-            </ul>
-            -->
           </div>
           <div class="navbar-menu-mobile" onclick="openNav()">
-            <a class="link" >NAVIGATION</a>
-            <a><img src="images/menu.svg"></a>
+            <a class="link">NAVIGATION</a>
+            <a><img src="images/menu.svg" /></a>
           </div>
         </div>
       </nav>
@@ -105,15 +102,22 @@
       <div class="overlay-content">
         <div class="overlay-nav">
           <div class="navbar-overlay">
-            <a href="index.html"><span id="blue">RAIN </span> CITY</a> 
+            <a href="index.html"><span id="blue">RAIN </span> CITY</a>
           </div>
           <span class="closebtn" onclick="closeNav()">&times;</span>
         </div>
         <div class="overlay-links">
-          <h1><a id = "link1" class="link" href="about.html">ABOUT</a></li>  </h1>
-          <h1><a id = "link2" class="link" href="services.html">SERVICES</a></li></h1>
-          <h1><a id = "link3" class="link" href="blog.html">BLOG</a></li></h1>
-          <h1><a id = "link4" class="link" href="contact.html">CONTACT</a></li></h1>
+          <h1><a id="link1" class="link" href="services.html">SERVICES</a></h1>
+          <h1><a id="link2" class="link" href="about.html">WORK</a></h1>
+          <h1><a id="link3" class="link" href="about.html">ABOUT</a></h1>
+          <h1><a id="link4" class="link" href="blog.html">INSIGHTS</a></h1>
+          <h1><a id="link5" class="link" href="contact.html">CONTACT</a></h1>
+          <h1>
+            <a id="link6" class="link-email" href="contact.html">
+              RAINCITYWEBSITES.COM
+              <img src="/images/icons8-circled-right-100.png" />
+            </a>
+          </h1>
         </div>
       </div>
     </div>
@@ -126,48 +130,38 @@
       <div class="container">
         <div class="left-section">
           <div class="hero-animation">
-            <div class="hero-header hero-transition">
-              SMALL BUSINESS
-            </div>
+            <div class="hero-header hero-transition">SMALL BUSINESS</div>
           </div>
           <div class="hero-animation">
-            <div class="hero-header hero-transition">
-              WEB DESIGN AND 
-            </div>
+            <div class="hero-header hero-transition">WEB DESIGN AND</div>
           </div>
           <div class="hero-animation">
-            <div class="hero-header hero-transition">
-              DEVELOPMENT
-            </div>
+            <div class="hero-header hero-transition">DEVELOPMENT</div>
           </div>
-          <br>
+          <br />
           <div class="hero-animation">
             <p class="hero-p hero-transition">
-              No page builders or WordPress necessary - We offer hand-coded websites with superior results from $200/mo.
+              No page builders or WordPress necessary - We offer hand-coded
+              websites with superior results from $200/mo.
             </p>
           </div>
         </div>
 
         <div class="left-section-mobile">
           <div class="hero-animation">
-            <div class="hero-header hero-transition">
-              SMALL BUSINESS
-            </div>
+            <div class="hero-header hero-transition">SMALL BUSINESS</div>
           </div>
           <div class="hero-animation">
-            <div class="hero-header hero-transition">
-              WEB DESIGN AND 
-            </div>
+            <div class="hero-header hero-transition">WEB DESIGN AND</div>
           </div>
           <div class="hero-animation">
-            <div class="hero-header hero-transition">
-              DEVELOPMENT
-            </div>
+            <div class="hero-header hero-transition">DEVELOPMENT</div>
           </div>
-          <br>
+          <br />
           <div class="hero-animation">
             <p class="hero-p hero-transition">
-              No page builders or WordPress necessary - We offer hand-coded websites with superior results from $200/mo.
+              No page builders or WordPress necessary - We offer hand-coded
+              websites with superior results from $200/mo.
             </p>
           </div>
         </div>
@@ -221,12 +215,11 @@
           </div>
           -->
           <div class="cl-effect-5-body">
-            <a href="services.html"><span data-hover="HOW IT WORKS">HOW IT WORKS</span></a>
-            <img src="/images/icons8-circled-right-100.png">
+            <a href="services.html"
+              ><span data-hover="HOW IT WORKS">HOW IT WORKS</span></a
+            >
+            <img src="/images/icons8-circled-right-100.png" />
           </div>
-          
-          
-        
         </div>
         <!--
         <div class="hero-button-tablet">
@@ -234,18 +227,17 @@
         </div>
         -->
         <div class="cl-effect-5-body-tablet">
-          <a href="services.html"><span data-hover="HOW IT WORKS">HOW IT WORKS</span></a>
-          <img src="/images/icons8-circled-right-100.png">
+          <a href="services.html"
+            ><span data-hover="HOW IT WORKS">HOW IT WORKS</span></a
+          >
+          <img src="/images/icons8-circled-right-100.png" />
         </div>
-        
-        
       </div>
     </section>
 
     <!-- ============================================ -->
     <!--                   PORTFOLIO                  -->
     <!-- ============================================ -->
-    
 
     <section id="portfolio" class="section">
       <div class="container">
@@ -253,7 +245,10 @@
           <a href="services.html" class="portfolio-link" id="mouse-link">
             <div class="title">CAKE CANNABIS</div>
             <div class="description">
-              Cake Cannabis is a celebration of Washington grown cannabis.  They source from the highest quality farms in the state, serving deisgner strains and well established industrial staples at an affordable price.
+              Cake Cannabis is a celebration of Washington grown cannabis. They
+              source from the highest quality farms in the state, serving
+              deisgner strains and well established industrial staples at an
+              affordable price.
             </div>
             <div class="subtitles">
               <span>WEB DESIGN</span>
@@ -270,12 +265,12 @@
               />
               <div class="overlay-hover">
                 <img
-                class="light"
-                decoding="async"
-                src="/images/portfolio1.webp"
-                alt=""
-                aria-hidden="true"
-              />
+                  class="light"
+                  decoding="async"
+                  src="/images/portfolio1.webp"
+                  alt=""
+                  aria-hidden="true"
+                />
               </div>
             </div>
           </a>
@@ -284,7 +279,10 @@
           <a href="services.html" class="portfolio-link" id="mouse-link">
             <div class="title">LIQUID LOVE</div>
             <div class="description">
-              Liquid Love is a high-end cocktail bar and restaurant that offers an extensive menu of unique and delicious drinks. The atmosphere at Liquid Love is chic and sophisticated, making it the perfect spot for a date or special occasion.
+              Liquid Love is a high-end cocktail bar and restaurant that offers
+              an extensive menu of unique and delicious drinks. The atmosphere
+              at Liquid Love is chic and sophisticated, making it the perfect
+              spot for a date or special occasion.
             </div>
             <div class="subtitles">
               <span>WEB DESIGN</span>
@@ -292,24 +290,23 @@
             </div>
             <div class="hover-container">
               <img
-              class="light"
-              decoding="async"
-              src="/images/liquidlove.jpg"
-              alt=""
-              aria-hidden="true"
-              width="100%"
-            />
+                class="light"
+                decoding="async"
+                src="/images/liquidlove.jpg"
+                alt=""
+                aria-hidden="true"
+                width="100%"
+              />
               <div class="overlay-hover">
                 <img
-              class="light"
-              decoding="async"
-              src="/images/portfolio2.webp"
-              alt=""
-              aria-hidden="true"
-            />
+                  class="light"
+                  decoding="async"
+                  src="/images/portfolio2.webp"
+                  alt=""
+                  aria-hidden="true"
+                />
               </div>
             </div>
-            
           </a>
         </div>
 
@@ -317,30 +314,33 @@
           <a href="services.html" class="portfolio-link" id="mouse-link">
             <div class="title">BISTRO CLEMENTINE</div>
             <div class="description">
-              Bistro Clementine is a luxurious wine and Italian restaurant that offers a fine dining experience like no other. The restaurant's menu features an array of delicious Italian dishes, each expertly crafted using the freshest ingredients.
+              Bistro Clementine is a luxurious wine and Italian restaurant that
+              offers a fine dining experience like no other. The restaurant's
+              menu features an array of delicious Italian dishes, each expertly
+              crafted using the freshest ingredients.
             </div>
             <div class="subtitles">
               <span>WEB DESIGN</span>
               <span>WEBSITE DEVELOPMENT</span>
             </div>
-            
+
             <div class="hover-container">
               <img
-              class="light"
-              decoding="async"
-              src="/images/bistroClementine.jpg"
-              alt=""
-              aria-hidden="true"
-              width="100%"
-            />
+                class="light"
+                decoding="async"
+                src="/images/bistroClementine.jpg"
+                alt=""
+                aria-hidden="true"
+                width="100%"
+              />
               <div class="overlay-hover">
                 <img
-              class="light"
-              decoding="async"
-              src="/images/portfolio3.webp"
-              alt=""
-              aria-hidden="true"
-            />
+                  class="light"
+                  decoding="async"
+                  src="/images/portfolio3.webp"
+                  alt=""
+                  aria-hidden="true"
+                />
               </div>
             </div>
           </a>
@@ -361,7 +361,9 @@
     <section id="pricing" class="section">
       <div class="container">
         <div class="left-section">
-          <div class="title">SMALL MONTHLY <span id="orange-header">PAYMENTS</span></div>
+          <div class="title">
+            SMALL MONTHLY <span id="orange-header">PAYMENTS</span>
+          </div>
           <div class="description">
             $0 down for a standard 5 page small business website. If you need
             more than that then we have to do custom pricing based on the scope
@@ -372,11 +374,13 @@
             with no fees or hassle.
           </div>
           <div class="cl-effect-5-body">
-            <a href="services.html"><span data-hover="LEARN MORE">LEARN MORE</span></a>
-            <img src="/images/icons8-circled-right-100.png">
+            <a href="services.html"
+              ><span data-hover="LEARN MORE">LEARN MORE</span></a
+            >
+            <img src="/images/icons8-circled-right-100.png" />
           </div>
         </div>
-        
+
         <div class="right-section">
           <div class="pricing-box-container">
             <img
@@ -422,10 +426,7 @@
             />
             <div class="pricing-box">
               <div class="pricing-title">24/7 Customer Service</div>
-              <p>
-                Call direct anytime, no phone trees or automated
-                responses.
-              </p>
+              <p>Call direct anytime, no phone trees or automated responses.</p>
               <hr />
             </div>
           </div>
@@ -472,9 +473,7 @@
             />
             <div class="pricing-box">
               <div class="pricing-title">Google Analytics</div>
-              <p>
-                We install Analytics for free to monitor traffic.
-              </p>
+              <p>We install Analytics for free to monitor traffic.</p>
               <hr />
             </div>
           </div>
@@ -495,76 +494,80 @@
 
     <section id="blog" class="section">
       <div class="container">
-        <a href="insights/advantages-of-developing-your-own-website.html" class="blog-element" id="mouse-link">
-          <div class="blog-date">
-            Article
-          </div>
+        <a
+          href="insights/advantages-of-developing-your-own-website.html"
+          class="blog-element"
+          id="mouse-link"
+        >
+          <div class="blog-date">Article</div>
           <div class="blog-header">
             Advantages of Developing your own Website
           </div>
           <div class="blog-link">
             <div class="blog-link-text">READ MORE</div>
-            <img src="/images/noun-arrow.svg">
+            <img src="/images/noun-arrow.svg" />
           </div>
         </a>
-        <a href="insights/optimizing-images-for-the-web.html" class="blog-element" id="mouse-link">
-          <div class="blog-date">
-            Insight
-          </div>
-          <div class="blog-header">
-            Optimizing Images for the Web
-          </div>
+        <a
+          href="insights/optimizing-images-for-the-web.html"
+          class="blog-element"
+          id="mouse-link"
+        >
+          <div class="blog-date">Insight</div>
+          <div class="blog-header">Optimizing Images for the Web</div>
           <div class="blog-link">
             <div class="blog-link-text">READ MORE</div>
-            <img src="/images/noun-arrow.svg">
+            <img src="/images/noun-arrow.svg" />
           </div>
         </a>
-        <a href="insights/how-to-drive-traffic-to-your-website.html" class="blog-element" id="mouse-link">
-          <div class="blog-date">
-            Article
-          </div>
-          <div class="blog-header">
-            How to Drive Traffic to your Website
-          </div>
+        <a
+          href="insights/how-to-drive-traffic-to-your-website.html"
+          class="blog-element"
+          id="mouse-link"
+        >
+          <div class="blog-date">Article</div>
+          <div class="blog-header">How to Drive Traffic to your Website</div>
           <div class="blog-link">
             <div class="blog-link-text">READ MORE</div>
-            <img src="/images/noun-arrow.svg">
+            <img src="/images/noun-arrow.svg" />
           </div>
         </a>
-        <a href="insights/beginers-guide-to-google-analytics.html" class="blog-element" id="mouse-link">
-          <div class="blog-date">
-            Insight
-          </div>
-          <div class="blog-header">
-            Beginners Guide to Google Analytics
-          </div>
+        <a
+          href="insights/beginers-guide-to-google-analytics.html"
+          class="blog-element"
+          id="mouse-link"
+        >
+          <div class="blog-date">Insight</div>
+          <div class="blog-header">Beginners Guide to Google Analytics</div>
           <div class="blog-link">
             <div class="blog-link-text">READ MORE</div>
-            <img src="/images/noun-arrow.svg">
+            <img src="/images/noun-arrow.svg" />
           </div>
         </a>
-        <a href="insights/seo-strategies-for-small-businesses.html" class="blog-element" id="mouse-link">
-          <div class="blog-date">
-            Article
-          </div>
-          <div class="blog-header">
-            SEO Strategies for Small Businesses
-          </div>
+        <a
+          href="insights/seo-strategies-for-small-businesses.html"
+          class="blog-element"
+          id="mouse-link"
+        >
+          <div class="blog-date">Article</div>
+          <div class="blog-header">SEO Strategies for Small Businesses</div>
           <div class="blog-link">
             <div class="blog-link-text">READ MORE</div>
-            <img src="/images/noun-arrow.svg">
+            <img src="/images/noun-arrow.svg" />
           </div>
         </a>
-        <a href="insights/how-to-optimize-a-website-for-mobile.html" class="blog-element" id="mouse-link">
-          <div class="blog-date">
-            Article
-          </div>
+        <a
+          href="insights/how-to-optimize-a-website-for-mobile.html"
+          class="blog-element"
+          id="mouse-link"
+        >
+          <div class="blog-date">Article</div>
           <div class="blog-header">
             How to Optimize a Website For Mobile Devices
           </div>
           <div class="blog-link">
             <div class="blog-link-text">READ MORE</div>
-            <img src="/images/noun-arrow.svg">
+            <img src="/images/noun-arrow.svg" />
           </div>
         </a>
       </div>
@@ -579,7 +582,7 @@
         <div class="right-section">CONTACT</div>
       </div>
     </section>
-    
+
     <footer id="footer">
       <div class="container">
         <div class="left-section">
@@ -587,21 +590,24 @@
           <div class="header">RAIN CITY WEBSITES</div>
           -->
           <p>
-            Rain City Websites is proud to serve the local Seattle community and more. We have been helping small businesses thrive by providing affordable options for websites. Get in contact and learn how you can optimize your business today!
+            Rain City Websites is proud to serve the local Seattle community and
+            more. We have been helping small businesses thrive by providing
+            affordable options for websites. Get in contact and learn how you
+            can optimize your business today!
           </p>
           <div class="footer-email-mobile">RAINCITYWEBSITES@GMAIL.COM</div>
 
           <div class="cl-effect-5-footer">
-            <a href="services.html"><span data-hover="SERVICES">SERVICES</span></a>
+            <a href="services.html"
+              ><span data-hover="SERVICES">SERVICES</span></a
+            >
             <a href="services.html"><span data-hover="WORK">WORK</span></a>
             <a href="about.html"><span data-hover="ABOUT">ABOUT</span></a>
             <a href="blog.html"><span data-hover="INSIGHTS">INSIGHTS</span></a>
             <a href="blog.html"><span data-hover="CONTACT">CONTACT</span></a>
           </div>
 
-          
           <div class="header">RAINCITYWEBSITES@GMAIL.COM</div>
-          
         </div>
         <div class="right-section">
           <div class="email-form">
@@ -614,7 +620,10 @@
             />
           </div>
           <p>
-            Rain City Websites is proud to serve the local Seattle community and more. We have been helping small businesses thrive by providing affordable options for websites. Get in contact and learn how you can optimize your business today!
+            Rain City Websites is proud to serve the local Seattle community and
+            more. We have been helping small businesses thrive by providing
+            affordable options for websites. Get in contact and learn how you
+            can optimize your business today!
           </p>
           <div class="footer-services">
             <div class="footer-services-section">
@@ -640,19 +649,15 @@
       </div>
     </footer>
 
-    
-
     <div class="socials">
       <div class="container">
-        <div class="socials-left">
-          RAIN CITY LLC
-        </div>
+        <div class="socials-left">RAIN CITY LLC</div>
         <div class="socials-middle">
-          <a href="about.html"><img src="images/reddit.svg"></a>
-          <a href="about.html"><img src="images/linkedin.svg"></a>
-          <a href="about.html"><img src="images/Twitter.svg"></a>
-          <a href="about.html"><img src="images/instagram.svg"></a>
-          <a href="about.html"><img src="images/facebook.svg"></a>
+          <a href="about.html"><img src="images/reddit.svg" /></a>
+          <a href="about.html"><img src="images/linkedin.svg" /></a>
+          <a href="about.html"><img src="images/Twitter.svg" /></a>
+          <a href="about.html"><img src="images/instagram.svg" /></a>
+          <a href="about.html"><img src="images/facebook.svg" /></a>
         </div>
         <div class="socials-right">
           <a href="about.html">TERMS</a>
@@ -665,26 +670,23 @@
     <script>
       /* cursor */
       let mouseCursor = document.querySelector(".cursor");
-      let navLinks = document.querySelectorAll('#mouse-link')
-      
-      
+      let navLinks = document.querySelectorAll("#mouse-link");
+
       window.addEventListener("mousemove", cursor);
 
-      function cursor(e){
-        mouseCursor.style.top = e.clientY + 'px';
-        mouseCursor.style.left = e.clientX + 'px';
+      function cursor(e) {
+        mouseCursor.style.top = e.clientY + "px";
+        mouseCursor.style.left = e.clientX + "px";
       }
 
-      navLinks.forEach(link => {
-        link.addEventListener('mouseover', () => {
-          mouseCursor.classList.add('link-grow');
+      navLinks.forEach((link) => {
+        link.addEventListener("mouseover", () => {
+          mouseCursor.classList.add("link-grow");
         });
-        link.addEventListener('mouseleave', () => {
-          mouseCursor.classList.remove('link-grow');
-        })
-      })
-
-
+        link.addEventListener("mouseleave", () => {
+          mouseCursor.classList.remove("link-grow");
+        });
+      });
     </script>
   </body>
 </html>
