@@ -644,6 +644,24 @@
     flex-direction: row;
   }
 
+  .process-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .process-header .process-header-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    font-size: 10vw;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(214, 214, 214);
+  }
+
   #process .container .left-section {
     width: 100%;
     display: none;
@@ -657,19 +675,19 @@
     display: flex;
     flex-direction: row;
     border-bottom: 2px solid rgb(214, 214, 214);
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 
   #process .container .left-section-mobile .left-section-element .number {
     width: 8%;
-    padding-top: 4px;
-    font-size: 6vw;
+    padding-bottom: 10px;
+    font-size: 4vw;
     font-weight: bold;
   }
 
   #process .container .left-section-mobile .left-section-element .header {
-    font-size: 6vw;
+    font-size: 7vw;
     font-weight: bold;
   }
 
@@ -723,7 +741,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 75px;
+    padding-top: 25px;
     padding-bottom: 75px;
     background-image: url("/images/Vector2.svg");
     background-size: 8 0%;
@@ -737,6 +755,24 @@
     flex-direction: row;
   }
 
+  .process-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .process-header .process-header-container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    font-size: 7vw;
+    font-weight: bold;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid rgb(214, 214, 214);
+  }
+
   #process .container .left-section {
     width: 50%;
     display: none;
@@ -748,27 +784,28 @@
 
   #process .container .left-section-mobile .left-section-element {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-bottom: 2px solid rgb(214, 214, 214);
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-top: 10px;
   }
 
   #process .container .left-section-mobile .left-section-element .number {
     width: 8%;
     padding-top: 8px;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
+    padding-bottom: 15px;
   }
 
   #process .container .left-section-mobile .left-section-element .header {
-    font-size: 8vw;
+    font-size: 5vw;
     font-weight: bold;
   }
 
   #process .container .left-section-mobile .left-section-element p {
-    width: 70%;
-    font-size: 20px;
+    width: 80%;
+    font-size: 18px;
   }
 
   #process .container .right-section {
@@ -795,7 +832,8 @@
   }
 
   #process .container .left-section-mobile .right-section-element p {
-    font-size: 20px;
+    font-size: 18px;
+    width: 80%;
   }
 }
 
@@ -832,6 +870,24 @@
     width: 95%;
     display: flex;
     flex-direction: row;
+  }
+
+  .process-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .process-header .process-header-container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    font-size: 6vw;
+    font-weight: bold;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid rgb(214, 214, 214);
   }
 
   #process .container .left-section {
