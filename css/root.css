@@ -278,6 +278,13 @@ body {
   .navbar-overlay-animation2.is-active {
     right: 0px;
   }
+
+  .navbar-navigation img {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
 }
 
 /* -- Ipad Pro -- */
@@ -466,6 +473,13 @@ body {
   .navbar-overlay-animation2.is-active {
     right: 0px;
   }
+
+  .navbar-navigation img {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
 }
 
 /* -- Tablets -- */
@@ -559,8 +573,9 @@ body {
   }
 
   .navbar-navigation img {
-    width: 150px;
-    padding-top: 17px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
   }
 
   .navbar-menu {
