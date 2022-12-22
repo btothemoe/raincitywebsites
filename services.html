@@ -14,23 +14,42 @@
     <link rel="stylesheet" href="/css/root.css" type="text/css" />
     <link rel="stylesheet" href="/css/services.css" />
     <!-- JS -->
-    <script type="text/javascript"  src="main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
     <script>
       /* Open */
       function openNav() {
         document.getElementById("myNav").style.height = "100%";
+
+        for (let i = 1; i < 7; i++) {
+          id = "link" + i;
+          document.getElementById(id).style.transitionDelay = i - 1 + "50ms";
+          document.getElementById(id).style.transform = "translate(0,0)";
+        }
       }
 
       /* Close */
       function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
+        for (let i = 1; i < 7; i++) {
+          id = "link" + i;
+          delay = 4;
+          document.getElementById(id).style.transitionDelay =
+            delay - i + "50ms";
+          document.getElementById(id).style.transform = "translate(0,100%)";
+        }
+
+        setTimeout(closeNavWait, 1000);
+
+        //function definition
+        function closeNavWait() {
+          document.getElementById("myNav").style.height = "0%";
+        }
       }
     </script>
 
     <title>Rain City Websites</title>
   </head>
   <body>
-
     <!--  <div class="transition transition-3 is-active"></div> -->
     <div class="navbar-overlay-animation is-active"></div>
     <!-- ============================================ -->
@@ -40,55 +59,62 @@
     <header>
       <!-- Normal Nav -->
       <nav>
-        
         <div class="navbar">
           <div class="navbar-navigation">
             <!-- <a href="index.html"><img src="images/raincitylogo2.svg"></a> -->
-            <a class="navbar-transition" href="/"><span id="blue">RAIN </span> CITY</a> 
+            <a class="navbar-transition" href="/"
+              ><span id="blue">RAIN </span> CITY</a
+            >
           </div>
           <div class="navbar-menu">
             <div class="cl-effect-5">
               <nav class="cl-effect-5">
-                <a class="navbar-transition" href="services.html"><span data-hover="SERVICES">SERVICES</span></a>
-                <a class="navbar-transition" href="services.html"><span data-hover="WORK">WORK</span></a>
-                <a class="navbar-transition" href="about.html"><span data-hover="ABOUT">ABOUT</span></a>
-                <a class="navbar-transition" href="blog.html"><span data-hover="INSIGHTS">INSIGHTS</span></a>
-                <a class="navbar-transition" id="contact" href="contact.html">CONTACT</a>
+                <a class="navbar-transition" href="services.html"
+                  ><span data-hover="SERVICES">SERVICES</span></a
+                >
+                <a class="navbar-transition" href="services.html"
+                  ><span data-hover="WORK">WORK</span></a
+                >
+                <a class="navbar-transition" href="about.html"
+                  ><span data-hover="ABOUT">ABOUT</span></a
+                >
+                <a class="navbar-transition" href="blog.html"
+                  ><span data-hover="INSIGHTS">INSIGHTS</span></a
+                >
+                <a class="navbar-transition" id="contact" href="contact.html"
+                  >CONTACT</a
+                >
               </nav>
             </div>
-            
-            <!--
-            <ul>
-              <li><a href="services.html"><span data-hover="SERVICES">SERVICES</span></a></li>
-              <li><a class="flip-animate" href="services.html"><span data-hover="WORK">WORK</span></a></li>
-              <li><a class="flip-animate" href="about.html"><span data-hover="ABOUT">ABOUT</span></a></li>
-              <li><a class="flip-animate" href="blog.html"><span data-hover="INSIGHTS">INSIGHTS</span></a></li>
-              <li><a class="link" id="contact" href="contact.html">CONTACT US</a></li>
-            </ul>
-            -->
           </div>
           <div class="navbar-menu-mobile" onclick="openNav()">
-            <a class="link" >NAVIGATION</a>
-            <a><img src="images/menu.svg"></a>
+            <a class="link">NAVIGATION</a>
+            <a><img src="images/menu.svg" /></a>
           </div>
         </div>
       </nav>
     </header>
 
     <div id="myNav" class="overlay">
-      
       <div class="overlay-content">
         <div class="overlay-nav">
           <div class="navbar-overlay">
-            <a href="index.html"><span id="blue">RAIN </span> CITY</a> 
+            <a href="index.html"><span id="blue">RAIN </span> CITY</a>
           </div>
           <span class="closebtn" onclick="closeNav()">&times;</span>
         </div>
         <div class="overlay-links">
-          <a class="link" href="about.html">ABOUT</a></li>  
-          <a class="link" href="services.html">SERVICES</a></li>
-          <a class="link" href="blog.html">BLOG</a></li>
-          <a class="link" href="contact.html">CONTACT</a></li>
+          <h1><a id="link1" class="link" href="services.html">SERVICES</a></h1>
+          <h1><a id="link2" class="link" href="about.html">WORK</a></h1>
+          <h1><a id="link3" class="link" href="about.html">ABOUT</a></h1>
+          <h1><a id="link4" class="link" href="blog.html">INSIGHTS</a></h1>
+          <h1><a id="link5" class="link" href="contact.html">CONTACT</a></h1>
+          <h1>
+            <a id="link6" class="link-email" href="contact.html">
+              RAINCITYWEBSITES.COM
+              <img src="/images/icons8-circled-right-100.png" />
+            </a>
+          </h1>
         </div>
       </div>
     </div>
@@ -101,48 +127,38 @@
       <div class="container">
         <div class="left-section">
           <div class="hero-animation">
-            <div class="hero-header hero-transition">
-              RAISING THE
-            </div>
+            <div class="hero-header hero-transition">RAISING THE</div>
           </div>
           <div class="hero-animation">
-            <div class="hero-header hero-transition">
-              STANDARD FOR 
-            </div>
+            <div class="hero-header hero-transition">STANDARD FOR</div>
           </div>
           <div class="hero-animation">
-            <div class="hero-header hero-transition">
-              TECH SOLUTIONS
-            </div>
+            <div class="hero-header hero-transition">TECH SOLUTIONS</div>
           </div>
-          <br>
+          <br />
           <div class="hero-animation">
             <p class="hero-p hero-transition">
-              Scaling your business through a data driven approach is what we 
+              Scaling your business through a data driven approach is what we
             </p>
           </div>
           <div class="hero-animation">
             <p class="hero-p hero-transition">
-              specialize in.  Explore our different services below to see if we’d be a
+              specialize in. Explore our different services below to see if we’d
+              be a
             </p>
           </div>
           <div class="hero-animation">
-            <p class="hero-p hero-transition">
-              great fit for your company.
-            </p>
+            <p class="hero-p hero-transition">great fit for your company.</p>
           </div>
         </div>
         <div class="left-section-mobile">
-          <div class="hero-header">
-            RAISING THE
-          </div><div class="hero-header">
-            STANDARD FOR
-          </div>
-          <div class="hero-header">
-            TECH SOLUTIONS
-          </div>
+          <div class="hero-header">RAISING THE</div>
+          <div class="hero-header">STANDARD FOR</div>
+          <div class="hero-header">TECH SOLUTIONS</div>
           <p>
-            Scaling your business through a data driven approach is what we specialize in.  Explore our different services below to see if we’d be a great fit for your company.
+            Scaling your business through a data driven approach is what we
+            specialize in. Explore our different services below to see if we’d
+            be a great fit for your company.
           </p>
         </div>
         <div class="right-section">
@@ -175,73 +191,106 @@
           <div class="left-section-header">
             QUALITY OVER <span id="orange-header">QUANTITY</span>
           </div>
-          <p>We focus on the needs on each individual business and tailor content around what makes it unique. </p>
+          <p>
+            We focus on the needs on each individual business and tailor content
+            around what makes it unique.
+          </p>
         </div>
         <div class="right-section">
-          <button type="button" class="collapsible">CUSTOM WEB DEVELOPMENT</button>
+          <button type="button" class="collapsible">
+            CUSTOM WEB DEVELOPMENT
+          </button>
           <div class="content">
             <p>
-              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
             </p>
             <ul>
-              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
-              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
-              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
             </ul>
           </div>
-          <button type="button" class="collapsible">SEARCH ENGINE OPTIMIZATION</button>
+          <button type="button" class="collapsible">
+            SEARCH ENGINE OPTIMIZATION
+          </button>
           <div class="content">
             <p>
-              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
             </p>
             <ul>
-              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
-              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
-              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
             </ul>
           </div>
-          <button type="button" class="collapsible">THIRD-PARTY INTEGRATIONS</button>
+          <button type="button" class="collapsible">
+            THIRD-PARTY INTEGRATIONS
+          </button>
           <div class="content">
             <p>
-              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
             </p>
             <ul>
-              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
-              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
-              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
             </ul>
           </div>
           <button type="button" class="collapsible">WEBSITE MAINTENANCE</button>
           <div class="content">
             <p>
-              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
             </p>
             <ul>
-              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
-              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
-              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
             </ul>
           </div>
           <button type="button" class="collapsible">LIFETIME UPDATES</button>
           <div class="content">
             <p>
-              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
             </p>
             <ul>
-              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
-              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
-              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
             </ul>
           </div>
           <button type="button" class="collapsible">PLAYERS CLUB</button>
           <div class="content">
             <p>
-              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
             </p>
             <ul>
-              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
-              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
-              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
             </ul>
           </div>
         </div>
@@ -259,9 +308,7 @@
     </div>
 
     <div class="process-header">
-      <div class="process-header-container">
-        THE PROCESS
-      </div>
+      <div class="process-header-container">THE PROCESS</div>
     </div>
 
     <div id="process" class="section">
@@ -271,21 +318,30 @@
             <div class="number">01</div>
             <div class="right">
               <div class="header">DISCOVERY</div>
-              <p>Good designs stand the test of time.  Work closely with us to ensure that you are satisfied with the design of the project.</p>
+              <p>
+                Good designs stand the test of time. Work closely with us to
+                ensure that you are satisfied with the design of the project.
+              </p>
             </div>
           </div>
           <div class="left-section-element">
             <div class="number">02</div>
             <div class="right">
               <div class="header">DESIGN</div>
-              <p>Good designs stand the test of time.  Work closely with us to ensure that you are satisfied with the design of the project.</p>
+              <p>
+                Good designs stand the test of time. Work closely with us to
+                ensure that you are satisfied with the design of the project.
+              </p>
             </div>
           </div>
           <div class="left-section-element-last">
             <div class="number">03</div>
             <div class="right">
               <div class="header">DEVELOPMENT</div>
-              <p>Good designs stand the test of time.  Work closely with us to ensure that you are satisfied with the design of the project.</p>
+              <p>
+                Good designs stand the test of time. Work closely with us to
+                ensure that you are satisfied with the design of the project.
+              </p>
             </div>
           </div>
         </div>
@@ -293,41 +349,70 @@
           <div class="block">
             <div class="right-section-element">
               <div class="header">DISCOVERY CALL</div>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline. 
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <p>
+                The discovery call is an introductory meeting that helps us get
+                to know you and understand your business, business goals,
+                objectives, budget, and timeline. During this call, we will
+                scope your project to see how we can help. A further discovery
+                call may be scheduled with you if we have any follow-up
+                questions.
               </p>
             </div>
             <div class="right-section-element">
               <div class="header">CONTRACT REVIEW</div>
-              <p>Once both parties approve and sign off on the scope of work, timeline, and budget proposal, we will send over a service agreement for you to review and e-sign. 
-                At this time, we will also sign NDAs for your project if we discussed them beforehand.
+              <p>
+                Once both parties approve and sign off on the scope of work,
+                timeline, and budget proposal, we will send over a service
+                agreement for you to review and e-sign. At this time, we will
+                also sign NDAs for your project if we discussed them beforehand.
               </p>
             </div>
           </div>
           <div class="block">
             <div class="right-section-element">
               <div class="header">WIREFRAME & UI/UX DESIGN</div>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <p>
+                The discovery call is an introductory meeting that helps us get
+                to know you and understand your business, business goals,
+                objectives, budget, and timeline. During this call, we will
+                scope your project to see how we can help. A further discovery
+                call may be scheduled with you if we have any follow-up
+                questions.
               </p>
             </div>
             <div class="right-section-element">
               <div class="header">REVIEWS & REVISIONS</div>
-              <p>You will always be in control and we always appreciate your feedback. Follow the whole process with live links from Figma. We usually provide 3 collaborative revisions per page.
-                Once the design is complete and you are happy with everything, you will sign off on the final design. This finalized design then moves on to development.
+              <p>
+                You will always be in control and we always appreciate your
+                feedback. Follow the whole process with live links from Figma.
+                We usually provide 3 collaborative revisions per page. Once the
+                design is complete and you are happy with everything, you will
+                sign off on the final design. This finalized design then moves
+                on to development.
               </p>
             </div>
           </div>
           <div class="block">
             <div class="right-section-element">
               <div class="header">PIXEL-PERFECT DEVELOPMENT</div>
-              <p>Our developers take the finalized high-fidelity designs to development. Every development is built to follow only the highest internet standards. Whether it is Webflow or custom development, every page will be structured for your ease-of-use in mind. 
-                You will be able to follow the whole development phase with demo links provided by your project manager.
+              <p>
+                Our developers take the finalized high-fidelity designs to
+                development. Every development is built to follow only the
+                highest internet standards. Whether it is Webflow or custom
+                development, every page will be structured for your ease-of-use
+                in mind. You will be able to follow the whole development phase
+                with demo links provided by your project manager.
               </p>
             </div>
             <div class="right-section-element">
               <div class="header">SEO OPTIMIZATIONS</div>
-              <p>We take care of on-page SEO for you. Every project we develop includes: Our developers take the finalized high-fidelity designs to development. Every development is built to follow only the highest internet standards. Whether it is Webflow or custom development, every page will be structured for your ease-of-use in mind. 
+              <p>
+                We take care of on-page SEO for you. Every project we develop
+                includes: Our developers take the finalized high-fidelity
+                designs to development. Every development is built to follow
+                only the highest internet standards. Whether it is Webflow or
+                custom development, every page will be structured for your
+                ease-of-use in mind.
               </p>
             </div>
           </div>
@@ -338,69 +423,99 @@
             <div class="right">
               <div class="number">01</div>
               <div class="header">DISCOVERY</div>
-              <p>Let's get to know each other. Allow us to understand your current and future business goals, visions, and objectives to help you reach your goals.</p>
+              <p>
+                Let's get to know each other. Allow us to understand your
+                current and future business goals, visions, and objectives to
+                help you reach your goals.
+              </p>
             </div>
-            
           </div>
           <div class="right-section-element">
             <div class="header">DISCOVERY CALL</div>
-            <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline. 
-              During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+            <p>
+              The discovery call is an introductory meeting that helps us get to
+              know you and understand your business, business goals, objectives,
+              budget, and timeline. During this call, we will scope your project
+              to see how we can help. A further discovery call may be scheduled
+              with you if we have any follow-up questions.
             </p>
           </div>
           <div class="right-section-element">
             <div class="header">CONTRACT REVIEW</div>
-            <p>Once both parties approve and sign off on the scope of work, timeline, and budget proposal, we will send over a service agreement for you to review and e-sign. 
-              At this time, we will also sign NDAs for your project if we discussed them beforehand.
+            <p>
+              Once both parties approve and sign off on the scope of work,
+              timeline, and budget proposal, we will send over a service
+              agreement for you to review and e-sign. At this time, we will also
+              sign NDAs for your project if we discussed them beforehand.
             </p>
           </div>
           <div class="left-section-element">
-            
             <div class="right">
               <div class="number">02</div>
               <div class="header">DESIGN</div>
-              <p>Good designs stand the test of time.  Work closely with us to ensure that you are satisfied with the design of the project.</p>
-              
+              <p>
+                Good designs stand the test of time. Work closely with us to
+                ensure that you are satisfied with the design of the project.
+              </p>
             </div>
-            
           </div>
           <div class="right-section-element">
             <div class="header">WIREFRAME & UI/UX DESIGN</div>
-            <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-              During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+            <p>
+              The discovery call is an introductory meeting that helps us get to
+              know you and understand your business, business goals, objectives,
+              budget, and timeline. During this call, we will scope your project
+              to see how we can help. A further discovery call may be scheduled
+              with you if we have any follow-up questions.
             </p>
           </div>
           <div class="right-section-element">
             <div class="header">REVIEWS & REVISIONS</div>
-            <p>You will always be in control and we always appreciate your feedback. Follow the whole process with live links from Figma. We usually provide 3 collaborative revisions per page.
-              Once the design is complete and you are happy with everything, you will sign off on the final design. This finalized design then moves on to development.
+            <p>
+              You will always be in control and we always appreciate your
+              feedback. Follow the whole process with live links from Figma. We
+              usually provide 3 collaborative revisions per page. Once the
+              design is complete and you are happy with everything, you will
+              sign off on the final design. This finalized design then moves on
+              to development.
             </p>
           </div>
           <div class="left-section-element">
-            
             <div class="right">
               <div class="number">03</div>
               <div class="header">DEVELOPMENT</div>
-              <p>Good designs stand the test of time.  Work closely with us to ensure that you are satisfied with the design of the project.</p>
+              <p>
+                Good designs stand the test of time. Work closely with us to
+                ensure that you are satisfied with the design of the project.
+              </p>
             </div>
-            
           </div>
           <div class="right-section-element">
             <div class="header">PIXEL-PERFECT DEVELOPMENT</div>
-            <p>Our developers take the finalized high-fidelity designs to development. Every development is built to follow only the highest internet standards. Whether it is Webflow or custom development, every page will be structured for your ease-of-use in mind. 
-              You will be able to follow the whole development phase with demo links provided by your project manager.
+            <p>
+              Our developers take the finalized high-fidelity designs to
+              development. Every development is built to follow only the highest
+              internet standards. Whether it is Webflow or custom development,
+              every page will be structured for your ease-of-use in mind. You
+              will be able to follow the whole development phase with demo links
+              provided by your project manager.
             </p>
           </div>
           <div class="right-section-element">
             <div class="header">SEO OPTIMIZATIONS</div>
-            <p>We take care of on-page SEO for you. Every project we develop includes: Our developers take the finalized high-fidelity designs to development. Every development is built to follow only the highest internet standards. Whether it is Webflow or custom development, every page will be structured for your ease-of-use in mind. 
+            <p>
+              We take care of on-page SEO for you. Every project we develop
+              includes: Our developers take the finalized high-fidelity designs
+              to development. Every development is built to follow only the
+              highest internet standards. Whether it is Webflow or custom
+              development, every page will be structured for your ease-of-use in
+              mind.
             </p>
           </div>
         </div>
         <div class="right-section-mobile"></div>
       </div>
     </div>
-
 
     <!-- ============================================ -->
     <!--                   FOOTER                     -->
@@ -412,7 +527,7 @@
         <div class="right-section">CONTACT</div>
       </div>
     </section>
-    
+
     <footer id="footer">
       <div class="container">
         <div class="left-section">
@@ -420,21 +535,24 @@
           <div class="header">RAIN CITY WEBSITES</div>
           -->
           <p>
-            Rain City Websites is proud to serve the local Seattle community and more. We have been helping small businesses thrive by providing affordable options for websites. Get in contact and learn how you can optimize your business today!
+            Rain City Websites is proud to serve the local Seattle community and
+            more. We have been helping small businesses thrive by providing
+            affordable options for websites. Get in contact and learn how you
+            can optimize your business today!
           </p>
           <div class="footer-email-mobile">RAINCITYWEBSITES@GMAIL.COM</div>
 
           <div class="cl-effect-5-footer">
-            <a href="services.html"><span data-hover="SERVICES">SERVICES</span></a>
+            <a href="services.html"
+              ><span data-hover="SERVICES">SERVICES</span></a
+            >
             <a href="services.html"><span data-hover="WORK">WORK</span></a>
             <a href="about.html"><span data-hover="ABOUT">ABOUT</span></a>
             <a href="blog.html"><span data-hover="INSIGHTS">INSIGHTS</span></a>
             <a href="blog.html"><span data-hover="CONTACT">CONTACT</span></a>
           </div>
 
-          
           <div class="header">RAINCITYWEBSITES@GMAIL.COM</div>
-          
         </div>
         <div class="right-section">
           <div class="email-form">
@@ -447,7 +565,10 @@
             />
           </div>
           <p>
-            Rain City Websites is proud to serve the local Seattle community and more. We have been helping small businesses thrive by providing affordable options for websites. Get in contact and learn how you can optimize your business today!
+            Rain City Websites is proud to serve the local Seattle community and
+            more. We have been helping small businesses thrive by providing
+            affordable options for websites. Get in contact and learn how you
+            can optimize your business today!
           </p>
           <div class="footer-services">
             <div class="footer-services-section">
@@ -477,15 +598,13 @@
 
     <div class="socials">
       <div class="container">
-        <div class="socials-left">
-          RAIN CITY LLC
-        </div>
+        <div class="socials-left">RAIN CITY LLC</div>
         <div class="socials-middle">
-          <a href="about.html"><img src="images/reddit.svg"></a>
-          <a href="about.html"><img src="images/linkedin.svg"></a>
-          <a href="about.html"><img src="images/Twitter.svg"></a>
-          <a href="about.html"><img src="images/instagram.svg"></a>
-          <a href="about.html"><img src="images/facebook.svg"></a>
+          <a href="about.html"><img src="images/reddit.svg" /></a>
+          <a href="about.html"><img src="images/linkedin.svg" /></a>
+          <a href="about.html"><img src="images/Twitter.svg" /></a>
+          <a href="about.html"><img src="images/instagram.svg" /></a>
+          <a href="about.html"><img src="images/facebook.svg" /></a>
         </div>
         <div class="socials-right">
           <a href="about.html">TERMS</a>
@@ -495,22 +614,21 @@
       </div>
     </div>
 
-
     <script>
       var coll = document.getElementsByClassName("collapsible");
       var i;
-      
+
       for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
+        coll[i].addEventListener("click", function () {
           this.classList.toggle("active");
           var content = this.nextElementSibling;
-          if (content.style.maxHeight){
+          if (content.style.maxHeight) {
             content.style.maxHeight = null;
           } else {
             content.style.maxHeight = content.scrollHeight + "px";
-          } 
+          }
         });
       }
-      </script>
+    </script>
   </body>
 </html>
