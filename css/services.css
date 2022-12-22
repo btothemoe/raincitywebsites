@@ -270,17 +270,17 @@
   }
 
   #OurServices .container .left-section {
-    width: 80%;
+    width: 100%;
   }
 
   #OurServices .container .left-section p {
-    font-size: 2.8vw;
-    width: 90%;
+    font-size: 3.8vw;
+    width: 80%;
     padding-bottom: 40px;
   }
 
   #OurServices .container .left-section .left-section-header {
-    font-size: 7.5vw;
+    font-size: 9.5vw;
     font-weight: bold;
   }
 
@@ -299,13 +299,14 @@
   #OurServices .container .right-section .collapsible {
     width: 100%;
     font-weight: bold;
-    font-size: min(16px, 3vw);
+    font-size: min(18px, 4vw);
     height: 60px;
     text-align: left;
     border: none;
     border-top: 2px solid rgb(214, 214, 214);
     cursor: pointer;
     padding-left: 10px;
+    color: black;
   }
 
   .active,
@@ -328,7 +329,7 @@
   .content {
     padding-left: 10px;
     padding-right: 20px;
-    font-size: min(16px, 3vw);
+    font-size: min(16px, 4vw);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
