@@ -171,39 +171,78 @@
 
     <section id="OurServices" class="section">
       <div class="container">
-        <div class="header">
-          SERVICES WE OFFER
+        <div class="left-section">
+          <div class="left-section-header">
+            QUALITY OVER <span id="orange-header">QUANTITY</span>
+          </div>
+          <p>We focus on the needs on each individual business and tailor content around what makes it unique. </p>
         </div>
-        <div class="services-grid">
-          <div class="services-grid-element">
-            <img src="images/services_icon1.svg">
-            <div class="element-header">Custom Web Development</div>
-            <p>Our professional web development team can build high-performing, scalable custom web applications that match your business requirements and significantly increase customer engagement.</p>
+        <div class="right-section">
+          <button type="button" class="collapsible">CUSTOM WEB DEVELOPMENT</button>
+          <div class="content">
+            <p>
+              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+            </p>
+            <ul>
+              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
+              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+            </ul>
           </div>
-          <div class="services-grid-element">
-            <img src="images/services_icon1.svg">
-            <div class="element-header">Web Support and Maintenance</div>
-            <p>Our cooperation with you won't end once your web development project goes live. Web development services by COAX Software include maintenance and support to make sure your web solution is always up and running.</p>
+          <button type="button" class="collapsible">SEARCH ENGINE OPTIMIZATION</button>
+          <div class="content">
+            <p>
+              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+            </p>
+            <ul>
+              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
+              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+            </ul>
           </div>
-          <div class="services-grid-element">
-            <img src="images/services_icon1.svg">
-            <div class="element-header">eCommerce Development</div>
-            <p>Deliver personalized shopping experiences to your customers by leveraging our eCommerce web development services for B2B, B2C, and C2C.</p>
+          <button type="button" class="collapsible">THIRD-PARTY INTEGRATIONS</button>
+          <div class="content">
+            <p>
+              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+            </p>
+            <ul>
+              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
+              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+            </ul>
           </div>
-          <div class="services-grid-element">
-            <img src="images/services_icon1.svg">
-            <div class="element-header">Third-Party Integrations</div>
-            <p>We'll help you enhance the capability of your web apps through integration with various third-party plugins serving BI, analytics, social media, and more.</p>
+          <button type="button" class="collapsible">WEBSITE MAINTENANCE</button>
+          <div class="content">
+            <p>
+              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+            </p>
+            <ul>
+              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
+              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+            </ul>
           </div>
-          <div class="services-grid-element">
-            <img src="images/services_icon1.svg">
-            <div class="element-header">Enterprise Web Development</div>
-            <p>Increase the operational efficiency of your enterprise by creating interactive, fluid, and easy-to-use custom enterprise-grade web applications.</p>
+          <button type="button" class="collapsible">LIFETIME UPDATES</button>
+          <div class="content">
+            <p>
+              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+            </p>
+            <ul>
+              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
+              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+            </ul>
           </div>
-          <div class="services-grid-element">
-            <img src="images/services_icon1.svg">
-            <div class="element-header">Legacy App Upgrade</div>
-            <p>We help you modernize and upgrade your legacy apps without disturbing your business processes using the right middleware components.</p>
+          <button type="button" class="collapsible">PLAYERS CLUB</button>
+          <div class="content">
+            <p>
+              We meticulously write the code line by line. This gives us much more control over the design, and the website performs lightning fast because there's no bloated or messy code that slows it down.
+            </p>
+            <ul>
+              <li><img src="/images/icons8-done.svg">Performance Optimized</li>
+              <li><img src="/images/icons8-done.svg">Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg">Matches design 1 : 1</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -446,5 +485,23 @@
         </div>
       </div>
     </div>
+
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
   </body>
 </html>

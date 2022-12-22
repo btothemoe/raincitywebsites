@@ -262,50 +262,108 @@
     flex-direction: column;
   }
 
-  #OurServices .container .header {
-    font-size: 8vw;
-    font-weight: bold;
-    padding-bottom: 50px;
-  }
-
-  #OurServices .container .services-grid {
-    width: 100%;
+  #OurServices .container {
+    width: 95%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  #OurServices .container .services-grid .services-grid-element {
-    height: 300px;
-    border: 1px solid rgb(214, 214, 214);
-    margin-bottom: 5%;
-    padding: 15px;
-    background-color: #fafafa;
+  #OurServices .container .left-section {
+    width: 80%;
   }
 
-  #OurServices .container .services-grid .services-grid-element img {
-    width: 15%;
+  #OurServices .container .left-section p {
+    font-size: 2.8vw;
+    width: 90%;
+    padding-bottom: 40px;
   }
 
-  #OurServices
-    .container
-    .services-grid
-    .services-grid-element
-    .element-header {
+  #OurServices .container .left-section .left-section-header {
+    font-size: 7.5vw;
     font-weight: bold;
-    font-size: 5.5vw;
-    padding-top: 20px;
   }
 
-  #OurServices .container .services-grid .services-grid-element p {
-    font-size: 4vw;
-    padding-top: 10px;
+  #OurServices .container .left-section .left-section-header #orange-header {
+    color: #f18200;
+  }
+
+  #OurServices .container .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid rgb(214, 214, 214);
+  }
+
+  #OurServices .container .right-section .collapsible {
+    width: 100%;
+    font-weight: bold;
+    font-size: min(16px, 3vw);
+    height: 60px;
+    text-align: left;
+    border: none;
+    border-top: 2px solid rgb(214, 214, 214);
+    cursor: pointer;
+    padding-left: 10px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: rgb(225, 225, 225);
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  #OurServices .container .right-section .collapsible:after {
+    content: "\002B";
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .content {
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: min(16px, 3vw);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(225, 225, 225);
+  }
+
+  .content li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    padding-bottom: 10px;
+  }
+
+  .content li img {
+    width: 25px;
+    padding-right: 10px;
+  }
+
+  #OurServices .container .right-section .right-section-container {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid rgb(214, 214, 214);
   }
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 1023px) {
+@media screen and (min-width: 650px) and (max-width: 1023px) {
   body,
   html {
     font-family: "HelveticaNeue", sans-serif;
@@ -328,48 +386,98 @@
   #OurServices .container {
     width: 95%;
     display: flex;
-    flex-direction: column;
-  }
-
-  #OurServices .container .header {
-    font-size: 3vw;
-    font-weight: bold;
-    padding-bottom: 50px;
-  }
-
-  #OurServices .container .services-grid {
-    width: 100%;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
 
-  #OurServices .container .services-grid .services-grid-element {
-    height: 300px;
-    border: 1px solid rgb(214, 214, 214);
-    margin-bottom: 5%;
-    padding: 15px;
-    background-color: #fafafa;
+  #OurServices .container .left-section {
+    width: 50%;
   }
 
-  #OurServices .container .services-grid .services-grid-element img {
-    width: 15%;
+  #OurServices .container .left-section p {
+    font-size: 1.8vw;
+    width: 80%;
   }
 
-  #OurServices
-    .container
-    .services-grid
-    .services-grid-element
-    .element-header {
+  #OurServices .container .left-section .left-section-header {
+    font-size: 5.5vw;
     font-weight: bold;
-    font-size: 2.5vw;
-    padding-top: 20px;
   }
 
-  #OurServices .container .services-grid .services-grid-element p {
-    font-size: 2vw;
-    padding-top: 10px;
+  #OurServices .container .left-section .left-section-header #orange-header {
+    color: #f18200;
+  }
+
+  #OurServices .container .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    border-bottom: 2px solid rgb(214, 214, 214);
+  }
+
+  #OurServices .container .right-section .collapsible {
+    width: 100%;
+    font-weight: bold;
+    font-size: min(16px, 2vw);
+    height: 80px;
+    text-align: left;
+    border: none;
+    border-top: 2px solid rgb(214, 214, 214);
+    cursor: pointer;
+    padding-left: 10px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: rgb(225, 225, 225);
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  #OurServices .container .right-section .collapsible:after {
+    content: "\002B";
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .content {
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: min(16px, 2vw);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(225, 225, 225);
+  }
+
+  .content li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    padding-bottom: 10px;
+  }
+
+  .content li img {
+    width: 25px;
+    padding-right: 10px;
+  }
+
+  #OurServices .container .right-section .right-section-container {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid rgb(214, 214, 214);
   }
 }
 
@@ -401,50 +509,96 @@
   #OurServices .container {
     width: 95%;
     display: flex;
-    flex-direction: column;
-  }
-
-  #OurServices .container .header {
-    font-size: 3vw;
-    font-weight: bold;
-    padding-bottom: 50px;
-  }
-
-  #OurServices .container .services-grid {
-    width: 100%;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
 
-  #OurServices .container .services-grid .services-grid-element {
-    width: 30%;
-    height: 400px;
-    border: 1px solid rgb(214, 214, 214);
-    margin-bottom: 2%;
-    padding: 15px;
-    background-color: #fafafa;
+  #OurServices .container .left-section {
+    width: 50%;
   }
 
-  #OurServices .container .services-grid .services-grid-element img {
-    width: 15%;
+  #OurServices .container .left-section p {
+    font-size: 1.3vw;
+    width: 70%;
   }
 
-  #OurServices
-    .container
-    .services-grid
-    .services-grid-element
-    .element-header {
+  #OurServices .container .left-section .left-section-header {
+    font-size: 4.5vw;
     font-weight: bold;
-    font-size: 1.5vw;
-    font-size: min(1.5vw, 30px);
-    padding-top: 20px;
   }
 
-  #OurServices .container .services-grid .services-grid-element p {
-    font-size: min(1.3vw, 20px);
-    padding-top: 10px;
+  #OurServices .container .left-section .left-section-header #orange-header {
+    color: #f18200;
+  }
+
+  #OurServices .container .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    border-bottom: 2px solid rgb(214, 214, 214);
+  }
+
+  #OurServices .container .right-section .collapsible {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 80px;
+    text-align: left;
+    border: none;
+    border-top: 2px solid rgb(214, 214, 214);
+    cursor: pointer;
+    padding-left: 10px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: rgb(225, 225, 225);
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  #OurServices .container .right-section .collapsible:after {
+    content: "\002B";
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .content {
+    padding-left: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(225, 225, 225);
+  }
+
+  .content li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    padding-bottom: 10px;
+  }
+
+  .content li img {
+    width: 25px;
+    padding-right: 10px;
+  }
+
+  #OurServices .container .right-section .right-section-container {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid rgb(214, 214, 214);
   }
 }
 

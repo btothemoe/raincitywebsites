@@ -602,16 +602,22 @@ body {
   }
 
   .navbar-menu #contact {
-    background-color: #3056c5;
+    background-image: linear-gradient(to right, #f18200 50%, #3056c5 0);
+    background-position: right;
     border-radius: 20px;
     padding: 10px;
     padding-bottom: 13px;
     padding-left: 15px;
     padding-right: 15px;
     color: white;
-
     margin-right: 0px;
     margin-top: 20px;
+    background-size: 200% 200%;
+    transition: background-position 0.2s ease-in-out;
+  }
+
+  .navbar-menu #contact:hover {
+    background-position: left;
   }
 
   .navbar-menu-mobile {
