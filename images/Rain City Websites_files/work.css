@@ -1,0 +1,439 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #hero {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #hero .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  #hero .left-section-mobile {
+    width: 100%;
+    height: 35vh;
+    /*
+      background-color: rgb(223, 223, 253);
+      border: 1px dashed;
+      */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  #hero .right-section {
+    width: 95%;
+    height: 30vh;
+    /*background-color: rgb(204, 204, 252);
+      border: 1px dashed;
+      */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  #hero .left-section-mobile .hero-header {
+    font-size: 8.5vw;
+    /*font-size: 35px;*/
+    line-height: 95%;
+    font-weight: bold;
+  }
+
+  #hero .left-section-mobile p {
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  #hero .left-section {
+    display: none;
+  }
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 1023px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #hero {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #hero .container {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+  }
+  #hero .left-section {
+    width: 55%;
+    height: 50vh;
+    /*
+      background-color: rgb(223, 223, 253);
+      border: 1px dashed;
+      */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  #hero .right-section {
+    width: 45%;
+    height: 50vh;
+    /*background-color: rgb(204, 204, 252);
+      border: 1px dashed;
+      */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  #hero .left-section .hero-header {
+    font-size: 4.5vw;
+    /*font-size: 45px;*/
+    line-height: 95%;
+    font-weight: bold;
+  }
+
+  #hero .left-section p {
+    font-size: 16px;
+    line-height: 125%;
+    width: 70%;
+  }
+
+  #hero .left-section-mobile {
+    display: none;
+  }
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #hero {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #hero .container {
+    display: flex;
+    flex-direction: row;
+    width: 1400px;
+    margin-left: 27px;
+    margin-right: 27px;
+  }
+
+  #hero .left-section {
+    width: 55%;
+    height: 70vh;
+    /*
+      background-color: rgb(223, 223, 253);
+      border: 1px dashed;
+      */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  #hero .right-section {
+    width: 45%;
+    height: 70vh;
+    /*background-color: rgb(204, 204, 252);
+      border: 1px dashed;
+      */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    padding-top: 35px;
+  }
+
+  .hero-header {
+    font-size: 4.5vw;
+    /*font-size: 75px;*/
+    line-height: 95%;
+    font-weight: bold;
+    position: relative;
+    transition: 0.5s ease-out;
+    top: 0px;
+    opacity: 1;
+  }
+
+  #hero .hero-animation {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-transition {
+    top: 80% !important;
+    opacity: 0;
+  }
+
+  #hero p {
+    font-size: 20px;
+    line-height: 125%;
+    width: 80%;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top: 0px;
+    margin: 0px;
+  }
+
+  #hero .left-section-mobile {
+    display: none;
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+/*-- -------------------------- -->
+<---          PORTFOLIO           -->
+<--- -------------------------- -*/
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 1023px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+
+  #portfolio .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #portfolio .container .left-section {
+    width: 30%;
+    display: initial;
+  }
+
+  #portfolio .container .left-section .sticky-elements {
+    width: 100%;
+    position: sticky;
+    top: 100px;
+  }
+
+  #portfolio .container .left-section .sticky-elements .title {
+    font-weight: bold;
+    font-size: 3vw;
+    padding-bottom: 20px;
+  }
+
+  #portfolio .container .left-section .sticky-elements .link {
+    padding-bottom: 20px;
+  }
+
+  #portfolio .container .left-section .sticky-elements .contact {
+    padding-top: 300px;
+  }
+
+  #portfolio .container .left-section .sticky-elements a {
+    font-weight: bold;
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: black;
+  }
+
+  #portfolio .container .left-section .cl-effect-5-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Effect 5: same word slide in */
+  #portfolio .container .left-section .cl-effect-5-body a {
+    overflow: hidden;
+    height: 1em;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  #portfolio .container .left-section .cl-effect-5-body a:hover {
+    color: #f18200;
+  }
+
+  #portfolio .container .left-section .cl-effect-5-body a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  #portfolio .container .left-section .cl-effect-5-body img {
+    padding-left: 15px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #portfolio .container .left-section .cl-effect-5-body a span::before {
+    position: absolute;
+    top: -100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  #portfolio .container .left-section .cl-effect-5-body a:hover span,
+  #portfolio .container .left-section .cl-effect-5-body a:focus span {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  #portfolio .container .right-section {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1%;
+    flex-wrap: wrap;
+  }
+
+  #portfolio .container .right-section .portfolio-link {
+    width: 49%;
+    padding-bottom: 80px;
+    text-decoration: none;
+  }
+
+  #portfolio .container .right-section .portfolio-link .title {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #portfolio .container .right-section .portfolio-link .subtitles {
+    color: rgb(95, 95, 95);
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+  }
+
+  #portfolio .container .right-section .portfolio-link span {
+    color: rgb(95, 95, 95);
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+  }
+
+  #portfolio .hover-container {
+    position: relative;
+  }
+
+  #portfolio .overlay-hover {
+    display: initial;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008cba;
+    overflow: hidden;
+    width: 0%;
+    height: 100%;
+    transition: 0.5s ease;
+  }
+
+  #portfolio a:hover .overlay-hover {
+    width: 100%;
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
