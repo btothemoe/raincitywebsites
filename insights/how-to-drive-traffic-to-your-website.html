@@ -21,11 +21,30 @@
     /* Open */
     function openNav() {
       document.getElementById("myNav").style.height = "100%";
+
+      for (let i = 1; i < 7; i++) {
+        id = "link" + i;
+        document.getElementById(id).style.transitionDelay = i - 1 + "50ms";
+        document.getElementById(id).style.transform = "translate(0,0)";
+      }
     }
 
     /* Close */
     function closeNav() {
-      document.getElementById("myNav").style.height = "0%";
+      for (let i = 1; i < 7; i++) {
+        id = "link" + i;
+        delay = 4;
+        document.getElementById(id).style.transitionDelay =
+          delay - i + "50ms";
+        document.getElementById(id).style.transform = "translate(0,100%)";
+      }
+
+      setTimeout(closeNavWait, 1000);
+
+      //function definition
+      function closeNavWait() {
+        document.getElementById("myNav").style.height = "0%";
+      }
     }
   </script>
 
@@ -132,9 +151,8 @@
         </div>
       </div>
       <div class="left-section-mobile">
-        <div class="hero-header">CONSISTENTLY</div>
-        <div class="hero-header">PUSHING THE</div>
-        <div class="hero-header">ENVELOPE</div>
+        <p class="hero-p">Bryan Moore &nbsp &#9679 &nbsp 12.24.2022 &nbsp &#9679 &nbsp 10 min.</p>
+        <div class="hero-header">HOW TO DRIVE TRAFFIC TO YOUR WEBSITE</div>
         <p>
           Scaling your business through a data driven approach is what we
           specialize in. Explore our different services below to see if we’d
@@ -158,6 +176,7 @@
   <!--                   BLOG                       -->
   <!-- ============================================ -->
   <div class="navbar-overlay-animation2 is-active"></div>
+
     <div id="section-title">
       <div class="container">
         <div class="left-section">Latest Articles</div>
@@ -168,56 +187,167 @@
     <section id="blog" class="section">
       <div class="container">
         <div class="left-section">
-          
           <div class="categories">
-            <div class="header">HOW TO DRIVE TRAFFIC TO YOUR WEBSITE</div>
-            <div class="category-element">
-
-              <div class="category-header">News</div>
+            <div class="header">ADVANTAGES OF DEVELOPING YOUR OWN WEBSITE</div>
+            <div class="contact">
+              
+              <div class="cl-effect-5-body">
+                
+                <a href="services.html"
+                  ><span data-hover="CONTACT US">CONTACT US</span></a
+                >
+                <img src="/images/icons8-circled-right-100.png" />
+              </div>
             </div>
-
           </div>
         </div>
         <div class="right-section">
           <div class="blog-page-element">
             <div class="right">
-              <div class="sub-header">11.22.2022  Bryan Moore</div>
-              <div class="header">Advantages of Developing your own Website</div>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <div class="header">
+                Advantages of Developing your own Website
+              </div>
+              <p>
+                There are many advantages to coding your own website, rather
+                than using a pre-made template or a website builder. Here are
+                just a few:
               </p>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <p>
+                Increased control and customization: When you code your own
+                website, you have complete control over every aspect of its
+                design and functionality. This allows you to create a unique and
+                personalized experience for your users. You can also easily make
+                changes to your website as your needs evolve.
               </p>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <p>
+                Better performance: Websites that are coded from scratch tend to
+                be leaner and more efficient than those built using pre-made
+                templates or website builders. This means they will load faster
+                and be more responsive, providing a better user experience.
               </p>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <p>
+                Enhanced security: When you code your own website, you are in
+                control of the security measures you put in place. This can help
+                to protect your website and your users’ data from potential
+                security threats.
               </p>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <p>
+                Improved SEO: Search engine optimization (SEO) is crucial for
+                ensuring that your website appears high in search engine
+                results. When you code your own website, you can ensure that it
+                is optimized for SEO from the ground up, helping to improve its
+                visibility and drive more traffic to your site.
+              </p>
+              <p>
+                Enhanced credibility: Coding your own website shows that you are
+                dedicated and knowledgeable about your business. This can help
+                to establish trust and credibility with your users, which is
+                essential for building a successful online presence.
+              </p>
+              <p>
+                In conclusion, coding your own website can provide you with
+                increased control, better performance, enhanced security,
+                improved SEO, and enhanced credibility. While it may require
+                some time and effort, the benefits of coding your own website
+                are well worth it.
               </p>
             </div>
           </div>
           <div class="blog-page-element">
             <div class="right">
-              <div class="sub-header">11.22.2022  Bryan Moore</div>
-              <div class="header">Advantages of Developing your own Website</div>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <div class="header">
+                Advantages of Developing your own Website
+              </div>
+              <p>
+                The discovery call is an introductory meeting that helps us get
+                to know you and understand your business, business goals,
+                objectives, budget, and timeline. During this call, we will
+                scope your project to see how we can help. A further discovery
+                call may be scheduled with you if we have any follow-up
+                questions.
               </p>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <p>
+                The discovery call is an introductory meeting that helps us get
+                to know you and understand your business, business goals,
+                objectives, budget, and timeline. During this call, we will
+                scope your project to see how we can help. A further discovery
+                call may be scheduled with you if we have any follow-up
+                questions.
               </p>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <p>
+                The discovery call is an introductory meeting that helps us get
+                to know you and understand your business, business goals,
+                objectives, budget, and timeline. During this call, we will
+                scope your project to see how we can help. A further discovery
+                call may be scheduled with you if we have any follow-up
+                questions.
               </p>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <p>
+                The discovery call is an introductory meeting that helps us get
+                to know you and understand your business, business goals,
+                objectives, budget, and timeline. During this call, we will
+                scope your project to see how we can help. A further discovery
+                call may be scheduled with you if we have any follow-up
+                questions.
               </p>
-              <p>The discovery call is an introductory meeting that helps us get to know you and understand your business, business goals, objectives, budget, and timeline.
-                During this call, we will scope your project to see how we can help. A further discovery call may be scheduled with you if we have any follow-up questions.
+              <p>
+                The discovery call is an introductory meeting that helps us get
+                to know you and understand your business, business goals,
+                objectives, budget, and timeline. During this call, we will
+                scope your project to see how we can help. A further discovery
+                call may be scheduled with you if we have any follow-up
+                questions.
+              </p>
+            </div>
+          </div>
+          <div class="blog-page-element">
+            <div class="right">
+              <div class="header">
+                Advantages of Developing your own Website
+              </div>
+              <p>
+                There are many advantages to coding your own website, rather
+                than using a pre-made template or a website builder. Here are
+                just a few:
+              </p>
+              <p>
+                Increased control and customization: When you code your own
+                website, you have complete control over every aspect of its
+                design and functionality. This allows you to create a unique and
+                personalized experience for your users. You can also easily make
+                changes to your website as your needs evolve.
+              </p>
+              <p>
+                Better performance: Websites that are coded from scratch tend to
+                be leaner and more efficient than those built using pre-made
+                templates or website builders. This means they will load faster
+                and be more responsive, providing a better user experience.
+              </p>
+              <p>
+                Enhanced security: When you code your own website, you are in
+                control of the security measures you put in place. This can help
+                to protect your website and your users’ data from potential
+                security threats.
+              </p>
+              <p>
+                Improved SEO: Search engine optimization (SEO) is crucial for
+                ensuring that your website appears high in search engine
+                results. When you code your own website, you can ensure that it
+                is optimized for SEO from the ground up, helping to improve its
+                visibility and drive more traffic to your site.
+              </p>
+              <p>
+                Enhanced credibility: Coding your own website shows that you are
+                dedicated and knowledgeable about your business. This can help
+                to establish trust and credibility with your users, which is
+                essential for building a successful online presence.
+              </p>
+              <p>
+                In conclusion, coding your own website can provide you with
+                increased control, better performance, enhanced security,
+                improved SEO, and enhanced credibility. While it may require
+                some time and effort, the benefits of coding your own website
+                are well worth it.
               </p>
             </div>
           </div>
@@ -316,11 +446,11 @@
           RAIN CITY LLC
         </div>
         <div class="socials-middle">
-          <a href="about.html"><img src="images/reddit.svg"></a>
-          <a href="about.html"><img src="images/linkedin.svg"></a>
-          <a href="about.html"><img src="images/Twitter.svg"></a>
-          <a href="about.html"><img src="images/instagram.svg"></a>
-          <a href="about.html"><img src="images/facebook.svg"></a>
+          <a href="about.html"><img src="../images/reddit.svg"></a>
+          <a href="about.html"><img src="../images/linkedin.svg"></a>
+          <a href="about.html"><img src="../images/Twitter.svg"></a>
+          <a href="about.html"><img src="../images/instagram.svg"></a>
+          <a href="about.html"><img src="../images/facebook.svg"></a>
         </div>
         <div class="socials-right">
           <a href="about.html">TERMS</a>

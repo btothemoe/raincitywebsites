@@ -21,11 +21,30 @@
       /* Open */
       function openNav() {
         document.getElementById("myNav").style.height = "100%";
+
+        for (let i = 1; i < 7; i++) {
+          id = "link" + i;
+          document.getElementById(id).style.transitionDelay = i - 1 + "50ms";
+          document.getElementById(id).style.transform = "translate(0,0)";
+        }
       }
 
       /* Close */
       function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
+        for (let i = 1; i < 7; i++) {
+          id = "link" + i;
+          delay = 4;
+          document.getElementById(id).style.transitionDelay =
+            delay - i + "50ms";
+          document.getElementById(id).style.transform = "translate(0,100%)";
+        }
+
+        setTimeout(closeNavWait, 1000);
+
+        //function definition
+        function closeNavWait() {
+          document.getElementById("myNav").style.height = "0%";
+        }
       }
     </script>
 
@@ -132,9 +151,8 @@
           </div>
         </div>
         <div class="left-section-mobile">
-          <div class="hero-header">CONSISTENTLY</div>
-          <div class="hero-header">PUSHING THE</div>
-          <div class="hero-header">ENVELOPE</div>
+          <p class="hero-p">Bryan Moore &nbsp &#9679 &nbsp 12.24.2022 &nbsp &#9679 &nbsp 10 min.</p>
+          <div class="hero-header">ADVANTAGES OF DEVELOPING YOUR OWN WEBSITE</div>
           <p>
             Scaling your business through a data driven approach is what we
             specialize in. Explore our different services below to see if we’d
@@ -432,11 +450,11 @@
       <div class="container">
         <div class="socials-left">RAIN CITY LLC</div>
         <div class="socials-middle">
-          <a href="about.html"><img src="images/reddit.svg" /></a>
-          <a href="about.html"><img src="images/linkedin.svg" /></a>
-          <a href="about.html"><img src="images/Twitter.svg" /></a>
-          <a href="about.html"><img src="images/instagram.svg" /></a>
-          <a href="about.html"><img src="images/facebook.svg" /></a>
+          <a href="about.html"><img src="../images/reddit.svg" /></a>
+          <a href="about.html"><img src="../images/linkedin.svg" /></a>
+          <a href="about.html"><img src="../images/Twitter.svg" /></a>
+          <a href="about.html"><img src="../images/instagram.svg" /></a>
+          <a href="about.html"><img src="../images/facebook.svg" /></a>
         </div>
         <div class="socials-right">
           <a href="about.html">TERMS</a>

@@ -50,7 +50,7 @@
   }
 
   #hero .left-section-mobile .hero-header {
-    font-size: min(9.5vw, 50px);
+    font-size: min(7.5vw, 30px);
     /*font-size: 75px;*/
     line-height: 95%;
     font-weight: bold;
@@ -58,6 +58,11 @@
     transition: 0.5s ease-out;
     top: 0px;
     opacity: 1;
+    padding-bottom: 10px;
+  }
+
+  #hero .left-section-mobile .hero-p {
+    font-size: 12px;
   }
 
   #hero .hero-animation {
@@ -71,13 +76,14 @@
   }
 
   #hero .left-section-mobile p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 125%;
     width: 90%;
     transition: 0.5s ease-in-out;
     position: relative;
     top: 0px;
     margin: 0px;
+    padding-bottom: 10px;
   }
 
   #hero .left-section {
@@ -300,7 +306,7 @@
   }
 
   #blog .container .left-section {
-    width: 35%;
+    width: 40%;
     display: none;
   }
 
@@ -314,37 +320,32 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0px;
   }
 
   #blog .container .right-section .blog-page-element p {
-    width: 90%;
-    font-size: min(3.5vw, 18px);
+    width: 100%;
+    font-size: 16px;
   }
 
   #blog .container .right-section .blog-page-element .left {
-    padding-top: 33px;
-    width: 10%;
-  }
-
-  #blog .container .right-section .blog-page-element .left img {
-    width: 80%;
+    padding-top: 49px;
+    width: 7%;
   }
 
   #blog .container .right-section .blog-page-element .right {
-    width: 90%;
+    width: 93%;
   }
 
   #blog .container .right-section .blog-page-element .header {
-    font-size: min(7vw, 26px);
+    font-size: 26px;
     font-weight: bold;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 
   #blog .container .right-section .blog-page-element .sub-header {
-    font-size: 14px;
-    padding-bottom: 20px;
+    font-size: 16px;
+    padding-bottom: 30px;
   }
 }
 
@@ -369,6 +370,15 @@
     padding-bottom: 75px;
   }
 
+  #blog {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
   #blog .container {
     width: 95%;
     display: flex;
@@ -376,44 +386,12 @@
   }
 
   #blog .container .left-section {
-    width: 35%;
-    display: initial;
-  }
-
-  #blog .container .left-section .header {
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 30px;
-  }
-
-  #blog .container .left-section .categories {
-    width: 100%;
-    position: sticky;
-    top: 100px;
-  }
-
-  #blog .container .left-section .categories .category-element {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    padding-bottom: 30px;
-    font-size: 18px;
-  }
-
-  #blog .container .left-section .categories .category-element img {
-    width: 8%;
-  }
-
-  #blog .container .left-section .categories .category-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
+    width: 40%;
+    display: none;
   }
 
   #blog .container .right-section {
-    width: 65%;
-    margin-top: -25px;
+    width: 100%;
   }
 
   #blog .container .right-section .blog-page-element {
@@ -422,37 +400,32 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0px;
   }
 
   #blog .container .right-section .blog-page-element p {
-    width: 90%;
-    font-size: min(2vw, 18px);
+    width: 100%;
+    font-size: 16px;
   }
 
   #blog .container .right-section .blog-page-element .left {
-    padding-top: 33px;
-    width: 10%;
-  }
-
-  #blog .container .right-section .blog-page-element .left img {
-    width: 60%;
+    padding-top: 49px;
+    width: 7%;
   }
 
   #blog .container .right-section .blog-page-element .right {
-    width: 90%;
+    width: 93%;
   }
 
   #blog .container .right-section .blog-page-element .header {
-    font-size: min(3vw, 26px);
+    font-size: 26px;
     font-weight: bold;
     padding-bottom: 30px;
   }
 
   #blog .container .right-section .blog-page-element .sub-header {
-    font-size: 14px;
-    padding-bottom: 20px;
+    font-size: 16px;
+    padding-bottom: 30px;
   }
 }
 
@@ -597,7 +570,8 @@
   }
 
   #blog .container .right-section .blog-page-element p {
-    width: 90%;
+    width: 100%;
+    font-size: 20px;
   }
 
   #blog .container .right-section .blog-page-element .left {
