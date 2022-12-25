@@ -30,9 +30,9 @@
     width: 100%;
     height: 35vh;
     /*
-        background-color: rgb(223, 223, 253);
-        border: 1px dashed;
-        */
+    background-color: rgb(223, 223, 253);
+    border: 1px dashed;
+    */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -42,23 +42,42 @@
     width: 95%;
     height: 30vh;
     /*background-color: rgb(204, 204, 252);
-        border: 1px dashed;
-        */
+    border: 1px dashed;
+    */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
   }
 
   #hero .left-section-mobile .hero-header {
-    font-size: 8.5vw;
-    /*font-size: 35px;*/
+    font-size: min(9.5vw, 50px);
+    /*font-size: 75px;*/
     line-height: 95%;
     font-weight: bold;
+    position: relative;
+    transition: 0.5s ease-out;
+    top: 0px;
+    opacity: 1;
+  }
+
+  #hero .hero-animation {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-transition {
+    top: 100% !important;
+    opacity: 0;
   }
 
   #hero .left-section-mobile p {
     font-size: 16px;
     line-height: 125%;
+    width: 90%;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top: 0px;
+    margin: 0px;
   }
 
   #hero .left-section {
@@ -67,7 +86,7 @@
 }
 
 /* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 1023px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
   body,
   html {
     font-family: "HelveticaNeue", sans-serif;
@@ -87,7 +106,7 @@
   }
 
   #hero .container {
-    width: 85%;
+    width: 95%;
     display: flex;
     flex-direction: row;
   }
@@ -95,9 +114,9 @@
     width: 55%;
     height: 50vh;
     /*
-        background-color: rgb(223, 223, 253);
-        border: 1px dashed;
-        */
+    background-color: rgb(223, 223, 253);
+    border: 1px dashed;
+    */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -107,24 +126,42 @@
     width: 45%;
     height: 50vh;
     /*background-color: rgb(204, 204, 252);
-        border: 1px dashed;
-        */
+    border: 1px dashed;
+    */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
   }
 
-  #hero .left-section .hero-header {
+  .hero-header {
     font-size: 4.5vw;
-    /*font-size: 45px;*/
+    /*font-size: 75px;*/
     line-height: 95%;
     font-weight: bold;
+    position: relative;
+    transition: 0.5s ease-out;
+    top: 0px;
+    opacity: 1;
+  }
+
+  #hero .hero-animation {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-transition {
+    top: 80% !important;
+    opacity: 0;
   }
 
   #hero .left-section p {
     font-size: 16px;
     line-height: 125%;
     width: 70%;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top: 0px;
+    margin: 0px;
   }
 
   #hero .left-section-mobile {
@@ -168,9 +205,9 @@
     width: 55%;
     height: 70vh;
     /*
-        background-color: rgb(223, 223, 253);
-        border: 1px dashed;
-        */
+    background-color: rgb(223, 223, 253);
+    border: 1px dashed;
+    */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -180,8 +217,8 @@
     width: 45%;
     height: 70vh;
     /*background-color: rgb(204, 204, 252);
-        border: 1px dashed;
-        */
+    border: 1px dashed;
+    */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -451,7 +488,7 @@
   }
 
   #blog .container .left-section {
-    width: 30%;
+    width: 40%;
     display: initial;
   }
 
@@ -459,6 +496,7 @@
     font-size: 40px;
     font-weight: bold;
     padding-bottom: 30px;
+    width: 70%;
   }
 
   #blog .container .left-section .categories {
@@ -486,19 +524,76 @@
     padding-left: 20px;
   }
 
+  #blog .container .left-section .contact {
+    padding-top: 450px;
+  }
+
+  #blog .container .left-section .cl-effect-5-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #blog .container .left-section a {
+    font-weight: bold;
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Effect 5: same word slide in */
+  #blog .container .left-section .categories .cl-effect-5-body a {
+    overflow: hidden;
+    height: 1em;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  #blog .container .left-section .cl-effect-5-body a:hover {
+    color: #f18200;
+  }
+
+  #blog .container .left-section .cl-effect-5-body a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+  #blog .container .left-section .cl-effect-5-body img {
+    padding-left: 15px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #blog .container .left-section .cl-effect-5-body a span::before {
+    position: absolute;
+    top: -100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  #blog .container .left-section .cl-effect-5-body a:hover span,
+  #blog .container .left-section .cl-effect-5-body a:focus span {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
   #blog .container .right-section {
-    width: 70%;
-    margin-top: -20px;
+    width: 60%;
   }
 
   #blog .container .right-section .blog-page-element {
     width: 100%;
-
     border-bottom: 2px solid #a9a9a9;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    padding-top: 50px;
+    padding-top: 0px;
   }
 
   #blog .container .right-section .blog-page-element p {
