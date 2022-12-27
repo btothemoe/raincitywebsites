@@ -431,6 +431,25 @@
   select:hover {
     background-color: white;
   }
+
+  input[type="submit"] {
+    margin-top: 10px;
+    width: 200px;
+    height: 55px;
+    font-size: 18px;
+    background-color: #f18200;
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #3056c5;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.5s;
+  }
 }
 
 /* -- Regular Desktop -- */
