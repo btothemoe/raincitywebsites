@@ -172,37 +172,110 @@
     <section id="about" class="section">
       <div class="container">
         <div class="left-section">
-          <div class="about-header">WHO WE ARE</div>
+          <div class="left-section-header">
+            OUR GUIDING <br /><span id="orange-header">PRINCIPLES</span>
+          </div>
+          <p>
+            We focus on the needs on each individual business and tailor content
+            around what makes it unique.
+          </p>
         </div>
         <div class="right-section">
-          <div class="left-side">
+          <button type="button" class="collapsible">
+            CUSTOM WEB DEVELOPMENT
+          </button>
+          <div class="content">
             <p>
-              We don't just create web design for the internet, we create
-              meaningful digital experiences for users that go above and beyond
-              through data-driven UI/UX practices. Our design scales and
-              converts.
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
             </p>
-            <p>
-              As the only constant is change, traditional web design is
-              outdated. While it may still "work," it is difficult to deliver
-              satisfactory results in an already extremely competitive market.
-              Proactive, strategy-driven user experiences is the new standard to
-              engage with the target audience.
-            </p>
+            <ul>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
+            </ul>
           </div>
-          <div class="right-side">
+          <button type="button" class="collapsible">
+            SEARCH ENGINE OPTIMIZATION
+          </button>
+          <div class="content">
             <p>
-              Our design team at Vyntex has extensive and up-to-date knowledge
-              in UI (user interface), UX (user experience), CX (customer
-              experience), graphic design, animations, and more. As a website is
-              a business's best marketing tool, we delivery exceptional user
-              experience that sells.
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
             </p>
+            <ul>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
+            </ul>
+          </div>
+          <button type="button" class="collapsible">
+            THIRD-PARTY INTEGRATIONS
+          </button>
+          <div class="content">
             <p>
-              Our team will always over deliver to ensure that your business has
-              the tools necessary to succeed. Bring your ideas and products to
-              life with our talented design team.
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
             </p>
+            <ul>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
+            </ul>
+          </div>
+          <button type="button" class="collapsible">WEBSITE MAINTENANCE</button>
+          <div class="content">
+            <p>
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
+            </p>
+            <ul>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
+            </ul>
+          </div>
+          <button type="button" class="collapsible">LIFETIME UPDATES</button>
+          <div class="content">
+            <p>
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
+            </p>
+            <ul>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
+            </ul>
+          </div>
+          <button type="button" class="collapsible">PLAYERS CLUB</button>
+          <div class="content">
+            <p>
+              We meticulously write the code line by line. This gives us much
+              more control over the design, and the website performs lightning
+              fast because there's no bloated or messy code that slows it down.
+            </p>
+            <ul>
+              <li>
+                <img src="/images/icons8-done.svg" />Performance Optimized
+              </li>
+              <li><img src="/images/icons8-done.svg" />Thoroughly Tested</li>
+              <li><img src="/images/icons8-done.svg" />Matches design 1 : 1</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -350,5 +423,22 @@
         </div>
       </div>
     </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

@@ -452,6 +452,10 @@
     justify-content: center;
     padding-top: 75px;
     padding-bottom: 75px;
+    background-image: url("/images/Vector2.svg");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center right;
   }
 
   #blog .container {

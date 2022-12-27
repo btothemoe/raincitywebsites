@@ -233,7 +233,7 @@
 }
 
 /*-- -------------------------- -->
-<---          Landing           -->
+<---          CONTACT           -->
 <--- -------------------------- -*/
 /* -- Mobile -- */
 @media screen and (min-width: 0px) {
@@ -307,31 +307,122 @@
 
   #contact-section {
     width: 100%;
-    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 50px;
+    background-image: url("/images/Vector2.svg");
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-top: 75px;
   }
 
   #contact-section .container {
-    width: 560%;
     display: flex;
     flex-direction: row;
-    width: 1400px;
-    margin-left: 27px;
-    margin-right: 27px;
   }
 
   #contact-section .left-section {
     width: 50%;
     height: 40vw;
-    background-color: #696969;
+  }
+
+  #contact-section .left-section .contact-box {
+    background: rgb(14, 14, 14);
+    width: 90%;
+    height: 200px;
+    padding-top: 30px;
+  }
+
+  #contact-section .left-section .contact-box .contact-element {
+    color: white;
+    padding-left: 30px;
+    font-weight: bold;
+  }
+
+  #contact-section .left-section .contact-box p {
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   #contact-section .right-section {
     width: 50%;
     height: 40vw;
-    background-color: blue;
+  }
+
+  #contact-section .right-section .form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #contact-section .right-section .form-flex .form-element-half {
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 40px;
+  }
+
+  #contact-section .right-section .form-flex .form-element-half input {
+    width: 90%;
+    font-size: 15px;
+    height: 35px;
+    margin-top: 20px;
+    padding-left: 10px;
+    background-color: #e4e4e4;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+
+  #contact-section .right-section .form-flex .form-element-full {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  #contact-section .right-section .form-flex .form-element-full input {
+    width: 95%;
+    font-size: 15px;
+    height: 200px;
+    margin-top: 20px;
+    padding-left: 10px;
+    background-color: #e4e4e4;
+    background: none;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+
+  #contact-section .right-section .form-flex .form-element-half input:hover {
+    border-bottom: 2px solid #f18200;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  #contact-section .right-section .form-flex .form-element-half input:focus {
+    background-color: #e4e4e4;
+    outline: none;
+  }
+
+  #contact-section .right-section .form-flex .form-element-full input:hover {
+    border-bottom: 2px solid #f18200;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  #contact-section .right-section .form-flex .form-element-full input:focus {
+    background-color: #e4e4e4;
+    outline: none;
+  }
+
+  input:hover,
+  select:hover {
+    background-color: white;
   }
 }
 

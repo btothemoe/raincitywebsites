@@ -367,18 +367,89 @@
     width: 50%;
   }
 
-  #about .container .left-section .about-header {
+  #about .container .left-section p {
+    font-size: 1.3vw;
+    width: 70%;
+  }
+
+  #about .container .left-section .left-section-header {
     font-size: 4.5vw;
     font-weight: bold;
   }
 
-  #about .container .right-section {
-    width: 50%;
+  #about .container .left-section .left-section-header #orange-header {
+    color: #f18200;
   }
 
-  #about .container .right-section p {
-    font-size: 1vw;
-    width: 95%;
+  #about .container .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    border-bottom: 2px solid rgb(214, 214, 214);
+  }
+
+  #about .container .right-section .collapsible {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 80px;
+    text-align: left;
+    border: none;
+    border-top: 2px solid rgb(214, 214, 214);
+    cursor: pointer;
+    padding-left: 10px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: rgb(225, 225, 225);
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  #about .container .right-section .collapsible:after {
+    content: "\002B";
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  #about .content {
+    padding-left: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(225, 225, 225);
+  }
+
+  #about .content li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    padding-bottom: 10px;
+  }
+
+  #about .content li img {
+    width: 25px;
+    padding-right: 10px;
+  }
+
+  #about .container .right-section .right-section-container {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid rgb(214, 214, 214);
   }
 }
 
