@@ -347,6 +347,11 @@
     padding-right: 30px;
   }
 
+  #contact-section .left-section .contact-box img {
+    position: absolute;
+    left: 41%;
+  }
+
   #contact-section .right-section {
     width: 50%;
     height: 40vw;
@@ -382,11 +387,12 @@
     font-size: 18px;
     font-weight: bold;
     padding-bottom: 20px;
+    margin-top: 30px;
   }
 
-  #contact-section .right-section .form-flex .form-element-full input {
+  #contact-section .right-section .form-flex .form-element-full textarea {
     width: 95%;
-    font-size: 15px;
+    font-size: 16px;
     height: 200px;
     margin-top: 20px;
     padding-left: 10px;
@@ -394,6 +400,7 @@
     background: none;
     border: none;
     border-bottom: 2px solid black;
+    font-family: "HelveticaNeue", sans-serif;
   }
 
   #contact-section .right-section .form-flex .form-element-half input:hover {
@@ -408,14 +415,14 @@
     outline: none;
   }
 
-  #contact-section .right-section .form-flex .form-element-full input:hover {
+  #contact-section .right-section .form-flex .form-element-full textarea:hover {
     border-bottom: 2px solid #f18200;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     transition: 0.3s;
   }
 
-  #contact-section .right-section .form-flex .form-element-full input:focus {
+  #contact-section .right-section .form-flex .form-element-full textarea:focus {
     background-color: #e4e4e4;
     outline: none;
   }

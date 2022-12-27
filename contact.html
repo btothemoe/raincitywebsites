@@ -16,7 +16,39 @@
 
     <title>Rain City Websites</title>
 
+    <!-- JS -->
     <script type="text/javascript" src="main.js"></script>
+
+    <script>
+      /* Open */
+      function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+
+        for (let i = 1; i < 7; i++) {
+          id = "link" + i;
+          document.getElementById(id).style.transitionDelay = i - 1 + "50ms";
+          document.getElementById(id).style.transform = "translate(0,0)";
+        }
+      }
+
+      /* Close */
+      function closeNav() {
+        for (let i = 1; i < 7; i++) {
+          id = "link" + i;
+          delay = 4;
+          document.getElementById(id).style.transitionDelay =
+            delay - i + "50ms";
+          document.getElementById(id).style.transform = "translate(0,100%)";
+        }
+
+        setTimeout(closeNavWait, 1000);
+
+        //function definition
+        function closeNavWait() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="navbar-overlay-animation is-active"></div>
@@ -162,12 +194,13 @@
       <div class="container">
         <div class="left-section">
           <div class="contact-box">
-            <div class="contact-element">Call: (760)855-5579</div>
-            <div class="contact-element">Email: raincitywebsites@gmail.com</div>
+            <div class="contact-element">CALL: (760)855-5579</div>
+            <div class="contact-element">EMAIL: raincitywebsites@gmail.com</div>
             <p>
               For the best results, use this form to have the appropriate team
               member get in touch.
             </p>
+            <img src="/images/icons8-circled-right-100.png" />
           </div>
         </div>
         <div class="right-section">
@@ -210,12 +243,10 @@
             </div>
             <div class="form-element-full">
               <label for="lname">Describe your project *</label><br />
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="Current Site?"
-              />
+              <textarea
+                name="description"
+                placeholder="How can we help?"
+              ></textarea>
             </div>
           </form>
         </div>
