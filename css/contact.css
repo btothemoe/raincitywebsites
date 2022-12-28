@@ -689,6 +689,7 @@
   #contact-section .right-section {
     width: 50%;
     height: 40vw;
+    margin-top: 0px;
   }
 
   #contact-section .right-section .form-flex {
