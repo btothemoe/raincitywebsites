@@ -265,22 +265,94 @@
 
   #about .container .left-section {
     width: 100%;
+    padding-bottom: 30px;
   }
 
-  #about .container .left-section .about-header {
-    font-size: 8vw;
+  #about .container .left-section p {
+    font-size: 3.5vw;
+    width: 80%;
+  }
+
+  #about .container .left-section .left-section-header {
+    font-size: 7.5vw;
     font-weight: bold;
   }
 
-  #about .container .right-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  #about .container .left-section .left-section-header #orange-header {
+    color: #f18200;
   }
 
-  #about .container .right-section p {
+  #about .container .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid rgb(214, 214, 214);
+  }
+
+  #about .container .right-section .collapsible {
+    width: 100%;
+    font-weight: bold;
     font-size: 16px;
-    line-height: 125%;
+    height: 70px;
+    text-align: left;
+    border: none;
+    border-top: 2px solid rgb(214, 214, 214);
+    cursor: pointer;
+    padding-left: 10px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: rgb(225, 225, 225);
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  #about .container .right-section .collapsible:after {
+    content: "\002B";
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  #about .content {
+    padding-left: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(225, 225, 225);
+    font-size: 16px;
+  }
+
+  #about .content li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+
+  #about .content li img {
+    width: 20px;
+    padding-right: 10px;
+  }
+
+  #about .container .right-section .right-section-container {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid rgb(214, 214, 214);
   }
 }
 
@@ -313,22 +385,93 @@
 
   #about .container .left-section {
     width: 100%;
+    padding-bottom: 50px;
   }
 
-  #about .container .left-section .about-header {
-    font-size: 4.5vw;
+  #about .container .left-section p {
+    font-size: 2.1vw;
+    width: 60%;
+  }
+
+  #about .container .left-section .left-section-header {
+    font-size: 5.5vw;
     font-weight: bold;
   }
 
-  #about .container .right-section {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+  #about .container .left-section .left-section-header #orange-header {
+    color: #f18200;
   }
 
-  #about .container .right-section p {
-    width: 95%;
-    font-size: 2vw;
+  #about .container .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid rgb(214, 214, 214);
+  }
+
+  #about .container .right-section .collapsible {
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    height: 70px;
+    text-align: left;
+    border: none;
+    border-top: 2px solid rgb(214, 214, 214);
+    cursor: pointer;
+    padding-left: 10px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: rgb(225, 225, 225);
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  #about .container .right-section .collapsible:after {
+    content: "\002B";
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  #about .content {
+    padding-left: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(225, 225, 225);
+  }
+
+  #about .content li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+
+  #about .content li img {
+    width: 20px;
+    padding-right: 10px;
+  }
+
+  #about .container .right-section .right-section-container {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px solid rgb(214, 214, 214);
   }
 }
 
