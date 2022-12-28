@@ -464,7 +464,7 @@
     flex-direction: row; /* make main axis vertical */
     justify-content: space-between; /* center items vertically, in this case */
     font-size: 16px;
-    line-height: 150%;
+
     padding-top: 50px;
   }
 
@@ -579,23 +579,24 @@
 
   #services {
     width: 100%;
-    height: 55vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 75px;
   }
 
   #services .container {
     width: 95%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding-bottom: 75px;
     border-bottom: 2px solid rgb(214, 214, 214);
   }
 
   #services .left-section {
     width: 55%;
-    height: 50vh;
+    height: fit-content;
     line-height: 60px;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
@@ -613,17 +614,18 @@
     font-size: 4vw;
     /*font-size: 75px;*/
     line-height: 95%;
+    margin-top: 0px;
   }
 
   #services .right-section {
     width: 40%;
-    height: 50vh;
+    height: fit-content;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: start; /* center items vertically, in this case */
-    font-size: 20px;
-    line-height: 150%;
-    padding-top: 50px;
+    font-size: 18px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   #services .right-section button {
@@ -647,9 +649,13 @@
     font-size: 20px;
     font-weight: bold;
     padding: 0px;
-    letter-spacing: 1px;
+    letter-spacing: initial;
     text-decoration: none;
     color: black;
+  }
+
+  #services .right-section p {
+    margin-top: 5px;
   }
 
   #services .right-section a:hover {
@@ -996,6 +1002,8 @@
   #portfolio .description {
     padding-bottom: 20px;
     font-size: 18px;
+    height: calc(420px - 19.5vw);
+    max-height: 150px;
   }
 
   #portfolio .subtitles {
@@ -1397,7 +1405,7 @@
 
   #pricing .left-section {
     width: 50%;
-    height: 80vh;
+    height: fit-content;
     /*
     border: 1px dashed;
     background-color: rgb(208, 236, 255);
@@ -1408,14 +1416,14 @@
   }
 
   #pricing .left-section .description {
-    width: 75%;
+    width: 70%;
     padding-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #pricing .right-section {
     width: 50%;
-    height: 80vh;
+    height: fit-content;
     /*
     border: 1px dashed;
     background-color: rgb(167, 220, 255);
@@ -1467,7 +1475,9 @@
 
   #pricing .pricing-box .pricing-title {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
+    height: calc(350px - 20vw);
+    max-height: 50px;
   }
 
   #pricing .pricing-box p {
@@ -1475,6 +1485,8 @@
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 5px;
+    height: calc(400px - 20vw);
+    max-height: 80px;
   }
 
   #pricing .left-section a {
