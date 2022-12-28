@@ -663,7 +663,9 @@
   #contact-section .left-section .contact-box img {
     position: absolute;
     right: -25px;
+    top: 180px;
     width: 100px;
+    transform: none;
   }
 
   #contact-section .left-section {
