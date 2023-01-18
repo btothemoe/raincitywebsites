@@ -535,7 +535,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
     border-bottom: 2px solid rgb(214, 214, 214);
   }
 
@@ -928,10 +928,9 @@
   }
 
   #process .container .left-section .left-section-element-first .number {
-    width: 15%;
-    padding-top: 8px;
-    font-size: 40px;
-    font-weight: bold;
+    width: 20%;
+    padding-top: 10px;
+    font-size: 30px;
   }
 
   #process .container .left-section .left-section-element-first .header {
@@ -941,14 +940,13 @@
 
   #process .container .left-section .left-section-element-first p {
     width: 70%;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #process .container .left-section .left-section-element .number {
-    width: 15%;
+    width: 20%;
     padding-top: 8px;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 30px;
   }
 
   #process .container .left-section .left-section-element .header {
@@ -958,14 +956,13 @@
 
   #process .container .left-section .left-section-element p {
     width: 70%;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #process .container .left-section .left-section-element-last .number {
-    width: 15%;
+    width: 20%;
     padding-top: 8px;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 30px;
   }
 
   #process .container .left-section .left-section-element-last .header {
@@ -975,22 +972,23 @@
 
   #process .container .left-section .left-section-element-last p {
     width: 70%;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #process .container .right-section {
-    width: 50%;
+    width: 45%;
     margin-top: -30px;
     display: initial;
   }
 
   #process .container .right-section .block {
-    padding-bottom: 95px;
+    padding-bottom: 50px;
   }
 
   #process .container .right-section .right-section-element {
     height: 250px;
     border-bottom: 2px solid rgb(214, 214, 214);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1002,7 +1000,13 @@
   }
 
   #process .container .right-section .right-section-element p {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  #process .container .right-section .right-section-element .process-label {
+    font-size: 16px;
+    color: rgb(64, 64, 64);
+    padding-top: 10px;
   }
 
   #process .container .left-section-mobile {
@@ -1013,6 +1017,197 @@
   #process .container .right-section-mobile {
     width: 50%;
     display: none;
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+/*-- -------------------------- -->
+<---          PRICING           -->
+<--- -------------------------- -*/
+
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+    background-size: 8 0%;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  #pricing .container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 1023px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 75px;
+    background-size: 8 0%;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  #pricing .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+  }
+
+  #pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  #pricing .container {
+    width: 80%;
+    display: flex;
+    flex-direction: row; /* make main axis vertical */
+    justify-content: space-between; /* center items vertically, in this case */
+    flex-wrap: wrap;
+  }
+
+  #pricing .container .pricing-section {
+    width: 31%;
+    height: 600px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 50px;
+    border: 1px solid rgb(214, 214, 214);
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    position: relative;
+  }
+
+  #pricing .container .middle-section {
+    width: 31%;
+    height: 600px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 30px;
+    border: 1px solid rgb(214, 214, 214);
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-size: 18px;
+    position: relative;
+  }
+
+  #pricing .container .pricing-section .header {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+
+  #pricing .container .middle-section .header {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+
+  #pricing .container li {
+    list-style-type: none;
+    display: flex;
+    align-items: left;
+    margin-left: -40px;
+    padding-bottom: 10px;
+  }
+
+  #pricing .container li img {
+    width: 25px;
+    padding-right: 10px;
+  }
+
+  #pricing .container .pricing-section button {
+    position: absolute;
+    bottom: 50px;
+    width: 85%;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(32, 32, 32);
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+
+  #pricing .container .middle-section button {
+    position: absolute;
+    bottom: 50px;
+    width: 85%;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #f18200;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
   }
 }
 
