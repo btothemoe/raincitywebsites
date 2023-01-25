@@ -507,7 +507,7 @@
 
   #blog .container .left-section .sticky-elements a {
     font-weight: bold;
-    font-size: 1.3vw;
+    font-size: max(1.5vw, 20px);
     text-decoration: none;
     color: black;
   }

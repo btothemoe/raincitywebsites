@@ -13,39 +13,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/root.css" type="text/css" />
     <link rel="stylesheet" href="/css/services.css" />
+
     <!-- JS -->
     <script type="text/javascript" src="main.js"></script>
-
-    <script>
-      /* Open */
-      function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-
-        for (let i = 1; i < 7; i++) {
-          id = "link" + i;
-          document.getElementById(id).style.transitionDelay = i - 1 + "50ms";
-          document.getElementById(id).style.transform = "translate(0,0)";
-        }
-      }
-
-      /* Close */
-      function closeNav() {
-        for (let i = 1; i < 7; i++) {
-          id = "link" + i;
-          delay = 4;
-          document.getElementById(id).style.transitionDelay =
-            delay - i + "50ms";
-          document.getElementById(id).style.transform = "translate(0,100%)";
-        }
-
-        setTimeout(closeNavWait, 1000);
-
-        //function definition
-        function closeNavWait() {
-          document.getElementById("myNav").style.height = "0%";
-        }
-      }
-    </script>
 
     <title>Rain City Websites</title>
   </head>

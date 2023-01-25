@@ -1,35 +1,3 @@
-/*
-window.onload = () => {
-  const anchors = document.querySelectorAll("a");
-  const transition_el = document.querySelector(".transition");
-
-  setTimeout(() => {
-    transition_el.classList.remove("is-active");
-  }, 200);
-
-  console.log(transition_el);
-
-  console.log(transition_el);
-
-  for (let i = 0; i < anchors.length; i++) {
-    const anchor = anchors[i];
-
-    anchor.addEventListener("click", (e) => {
-      //Every Time you click on a link
-      e.preventDefault(); //Prevent going to the different page
-      let target = e.currentTarget.href; //Store the link name in target variable
-
-      transition_el.classList.add("is-active"); //Add animation class to the page
-
-      setInterval(() => {
-        window.location.href = target; // Wait 500ms, then load the next page.
-      }, 200);
-
-    });
-  }
-};
-*/
-
 window.onload = () => {
   const anchors = document.querySelectorAll("a");
   const transition_el = document.querySelectorAll(".hero-header");
@@ -82,3 +50,33 @@ window.onload = () => {
     }, 800 + 150 * i);
   }
 };
+
+/************    MOBILE NAVBAR    ************/
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+
+  for (let i = 1; i < 7; i++) {
+    id = "link" + i;
+    document.getElementById(id).style.transitionDelay = i - 1 + "50ms";
+    document.getElementById(id).style.transform = "translate(0,0)";
+  }
+}
+
+/* Close */
+function closeNav() {
+  for (let i = 1; i < 7; i++) {
+    id = "link" + i;
+    delay = 4;
+    document.getElementById(id).style.transitionDelay = delay - i + "50ms";
+    document.getElementById(id).style.transform = "translate(0,100%)";
+  }
+
+  setTimeout(closeNavWait, 1000);
+
+  //function definition
+  function closeNavWait() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+}
+
+/************************/

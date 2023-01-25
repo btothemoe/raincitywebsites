@@ -17,37 +17,6 @@
     <!-- JS -->
     <script type="text/javascript" src="../main.js"></script>
 
-    <script>
-      /* Open */
-      function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-
-        for (let i = 1; i < 7; i++) {
-          id = "link" + i;
-          document.getElementById(id).style.transitionDelay = i - 1 + "50ms";
-          document.getElementById(id).style.transform = "translate(0,0)";
-        }
-      }
-
-      /* Close */
-      function closeNav() {
-        for (let i = 1; i < 7; i++) {
-          id = "link" + i;
-          delay = 4;
-          document.getElementById(id).style.transitionDelay =
-            delay - i + "50ms";
-          document.getElementById(id).style.transform = "translate(0,100%)";
-        }
-
-        setTimeout(closeNavWait, 1000);
-
-        //function definition
-        function closeNavWait() {
-          document.getElementById("myNav").style.height = "0%";
-        }
-      }
-    </script>
-
     <title>Rain City Websites</title>
   </head>
   <body>
@@ -163,7 +132,7 @@
           <img
             class="light"
             decoding="async"
-            src="../images/Startup_Isometric.svg"
+            src="../images/Startup_Isometric_animated.svg"
             alt=""
             aria-hidden="true"
             width="105%"
@@ -391,11 +360,11 @@
           <div class="footer-email-mobile">RAINCITYWEBSITES@GMAIL.COM</div>
 
           <div class="cl-effect-5-footer">
-            <a href="services.html"><span data-hover="SERVICES">SERVICES</span></a>
-            <a href="services.html"><span data-hover="WORK">WORK</span></a>
-            <a href="about.html"><span data-hover="ABOUT">ABOUT</span></a>
-            <a href="blog.html"><span data-hover="INSIGHTS">INSIGHTS</span></a>
-            <a href="blog.html"><span data-hover="CONTACT">CONTACT</span></a>
+            <a href="../services.html"><span data-hover="SERVICES">SERVICES</span></a>
+            <a href="../work.html"><span data-hover="WORK">WORK</span></a>
+            <a href="../about.html"><span data-hover="ABOUT">ABOUT</span></a>
+            <a href="../blog.html"><span data-hover="INSIGHTS">INSIGHTS</span></a>
+            <a href="../contact.html"><span data-hover="CONTACT">CONTACT</span></a>
           </div>
 
           

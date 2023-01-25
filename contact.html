@@ -18,37 +18,6 @@
 
     <!-- JS -->
     <script type="text/javascript" src="main.js"></script>
-
-    <script>
-      /* Open */
-      function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-
-        for (let i = 1; i < 7; i++) {
-          id = "link" + i;
-          document.getElementById(id).style.transitionDelay = i - 1 + "50ms";
-          document.getElementById(id).style.transform = "translate(0,0)";
-        }
-      }
-
-      /* Close */
-      function closeNav() {
-        for (let i = 1; i < 7; i++) {
-          id = "link" + i;
-          delay = 4;
-          document.getElementById(id).style.transitionDelay =
-            delay - i + "50ms";
-          document.getElementById(id).style.transform = "translate(0,100%)";
-        }
-
-        setTimeout(closeNavWait, 1000);
-
-        //function definition
-        function closeNavWait() {
-          document.getElementById("myNav").style.height = "0%";
-        }
-      }
-    </script>
   </head>
   <body>
     <div class="navbar-overlay-animation is-active"></div>
@@ -64,10 +33,6 @@
             <a class="navbar-transition" href="index.html"
               ><img src="images/RC_Logo.svg"
             /></a>
-            <!--
-            <a class="navbar-transition" href="/"
-              ><span id="blue">RAIN </span> CITY</a
-            >-->
           </div>
           <div class="navbar-menu">
             <div class="cl-effect-5">
