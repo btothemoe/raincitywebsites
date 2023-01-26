@@ -253,106 +253,80 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   #about .container {
     width: 90%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  #about .container .left-section {
+  .process-header {
     width: 100%;
-    padding-bottom: 30px;
-  }
-
-  #about .container .left-section p {
-    font-size: 3.5vw;
-    width: 80%;
-  }
-
-  #about .container .left-section .left-section-header {
-    font-size: 7.5vw;
-    font-weight: bold;
-  }
-
-  #about .container .left-section .left-section-header #orange-header {
-    color: #f18200;
-  }
-
-  #about .container .right-section {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .process-header-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    font-size: 10vw;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
     border-bottom: 2px solid rgb(214, 214, 214);
   }
 
-  #about .container .right-section .collapsible {
+  #about .container .left-section-mobile {
     width: 100%;
-    font-weight: bold;
+  }
+
+  #about .container .left-section-mobile .left-section-element {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #about .container .left-section-mobile .left-section-element .float-left {
+    width: 100%;
+  }
+
+  #about .container .left-section-mobile .left-section-element .float-right {
+    width: 100%;
+  }
+
+  #about .container .left-section-mobile .left-section-element .number {
+    padding-top: 8px;
     font-size: 16px;
-    height: 70px;
-    text-align: left;
-    border: none;
-    border-top: 2px solid rgb(214, 214, 214);
-    cursor: pointer;
-    padding-left: 10px;
+    padding-bottom: 15px;
   }
 
-  .active,
-  .collapsible:hover {
-    background-color: rgb(225, 225, 225);
-  }
-
-  .active:after {
-    content: "\2212";
-  }
-
-  #about .container .right-section .collapsible:after {
-    content: "\002B";
-    color: black;
+  #about .container .left-section-mobile .left-section-element .header {
+    font-size: 22px;
     font-weight: bold;
-    float: right;
-    margin-left: 5px;
+    width: 100%;
   }
 
-  #about .content {
-    padding-left: 10px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
-    transition: 0.5s ease-in-out;
-    background-color: rgb(225, 225, 225);
+  #about .container .left-section-mobile .left-section-element p {
     font-size: 16px;
   }
 
-  #about .content li {
+  #about li {
     list-style-type: none;
     display: flex;
     align-items: center;
-    margin-left: -10px;
+    margin-left: -40px;
     padding-bottom: 10px;
     font-size: 16px;
   }
 
-  #about .content li img {
+  #about li img {
     width: 20px;
     padding-right: 10px;
-  }
-
-  #about .container .right-section .right-section-container {
-    width: 100%;
-    font-weight: bold;
-    font-size: 20px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-bottom: 2px solid rgb(214, 214, 214);
   }
 }
 
@@ -373,105 +347,80 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   #about .container {
     width: 95%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  #about .container .left-section {
+  .process-header {
     width: 100%;
-    padding-bottom: 50px;
-  }
-
-  #about .container .left-section p {
-    font-size: 2.1vw;
-    width: 60%;
-  }
-
-  #about .container .left-section .left-section-header {
-    font-size: 5.5vw;
-    font-weight: bold;
-  }
-
-  #about .container .left-section .left-section-header #orange-header {
-    color: #f18200;
-  }
-
-  #about .container .right-section {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .process-header-container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    font-size: 6vw;
+    font-weight: bold;
+    padding-top: 70px;
+    padding-bottom: 70px;
     border-bottom: 2px solid rgb(214, 214, 214);
   }
 
-  #about .container .right-section .collapsible {
+  #about .container .left-section-mobile {
     width: 100%;
+  }
+
+  #about .container .left-section-mobile .left-section-element {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #about .container .left-section-mobile .left-section-element .float-left {
+    width: 100%;
+  }
+
+  #about .container .left-section-mobile .left-section-element .float-right {
+    width: 70%;
+  }
+
+  #about .container .left-section-mobile .left-section-element .number {
+    padding-top: 8px;
+    font-size: 3vw;
+    padding-bottom: 25px;
+  }
+
+  #about .container .left-section-mobile .left-section-element .header {
+    font-size: 4vw;
     font-weight: bold;
-    font-size: 16px;
-    height: 70px;
-    text-align: left;
-    border: none;
-    border-top: 2px solid rgb(214, 214, 214);
-    cursor: pointer;
-    padding-left: 10px;
+    width: 100%;
   }
 
-  .active,
-  .collapsible:hover {
-    background-color: rgb(225, 225, 225);
+  #about .container .left-section-mobile .left-section-element p {
+    font-size: 18px;
   }
 
-  .active:after {
-    content: "\2212";
-  }
-
-  #about .container .right-section .collapsible:after {
-    content: "\002B";
-    color: black;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-
-  #about .content {
-    padding-left: 10px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
-    transition: 0.5s ease-in-out;
-    background-color: rgb(225, 225, 225);
-  }
-
-  #about .content li {
+  #about li {
     list-style-type: none;
     display: flex;
     align-items: center;
-    margin-left: -10px;
+    margin-left: -40px;
     padding-bottom: 10px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
-  #about .content li img {
+  #about li img {
     width: 20px;
     padding-right: 10px;
-  }
-
-  #about .container .right-section .right-section-container {
-    width: 100%;
-    font-weight: bold;
-    font-size: 20px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-bottom: 2px solid rgb(214, 214, 214);
   }
 }
 
@@ -502,21 +451,8 @@
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center right;
-    padding-top: 75px;
-    padding-bottom: 0px;
-  }
-
-  #about {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     padding-top: 0px;
-    padding-bottom: 75px;
-    background-image: url("/images/Vector2.svg");
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: center right;
+    padding-bottom: 0px;
   }
 
   #about .container {
@@ -551,8 +487,8 @@
     display: flex;
     flex-direction: row;
     border-bottom: 2px solid rgb(214, 214, 214);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   #about .container .left-section-mobile .left-section-element .float-left {
@@ -565,7 +501,7 @@
 
   #about .container .left-section-mobile .left-section-element .number {
     padding-top: 8px;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding-bottom: 25px;
   }
 
@@ -634,11 +570,25 @@
   }
 
   #meet-the-team .container .left-section {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #meet-the-team .container .left-section .header {
+    font-size: 5.5vw;
+    font-weight: bold;
+  }
+
+  #meet-the-team .container .left-section .subheader {
+    font-size: 5.5vw;
+    padding-bottom: 20px;
   }
 
   #meet-the-team .container .left-section img {
-    width: 80%;
+    width: 65%;
   }
 
   #meet-the-team .container .right-section {
@@ -646,13 +596,23 @@
   }
 
   #meet-the-team .container .right-section .right-section-header {
-    font-size: 7.5vw;
+    font-size: 10vw;
     font-weight: bold;
+    line-height: 95%;
+    padding-bottom: 30px;
   }
 
   #meet-the-team .container .right-section p {
-    font-size: 4vw;
-    width: 95%;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  #meet-the-team
+    .container
+    .right-section
+    .right-section-header
+    #orange-header {
+    color: #f18200;
   }
 }
 
@@ -685,10 +645,24 @@
 
   #meet-the-team .container .left-section {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #meet-the-team .container .left-section .header {
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+
+  #meet-the-team .container .left-section .subheader {
+    font-size: 1.5vw;
+    padding-bottom: 20px;
   }
 
   #meet-the-team .container .left-section img {
-    width: 90%;
+    width: 45%;
   }
 
   #meet-the-team .container .right-section {
@@ -696,13 +670,23 @@
   }
 
   #meet-the-team .container .right-section .right-section-header {
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-weight: bold;
+    line-height: 95%;
+    padding-bottom: 30px;
   }
 
   #meet-the-team .container .right-section p {
-    font-size: 2vw;
-    width: 95%;
+    font-size: 18px;
+    width: 85%;
+  }
+
+  #meet-the-team
+    .container
+    .right-section
+    .right-section-header
+    #orange-header {
+    color: #f18200;
   }
 }
 
