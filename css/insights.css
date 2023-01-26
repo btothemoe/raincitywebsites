@@ -450,7 +450,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 75px;
+    padding-top: 45px;
     padding-bottom: 75px;
     background-image: url("/images/Vector2.svg");
     background-size: 40%;
@@ -459,21 +459,22 @@
   }
 
   #blog .container {
-    width: 95%;
+    width: 1400px;
     display: flex;
     flex-direction: row;
   }
 
   #blog .container .left-section {
-    width: 40%;
+    width: 50%;
     display: initial;
+    padding-top: 30px;
   }
 
   #blog .container .left-section .header {
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     padding-bottom: 30px;
-    width: 70%;
+    width: 60%;
   }
 
   #blog .container .left-section .categories {
@@ -575,22 +576,19 @@
 
   #blog .container .right-section .blog-page-element p {
     width: 100%;
-    font-size: 20px;
-  }
-
-  #blog .container .right-section .blog-page-element .left {
-    padding-top: 49px;
-    width: 7%;
+    font-size: 18px;
   }
 
   #blog .container .right-section .blog-page-element .right {
     width: 93%;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   #blog .container .right-section .blog-page-element .header {
     font-size: 30px;
     font-weight: bold;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
 
   #blog .container .right-section .blog-page-element .sub-header {
