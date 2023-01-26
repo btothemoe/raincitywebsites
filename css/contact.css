@@ -211,9 +211,9 @@
   }
 
   #hero p {
-    font-size: 20px;
+    font-size: min(20px, 1.5vw);
     line-height: 125%;
-    width: 80%;
+    width: 100%;
     transition: 0.5s ease-in-out;
     position: relative;
     top: 0px;
