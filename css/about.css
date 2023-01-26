@@ -575,6 +575,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
   }
 
   #meet-the-team .container .left-section .header {
@@ -603,7 +604,7 @@
   }
 
   #meet-the-team .container .right-section p {
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
   }
 
@@ -649,6 +650,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 0px;
   }
 
   #meet-the-team .container .left-section .header {
@@ -727,6 +729,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 0px;
   }
 
   #meet-the-team .container .left-section .header {
